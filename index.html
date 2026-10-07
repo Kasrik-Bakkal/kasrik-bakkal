@@ -261,9 +261,7 @@ input {
     placeholder="EAN manuell eingeben"
     inputmode="numeric">
 
-
   <br>
-
 
   <button onclick="searchManual()">
 
@@ -317,9 +315,7 @@ input {
 
     </button>
 
-
     <br>
-
 
     <button
       class="share-button"
@@ -329,9 +325,7 @@ input {
 
     </button>
 
-
     <br>
-
 
     <button
       class="clear-button"
@@ -355,24 +349,57 @@ input {
 
 <script>
 
-/* GOOGLE APPS SCRIPT */
+/* PRODUKTDATEN */
 
-const API_URL =
-  "https://script.google.com/macros/s/AKfycbxA6kCXYz0TXspy5RSoySzVdNWBx0zU42ITnkaVtx6ezqh8rdfXRaglgB42rBa-u618/exec";
+const PRODUCT_DATA_URL = "produkte.json";
 
-
-/* SCANNER */
-
-let scanner = null;
-
-let scanning = false;
-
-let alreadyScanned = false;
+let products = null;
 
 
-/* WARENKORB */
+/* PRODUKTDATEN LADEN */
 
-let cart = {};
+async function loadProducts() {
+
+  if (products) {
+    return products;
+  }
+
+  const response = await fetch(
+    PRODUCT_DATA_URL + "?v=" + Date.now()
+  );
+
+  if (!response.ok) {
+    throw new Error("Produktdaten konnten nicht geladen werden.");
+  }
+
+  products = await response.json();
+
+  return products;
+}
+
+
+/* PRODUKT SUCHEN */
+
+async function getProduct(code) {
+
+  const data = await loadProducts();
+
+  const product = data[String(code).trim()];
+
+  if (!product) {
+    return null;
+  }
+
+  return {
+    code: String(product.barcode),
+    name: product.produkt,
+    price: Number(product.preis),
+    marke: product.marke,
+    paket: product.paket,
+    einheit: product.einheit
+  };
+
+}
 
 
 /* PREIS FORMATIEREN */
@@ -386,54 +413,12 @@ function formatPrice(price) {
 }
 
 
-/* PRODUKT AUS GOOGLE SHEET LADEN */
-
-async function getProduct(code) {
-
-  const response = await fetch(
-    API_URL + "?barcode=" + encodeURIComponent(code)
-  );
-
-  if (!response.ok) {
-
-    throw new Error("API Fehler");
-
-  }
-
-  const product = await response.json();
-
-  if (product.error) {
-
-    return null;
-
-  }
-
-  return {
-
-    code: String(product.barcode),
-
-    name: product.produkt,
-
-    price: Number(product.preis),
-
-    marke: product.marke,
-
-    paket: product.paket,
-
-    einheit: product.einheit
-
-  };
-
-}
-
-
 /* PRODUKT ANZEIGEN */
 
 async function showProduct(code) {
 
   const result =
     document.getElementById("resultText");
-
 
   result.innerHTML =
     "🔎 Preis wird gesucht...";
@@ -508,6 +493,8 @@ async function showProduct(code) {
 
   catch(error) {
 
+    console.error(error);
+
     result.innerHTML =
 
       '<div class="not-found">' +
@@ -526,6 +513,9 @@ async function showProduct(code) {
 
 
 /* WARENKORB */
+
+let cart = {};
+
 
 function addToCart(product) {
 
@@ -731,6 +721,13 @@ function searchManual() {
 
 
 /* SCANNER */
+
+let scanner = null;
+
+let scanning = false;
+
+let alreadyScanned = false;
+
 
 function onScanSuccess(decodedText) {
 
@@ -963,6 +960,7 @@ async function shareCart() {
 
 }
 
+
 /* KAMERA AUTOMATISCH STARTEN */
 
 window.addEventListener("load", function() {
@@ -974,7 +972,7 @@ window.addEventListener("load", function() {
   }, 500);
 
 });
-  
+
 </script>
 
 </body>
