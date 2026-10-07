@@ -16,22 +16,14 @@
   type="text/javascript">
 </script>
 
-
 <style>
 
-/* =========================
-   GRUNDLAYOUT
-   ========================= */
-
 :root {
-
   --red: #b5121b;
   --dark: #171717;
   --gold: #d6a72c;
-  --cream: #fffaf0;
   --light: #f5f5f5;
   --green: #167447;
-
 }
 
 * {
@@ -39,58 +31,36 @@
 }
 
 body {
-
   font-family: Arial, sans-serif;
-
   max-width: 600px;
-
   margin: 0 auto;
-
   padding: 12px;
-
   background: var(--light);
-
   color: var(--dark);
-
 }
-
 
 /* =========================
    KOPF
    ========================= */
 
 .header {
-
   background: var(--dark);
-
   color: white;
-
   border-radius: 14px;
-
   padding: 16px;
-
   text-align: center;
-
   margin-bottom: 12px;
-
   border-bottom: 5px solid var(--gold);
-
 }
 
 .header h1 {
-
   margin: 0;
-
   font-size: 25px;
-
 }
 
 .header p {
-
   margin: 5px 0 0;
-
   color: #eee;
-
 }
 
 
@@ -99,32 +69,20 @@ body {
    ========================= */
 
 .scanner-box {
-
   background: white;
-
   border-radius: 14px;
-
   padding: 7px;
-
   margin-bottom: 10px;
-
-  box-shadow:
-    0 2px 8px rgba(0,0,0,0.12);
-
+  box-shadow: 0 2px 8px rgba(0,0,0,0.12);
 }
 
 #reader {
-
   max-width: 360px;
-
   margin: auto;
-
 }
 
 .scan-controls {
-
   text-align: center;
-
 }
 
 
@@ -133,83 +91,45 @@ body {
    ========================= */
 
 button {
-
   border: none;
-
   border-radius: 9px;
-
   padding: 11px 16px;
-
   font-size: 16px;
-
   font-weight: bold;
-
   cursor: pointer;
-
   margin: 4px;
-
 }
 
 .scan-button {
-
   background: var(--red);
-
   color: white;
-
 }
 
 .share-button {
-
   background: var(--gold);
-
   color: #171717;
-
 }
 
 .clear-button {
-
   background: #777;
-
   color: white;
-
 }
 
 .torch-button {
-
   background: #333;
-
   color: white;
-
 }
 
 .torch-button:disabled {
-
   background: #bbb;
-
   cursor: not-allowed;
-
-}
-
-.price-list-button {
-
-  background: var(--green);
-
-  color: white;
-
-  width: 90%;
-
 }
 
 .quantity-button {
-
   background: #eee;
-
   color: #111;
-
   padding: 6px 11px;
-
   margin: 0 3px;
-
 }
 
 
@@ -218,86 +138,56 @@ button {
    ========================= */
 
 .result {
-
   background: white;
-
   border-radius: 14px;
-
   padding: 17px;
-
   text-align: center;
-
   margin-bottom: 12px;
-
-  box-shadow:
-    0 2px 8px rgba(0,0,0,0.12);
-
+  box-shadow: 0 2px 8px rgba(0,0,0,0.12);
 }
 
 .product {
-
   font-size: 23px;
-
   font-weight: bold;
-
   margin-bottom: 5px;
-
 }
 
 .price {
-
   color: var(--red);
-
   font-size: 36px;
-
   font-weight: bold;
-
   margin-bottom: 10px;
-
 }
 
 input {
-
   width: 90%;
-
   padding: 11px;
-
   font-size: 17px;
-
   border: 1px solid #ccc;
-
   border-radius: 8px;
-
   margin-top: 8px;
-
 }
 
+
+/* =========================
+   SUCHZEILEN
+   ========================= */
+
 .search-row {
-
   display: flex;
-
   gap: 6px;
-
   align-items: center;
-
   justify-content: center;
-
   margin-top: 8px;
-
 }
 
 .search-row input {
-
   width: 65%;
-
   margin-top: 0;
-
 }
 
 .search-row button {
-
   margin: 0;
-
 }
 
 
@@ -306,49 +196,30 @@ input {
    ========================= */
 
 .search-results {
-
   margin-top: 12px;
-
   text-align: left;
-
 }
 
 .search-result {
-
   display: flex;
-
   justify-content: space-between;
-
   align-items: center;
-
   gap: 10px;
-
   padding: 10px;
-
   border: 1px solid #ddd;
-
   border-radius: 9px;
-
   margin-top: 7px;
-
   background: #fafafa;
-
 }
 
 .search-result-info {
-
   flex: 1;
-
 }
 
 .search-result-price {
-
   font-weight: bold;
-
   color: var(--red);
-
   white-space: nowrap;
-
 }
 
 
@@ -357,82 +228,43 @@ input {
    ========================= */
 
 .price-list-box {
-
   background: white;
-
   border-radius: 14px;
-
   padding: 12px;
-
   margin-bottom: 12px;
-
-  box-shadow:
-    0 2px 8px rgba(0,0,0,0.12);
-
+  box-shadow: 0 2px 8px rgba(0,0,0,0.12);
   text-align: center;
-
 }
 
-#priceList {
-
-  margin-top: 10px;
-
-}
-
-#priceListSearch {
-
+.price-list-button {
+  background: var(--green);
+  color: white;
   width: 90%;
-
-  margin-bottom: 10px;
-
 }
 
 .price-list-item {
-
   display: flex;
-
   justify-content: space-between;
-
   align-items: center;
-
   gap: 10px;
-
   text-align: left;
-
   border-bottom: 1px solid #ddd;
-
-  padding: 11px 4px;
-
+  padding: 10px 4px;
 }
 
 .price-list-info {
-
   flex: 1;
-
-}
-
-.price-list-info strong {
-
-  font-size: 15px;
-
 }
 
 .price-list-info span {
-
   color: #777;
-
   font-size: 14px;
-
 }
 
 .price-list-price {
-
   font-weight: bold;
-
   color: var(--red);
-
   white-space: nowrap;
-
 }
 
 
@@ -441,86 +273,51 @@ input {
    ========================= */
 
 .cart {
-
   background: white;
-
   border-radius: 14px;
-
   padding: 17px;
-
   margin-top: 12px;
-
-  box-shadow:
-    0 2px 8px rgba(0,0,0,0.12);
-
+  box-shadow: 0 2px 8px rgba(0,0,0,0.12);
 }
 
 .cart-title {
-
   font-size: 22px;
-
   font-weight: bold;
-
   border-bottom: 3px solid var(--gold);
-
   padding-bottom: 8px;
-
   margin-bottom: 8px;
-
 }
 
 .cart-item {
-
   display: flex;
-
   justify-content: space-between;
-
   align-items: center;
-
   gap: 7px;
-
   border-bottom: 1px solid #ddd;
-
   padding: 10px 0;
-
 }
 
 .cart-name {
-
   flex: 1;
-
   text-align: left;
-
 }
 
 .cart-price {
-
   white-space: nowrap;
-
   font-weight: bold;
-
 }
 
 .total {
-
   font-size: 25px;
-
   font-weight: bold;
-
   text-align: right;
-
   margin-top: 15px;
-
   color: var(--red);
-
 }
 
 .cart-buttons {
-
   text-align: center;
-
   margin-top: 12px;
-
 }
 
 
@@ -529,64 +326,44 @@ input {
    ========================= */
 
 .empty {
-
   text-align: center;
-
   color: #777;
-
   padding: 12px;
-
 }
 
 .not-found {
-
   color: var(--red);
-
   font-weight: bold;
-
 }
 
 .footer {
-
   text-align: center;
-
   color: #888;
-
   font-size: 12px;
-
   margin: 20px 0;
-
 }
 
 
 /* =========================
-   MOBILE
+   HANDY
    ========================= */
 
 @media (max-width: 480px) {
 
   .search-row {
-
     flex-direction: column;
-
   }
 
   .search-row input {
-
     width: 90%;
-
   }
 
   .search-row button {
-
     width: auto;
-
   }
 
   .cart-item {
-
     flex-wrap: wrap;
-
   }
 
 }
@@ -633,7 +410,6 @@ input {
 
   </button>
 
-
   <button
     id="torchButton"
     class="torch-button"
@@ -663,7 +439,7 @@ input {
   </div>
 
 
-  <!-- EAN -->
+  <!-- EAN MANUELL -->
 
   <div class="search-row">
 
@@ -716,7 +492,6 @@ input {
      ========================= -->
 
 <div class="price-list-box">
-
 
   <button
     class="price-list-button"
@@ -852,7 +627,6 @@ let products = null;
 
 async function loadProducts() {
 
-
   if (products) {
 
     return products;
@@ -861,11 +635,9 @@ async function loadProducts() {
 
 
   const response = await fetch(
-
     PRODUCT_DATA_URL +
     "?v=" +
     Date.now()
-
   );
 
 
@@ -888,11 +660,10 @@ async function loadProducts() {
 
 
 /* =====================================================
-   EINZELNES PRODUKT SUCHEN
+   PRODUKT SUCHEN
    ===================================================== */
 
 async function getProduct(code) {
-
 
   const data =
     await loadProducts();
@@ -943,11 +714,8 @@ async function getProduct(code) {
 function formatPrice(price) {
 
   return Number(price)
-
     .toFixed(2)
-
     .replace(".", ",") +
-
     " €";
 
 }
@@ -966,13 +734,9 @@ function escapeHtml(value) {
   )
 
     .replace(/&/g, "&amp;")
-
     .replace(/</g, "&lt;")
-
     .replace(/>/g, "&gt;")
-
     .replace(/"/g, "&quot;")
-
     .replace(/'/g, "&#039;");
 
 }
@@ -983,7 +747,6 @@ function escapeHtml(value) {
    ===================================================== */
 
 async function showProduct(code) {
-
 
   const result =
     document.getElementById(
@@ -997,13 +760,11 @@ async function showProduct(code) {
 
   try {
 
-
     const product =
       await getProduct(code);
 
 
     if (!product) {
-
 
       result.innerHTML =
 
@@ -1072,12 +833,10 @@ async function showProduct(code) {
 
     setTimeout(function() {
 
-
       document
         .getElementById(
           "resultBox"
         )
-
         .scrollIntoView({
 
           behavior: "smooth",
@@ -1086,14 +845,12 @@ async function showProduct(code) {
 
         });
 
-
     }, 100);
 
 
   }
 
   catch(error) {
-
 
     console.error(error);
 
@@ -1124,21 +881,17 @@ let cart = {};
 
 function addToCart(product) {
 
-
   const code =
     product.code;
 
 
   if (cart[code]) {
 
-
     cart[code].quantity++;
-
 
   }
 
   else {
-
 
     cart[code] = {
 
@@ -1176,7 +929,6 @@ function changeQuantity(
   change
 ) {
 
-
   if (!cart[code]) {
 
     return;
@@ -1192,9 +944,7 @@ function changeQuantity(
     cart[code].quantity <= 0
   ) {
 
-
     delete cart[code];
-
 
   }
 
@@ -1210,7 +960,6 @@ function changeQuantity(
 
 function updateCart() {
 
-
   const container =
     document.getElementById(
       "cartItems"
@@ -1225,7 +974,6 @@ function updateCart() {
     codes.length === 0
   ) {
 
-
     container.innerHTML =
 
       '<div class="empty">' +
@@ -1239,7 +987,6 @@ function updateCart() {
       .getElementById(
         "cartTotal"
       )
-
       .textContent =
         "0,00 €";
 
@@ -1256,7 +1003,6 @@ function updateCart() {
 
   codes.forEach(
     function(code) {
-
 
       const item =
         cart[code];
@@ -1281,7 +1027,7 @@ function updateCart() {
             '<strong>' +
 
             escapeHtml(
-              item.marke
+              item.marke || ""
             ) +
 
             '</strong><br>' +
@@ -1365,7 +1111,6 @@ function updateCart() {
     .getElementById(
       "cartTotal"
     )
-
     .textContent =
       formatPrice(total);
 
@@ -1386,11 +1131,10 @@ function clearCart() {
 
 
 /* =====================================================
-   MANUELLE EAN-SUCHE
+   EAN MANUELL
    ===================================================== */
 
 function searchManual() {
-
 
   const code =
     document
@@ -1419,7 +1163,6 @@ function searchManual() {
 
 async function searchText() {
 
-
   const query =
     document
 
@@ -1444,7 +1187,6 @@ async function searchText() {
     query.length < 2
   ) {
 
-
     resultsBox.innerHTML =
 
       '<div class="empty">' +
@@ -1453,14 +1195,12 @@ async function searchText() {
 
       '</div>';
 
-
     return;
 
   }
 
 
   try {
-
 
     const data =
       await loadProducts();
@@ -1472,7 +1212,6 @@ async function searchText() {
 
         .filter(
           function(product) {
-
 
             const searchable = [
 
@@ -1505,7 +1244,6 @@ async function searchText() {
       matches.length === 0
     ) {
 
-
       resultsBox.innerHTML =
 
         '<div class="not-found">' +
@@ -1513,7 +1251,6 @@ async function searchText() {
         'Kein passender Artikel gefunden.' +
 
         '</div>';
-
 
       return;
 
@@ -1527,26 +1264,10 @@ async function searchText() {
         .map(
           function(product) {
 
-
             const code =
               String(
                 product.barcode
               );
-
-
-            const brand =
-              product.marke || "";
-
-
-            const name =
-              product.produkt || "";
-
-
-            const packageText =
-              product.paket
-                ? " · " +
-                  product.paket
-                : "";
 
 
             return
@@ -1559,17 +1280,27 @@ async function searchText() {
                   '<strong>' +
 
                   escapeHtml(
-                    brand
+                    product.marke || ""
                   ) +
 
                   '</strong><br>' +
 
                   escapeHtml(
-                    name
+                    product.produkt || ""
                   ) +
 
-                  escapeHtml(
-                    packageText
+                  (
+
+                    product.paket
+
+                      ? '<br><small>' +
+                        escapeHtml(
+                          product.paket
+                        ) +
+                        '</small>'
+
+                      : ""
+
                   ) +
 
                 '</div>' +
@@ -1611,7 +1342,6 @@ async function searchText() {
 
   catch(error) {
 
-
     console.error(error);
 
 
@@ -1636,7 +1366,6 @@ async function selectSearchResult(
   code
 ) {
 
-
   const product =
     await getProduct(code);
 
@@ -1651,83 +1380,49 @@ async function selectSearchResult(
   addToCart(product);
 
 
-  showProductWithoutAdding(
-    product
-  );
-
-}
-
-
-/* =====================================================
-   PRODUKT ANZEIGEN
-   OHNE DOPPELT IN WARENKORB ZU LEGEN
-   ===================================================== */
-
-function showProductWithoutAdding(
-  product
-) {
-
-
-  const result =
-    document.getElementById(
-      "resultText"
-    );
-
-
-  result.innerHTML =
-
-    '<div class="product">' +
-
-    escapeHtml(
-      product.name
-    ) +
-
-    '</div>' +
-
-
-    '<div>' +
-
-    escapeHtml(
-      product.marke || ""
-    ) +
-
-    (
-
-      product.paket
-
-        ? ' · ' +
-          escapeHtml(
-            product.paket
-          )
-
-        : ""
-
-    ) +
-
-    '</div>' +
-
-
-    '<div class="price">' +
-
-    formatPrice(
-      product.price
-    ) +
-
-    '</div>';
-
-
   document
     .getElementById(
-      "resultBox"
+      "resultText"
     )
 
-    .scrollIntoView({
+    .innerHTML =
 
-      behavior: "smooth",
+      '<div class="product">' +
 
-      block: "start"
+      escapeHtml(
+        product.name
+      ) +
 
-    });
+      '</div>' +
+
+      '<div>' +
+
+      escapeHtml(
+        product.marke || ""
+      ) +
+
+      (
+
+        product.paket
+
+          ? ' · ' +
+            escapeHtml(
+              product.paket
+            )
+
+          : ""
+
+      ) +
+
+      '</div>' +
+
+      '<div class="price">' +
+
+      formatPrice(
+        product.price
+      ) +
+
+      '</div>';
 
 }
 
@@ -1737,7 +1432,6 @@ function showProductWithoutAdding(
    ===================================================== */
 
 async function togglePriceList() {
-
 
   const list =
     document.getElementById(
@@ -1756,7 +1450,6 @@ async function togglePriceList() {
     "none"
   ) {
 
-
     list.style.display =
       "block";
 
@@ -1767,11 +1460,9 @@ async function togglePriceList() {
 
     await renderPriceList();
 
-
   }
 
   else {
-
 
     list.style.display =
       "none";
@@ -1786,11 +1477,10 @@ async function togglePriceList() {
 
 
 /* =====================================================
-   PREISLISTE ERSTELLEN
+   PREISLISTE LADEN
    ===================================================== */
 
 async function renderPriceList() {
-
 
   const container =
     document.getElementById(
@@ -1799,7 +1489,6 @@ async function renderPriceList() {
 
 
   try {
-
 
     const data =
       await loadProducts();
@@ -1812,17 +1501,12 @@ async function renderPriceList() {
     productsArray.sort(
       function(a, b) {
 
-
         const aText =
 
           (
-
             (a.marke || "") +
-
             " " +
-
             (a.produkt || "")
-
           )
 
           .toLowerCase();
@@ -1831,13 +1515,9 @@ async function renderPriceList() {
         const bText =
 
           (
-
             (b.marke || "") +
-
             " " +
-
             (b.produkt || "")
-
           )
 
           .toLowerCase();
@@ -1858,14 +1538,11 @@ async function renderPriceList() {
         .map(
           function(product) {
 
-
             return
 
               '<div class="price-list-item">' +
 
-
                 '<div class="price-list-info">' +
-
 
                   '<strong>' +
 
@@ -1873,24 +1550,17 @@ async function renderPriceList() {
                     product.marke || ""
                   ) +
 
-                  '</strong>' +
-
-
-                  '<br>' +
-
+                  '</strong><br>' +
 
                   escapeHtml(
                     product.produkt || ""
                   ) +
 
-
                   (
 
                     product.paket
 
-                      ? '<br>' +
-
-                        '<span>' +
+                      ? '<br><span>' +
 
                         escapeHtml(
                           product.paket
@@ -1902,9 +1572,7 @@ async function renderPriceList() {
 
                   ) +
 
-
                 '</div>' +
-
 
                 '<div class="price-list-price">' +
 
@@ -1913,7 +1581,6 @@ async function renderPriceList() {
                   ) +
 
                 '</div>' +
-
 
               '</div>';
 
@@ -1926,7 +1593,6 @@ async function renderPriceList() {
 
 
   catch(error) {
-
 
     console.error(error);
 
@@ -1945,11 +1611,10 @@ async function renderPriceList() {
 
 
 /* =====================================================
-   PREISLISTE DURCHSUCHEN
+   PREISLISTE SUCHEN
    ===================================================== */
 
 function filterPriceList() {
-
 
   const query =
     document
@@ -1973,7 +1638,6 @@ function filterPriceList() {
 
   items.forEach(
     function(item) {
-
 
       const text =
         item.textContent
@@ -2015,7 +1679,6 @@ function onScanSuccess(
   decodedText
 ) {
 
-
   if (
     alreadyScanned
   ) {
@@ -2047,10 +1710,7 @@ function onScanFailure(
   error
 ) {
 
-  /*
-    Fehler beim normalen
-    Scannen ignorieren.
-  */
+  // Normale Scanfehler ignorieren.
 
 }
 
@@ -2060,7 +1720,6 @@ function onScanFailure(
    ===================================================== */
 
 function startScanner() {
-
 
   if (scanning) {
 
@@ -2074,7 +1733,6 @@ function startScanner() {
 
 
   if (!scanner) {
-
 
     scanner =
       new Html5Qrcode(
@@ -2117,14 +1775,11 @@ function startScanner() {
   .then(
     function() {
 
-
       scanning =
         true;
 
-
       torchOn =
         false;
-
 
       updateTorchButton();
 
@@ -2134,7 +1789,6 @@ function startScanner() {
 
   .catch(
     function(error) {
-
 
       console.error(error);
 
@@ -2160,7 +1814,6 @@ function startScanner() {
 
           '</div>';
 
-
     }
   );
 
@@ -2168,11 +1821,10 @@ function startScanner() {
 
 
 /* =====================================================
-   TASCHENLAMPE BUTTON
+   TASCHENLAMPE
    ===================================================== */
 
 function updateTorchButton() {
-
 
   const button =
     document.getElementById(
@@ -2202,12 +1854,7 @@ function updateTorchButton() {
 }
 
 
-/* =====================================================
-   TASCHENLAMPE EIN/AUS
-   ===================================================== */
-
 async function toggleTorch() {
-
 
   if (
     !scanner ||
@@ -2221,7 +1868,6 @@ async function toggleTorch() {
 
   try {
 
-
     const capabilities =
       scanner
         .getRunningTrackCapabilities();
@@ -2232,17 +1878,9 @@ async function toggleTorch() {
       !capabilities.torch
     ) {
 
-
       alert(
-
-        "Die Taschenlampe wird " +
-
-        "von diesem Handy oder " +
-
-        "Browser nicht unterstützt."
-
+        "Die Taschenlampe wird von diesem Handy oder Browser nicht unterstützt."
       );
-
 
       return;
 
@@ -2274,22 +1912,15 @@ async function toggleTorch() {
 
     updateTorchButton();
 
-
   }
 
 
   catch(error) {
 
-
     console.error(error);
 
-
     alert(
-
-      "Die Taschenlampe konnte " +
-
-      "nicht eingeschaltet werden."
-
+      "Die Taschenlampe konnte nicht geschaltet werden."
     );
 
   }
@@ -2303,7 +1934,6 @@ async function toggleTorch() {
 
 function stopScanner() {
 
-
   if (
     !scanner ||
     !scanning
@@ -2314,38 +1944,31 @@ function stopScanner() {
   }
 
 
-  scanner.stop()
-
+  scanner
+    .stop()
 
     .then(
       function() {
 
-
         scanning =
           false;
 
-
         torchOn =
           false;
-
 
         updateTorchButton();
 
       }
     )
 
-
     .catch(
       function() {
-
 
         scanning =
           false;
 
-
         torchOn =
           false;
-
 
         updateTorchButton();
 
@@ -2356,11 +1979,10 @@ function stopScanner() {
 
 
 /* =====================================================
-   RECHNUNG / EINKAUF TEILEN
+   RECHNUNG TEILEN
    ===================================================== */
 
 async function shareCart() {
-
 
   const codes =
     Object.keys(cart);
@@ -2370,13 +1992,9 @@ async function shareCart() {
     codes.length === 0
   ) {
 
-
     alert(
-
       "Der Warenkorb ist noch leer."
-
     );
-
 
     return;
 
@@ -2397,13 +2015,8 @@ async function shareCart() {
     now.toLocaleTimeString(
       "de-DE",
       {
-
-        hour:
-          "2-digit",
-
-        minute:
-          "2-digit"
-
+        hour: "2-digit",
+        minute: "2-digit"
       }
     );
 
@@ -2430,7 +2043,6 @@ async function shareCart() {
   codes.forEach(
     function(code) {
 
-
       const item =
         cart[code];
 
@@ -2448,7 +2060,7 @@ async function shareCart() {
 
         (
           item.marke ||
-          "Marke unbekannt"
+          ""
         ) +
 
         "\n";
@@ -2458,7 +2070,7 @@ async function shareCart() {
 
         (
           item.name ||
-          "Produkt"
+          ""
         ) +
 
         "\n";
@@ -2468,9 +2080,7 @@ async function shareCart() {
         item.paket
       ) {
 
-
         text +=
-
           item.paket +
           "\n";
 
@@ -2516,17 +2126,11 @@ async function shareCart() {
     "Kasrik Bakkal";
 
 
-  /* =========================
-     HANDY-TEILEN
-     ========================= */
-
   if (
     navigator.share
   ) {
 
-
     try {
-
 
       await navigator.share({
 
@@ -2538,31 +2142,19 @@ async function shareCart() {
 
       });
 
-
     }
 
     catch(error) {
 
-
-      /*
-        Teilen wurde vom
-        Benutzer abgebrochen.
-      */
+      // Teilen abgebrochen.
 
     }
 
   }
 
-
-  /* =========================
-     FALLBACK: KOPIEREN
-     ========================= */
-
   else {
 
-
     try {
-
 
       await navigator
         .clipboard
@@ -2575,16 +2167,11 @@ async function shareCart() {
         "Rechnung wurde kopiert."
       );
 
-
     }
-
 
     catch(error) {
 
-
-      alert(
-        text
-      );
+      alert(text);
 
     }
 
@@ -2611,12 +2198,10 @@ document.addEventListener(
         "keydown",
         function(event) {
 
-
           if (
             event.key ===
             "Enter"
           ) {
-
 
             searchManual();
 
@@ -2635,12 +2220,10 @@ document.addEventListener(
         "keydown",
         function(event) {
 
-
           if (
             event.key ===
             "Enter"
           ) {
-
 
             searchText();
 
@@ -2661,13 +2244,10 @@ window.addEventListener(
   "load",
   function() {
 
-
     setTimeout(
       function() {
 
-
         startScanner();
-
 
       },
       500
@@ -2677,7 +2257,6 @@ window.addEventListener(
 );
 
 </script>
-
 
 </body>
 
