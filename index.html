@@ -214,15 +214,20 @@ input {
 <!-- KOPF -->
 
 <div class="header">
+
   <h1>🛒 KASRIK BAKKAL</h1>
+
   <p>Preisfinder</p>
+
 </div>
 
 
 <!-- SCANNER -->
 
 <div class="scanner-box">
+
   <div id="reader"></div>
+
 </div>
 
 
@@ -244,8 +249,11 @@ input {
 <div class="result" id="resultBox">
 
   <div id="resultText">
+
     Bitte einen Barcode scannen.
+
   </div>
+
 
   <input
     type="text"
@@ -253,10 +261,11 @@ input {
     placeholder="EAN manuell eingeben"
     inputmode="numeric">
 
+
   <br>
 
-  <button
-    onclick="searchManual()">
+
+  <button onclick="searchManual()">
 
     Preis suchen
 
@@ -270,19 +279,694 @@ input {
 <div class="cart">
 
   <div class="cart-title">
+
     🛒 Mein Warenkorb
+
   </div>
+
 
   <div id="cartItems">
 
     <div class="empty">
+
       Noch keine Artikel
+
     </div>
 
   </div>
 
+
   <div class="total">
 
     Gesamt:
+
     <span id="cartTotal">
-      
+      0,00 €
+    </span>
+
+  </div>
+
+
+  <div class="cart-buttons">
+
+    <button
+      class="scan-button"
+      onclick="startScanner()">
+
+      📷 Weiter scannen
+
+    </button>
+
+
+    <br>
+
+
+    <button
+      class="share-button"
+      onclick="shareCart()">
+
+      📸 Einkaufsliste speichern / teilen
+
+    </button>
+
+
+    <br>
+
+
+    <button
+      class="clear-button"
+      onclick="clearCart()">
+
+      🗑️ Warenkorb leeren
+
+    </button>
+
+  </div>
+
+</div>
+
+
+<div class="footer">
+
+  Kasrik Bakkal
+
+</div>
+
+
+<script>
+
+/* GOOGLE APPS SCRIPT */
+
+const API_URL =
+  "https://script.google.com/macros/s/AKfycbxA6kCXYz0TXspy5RSoySzVdNWBx0zU42ITnkaVtx6ezqh8rdfXRaglgB42rBa-u618/exec";
+
+
+/* SCANNER */
+
+let scanner = null;
+
+let scanning = false;
+
+let alreadyScanned = false;
+
+
+/* WARENKORB */
+
+let cart = {};
+
+
+/* PREIS FORMATIEREN */
+
+function formatPrice(price) {
+
+  return Number(price)
+    .toFixed(2)
+    .replace(".", ",") + " €";
+
+}
+
+
+/* PRODUKT AUS GOOGLE SHEET LADEN */
+
+async function getProduct(code) {
+
+  const response = await fetch(
+    API_URL + "?barcode=" + encodeURIComponent(code)
+  );
+
+  if (!response.ok) {
+
+    throw new Error("API Fehler");
+
+  }
+
+  const product = await response.json();
+
+  if (product.error) {
+
+    return null;
+
+  }
+
+  return {
+
+    code: String(product.barcode),
+
+    name: product.produkt,
+
+    price: Number(product.preis),
+
+    marke: product.marke,
+
+    paket: product.paket,
+
+    einheit: product.einheit
+
+  };
+
+}
+
+
+/* PRODUKT ANZEIGEN */
+
+async function showProduct(code) {
+
+  const result =
+    document.getElementById("resultText");
+
+
+  result.innerHTML =
+    "🔎 Preis wird gesucht...";
+
+
+  try {
+
+    const product =
+      await getProduct(code);
+
+
+    if (!product) {
+
+      result.innerHTML =
+
+        '<div class="not-found">' +
+
+        'Artikel nicht gefunden<br><br>' +
+
+        'EAN: ' + code +
+
+        '</div>';
+
+      return;
+
+    }
+
+
+    result.innerHTML =
+
+      '<div class="product">' +
+
+      product.name +
+
+      '</div>' +
+
+      '<div>' +
+
+      (product.marke || '') +
+
+      (product.paket
+        ? ' · ' + product.paket
+        : '') +
+
+      '</div>' +
+
+      '<div class="price">' +
+
+      formatPrice(product.price) +
+
+      '</div>';
+
+
+    addToCart(product);
+
+
+    setTimeout(function() {
+
+      document
+        .getElementById("resultBox")
+        .scrollIntoView({
+
+          behavior: "smooth",
+
+          block: "start"
+
+        });
+
+    }, 100);
+
+  }
+
+  catch(error) {
+
+    result.innerHTML =
+
+      '<div class="not-found">' +
+
+      'Preis konnte nicht geladen werden.' +
+
+      '<br><br>' +
+
+      'Bitte erneut versuchen.' +
+
+      '</div>';
+
+  }
+
+}
+
+
+/* WARENKORB */
+
+function addToCart(product) {
+
+  const code = product.code;
+
+
+  if (cart[code]) {
+
+    cart[code].quantity++;
+
+  }
+
+  else {
+
+    cart[code] = {
+
+      name: product.name,
+
+      price: product.price,
+
+      quantity: 1
+
+    };
+
+  }
+
+
+  updateCart();
+
+}
+
+
+function changeQuantity(code, change) {
+
+  if (!cart[code]) return;
+
+
+  cart[code].quantity += change;
+
+
+  if (cart[code].quantity <= 0) {
+
+    delete cart[code];
+
+  }
+
+
+  updateCart();
+
+}
+
+
+function updateCart() {
+
+  const container =
+    document.getElementById("cartItems");
+
+
+  const codes =
+    Object.keys(cart);
+
+
+  if (codes.length === 0) {
+
+    container.innerHTML =
+
+      '<div class="empty">' +
+
+      'Noch keine Artikel' +
+
+      '</div>';
+
+
+    document
+      .getElementById("cartTotal")
+      .textContent = "0,00 €";
+
+
+    return;
+
+  }
+
+
+  let html = "";
+
+  let total = 0;
+
+
+  codes.forEach(function(code) {
+
+    const item = cart[code];
+
+
+    const itemTotal =
+      item.price * item.quantity;
+
+
+    total += itemTotal;
+
+
+    html +=
+
+      '<div class="cart-item">' +
+
+        '<div class="cart-name">' +
+
+          '<strong>' +
+
+          item.name +
+
+          '</strong><br>' +
+
+          formatPrice(item.price) +
+
+        '</div>' +
+
+
+        '<div>' +
+
+          '<button ' +
+
+          'class="quantity-button" ' +
+
+          'onclick="changeQuantity(\'' +
+
+          code +
+
+          '\', -1)">' +
+
+          '−' +
+
+          '</button>' +
+
+          item.quantity +
+
+          '<button ' +
+
+          'class="quantity-button" ' +
+
+          'onclick="changeQuantity(\'' +
+
+          code +
+
+          '\', 1)">' +
+
+          '+' +
+
+          '</button>' +
+
+        '</div>' +
+
+
+        '<div class="cart-price">' +
+
+          formatPrice(itemTotal) +
+
+        '</div>' +
+
+      '</div>';
+
+  });
+
+
+  container.innerHTML = html;
+
+
+  document
+    .getElementById("cartTotal")
+    .textContent = formatPrice(total);
+
+}
+
+
+/* WARENKORB LEEREN */
+
+function clearCart() {
+
+  cart = {};
+
+  updateCart();
+
+}
+
+
+/* MANUELLE EAN */
+
+function searchManual() {
+
+  const code =
+    document
+      .getElementById("manualCode")
+      .value
+      .trim();
+
+
+  if (code) {
+
+    showProduct(code);
+
+  }
+
+}
+
+
+/* SCANNER */
+
+function onScanSuccess(decodedText) {
+
+  if (alreadyScanned) return;
+
+
+  alreadyScanned = true;
+
+
+  showProduct(decodedText);
+
+
+  stopScanner();
+
+}
+
+
+function onScanFailure(error) {
+
+  // Fehler während des normalen Scannens ignorieren.
+
+}
+
+
+/* KAMERA STARTEN */
+
+function startScanner() {
+
+  if (scanning) return;
+
+
+  alreadyScanned = false;
+
+
+  if (!scanner) {
+
+    scanner =
+      new Html5Qrcode("reader");
+
+  }
+
+
+  scanner.start(
+
+    {
+      facingMode: "environment"
+    },
+
+    {
+
+      fps: 15,
+
+      qrbox: {
+
+        width: 280,
+
+        height: 130
+
+      }
+
+    },
+
+    onScanSuccess,
+
+    onScanFailure
+
+  )
+
+  .then(function() {
+
+    scanning = true;
+
+  })
+
+  .catch(function(error) {
+
+    scanning = false;
+
+
+    document
+      .getElementById("resultText")
+      .innerHTML =
+
+      '<div class="not-found">' +
+
+      'Kamera konnte nicht gestartet werden.' +
+
+      '<br><br>' +
+
+      'Bitte Kamera-Berechtigung prüfen.' +
+
+      '</div>';
+
+  });
+
+}
+
+
+/* KAMERA STOPPEN */
+
+function stopScanner() {
+
+  if (!scanner || !scanning) return;
+
+
+  scanner.stop()
+
+    .then(function() {
+
+      scanning = false;
+
+    })
+
+    .catch(function() {
+
+      scanning = false;
+
+    });
+
+}
+
+
+/* EINKAUFSLISTE */
+
+async function shareCart() {
+
+  const codes =
+    Object.keys(cart);
+
+
+  if (codes.length === 0) {
+
+    alert(
+      "Der Warenkorb ist noch leer."
+    );
+
+    return;
+
+  }
+
+
+  let text =
+    "🛒 KASRIK BAKKAL\n";
+
+  text +=
+    "Einkaufsliste\n\n";
+
+
+  let total = 0;
+
+
+  codes.forEach(function(code) {
+
+    const item = cart[code];
+
+
+    const itemTotal =
+      item.price * item.quantity;
+
+
+    total += itemTotal;
+
+
+    text +=
+
+      item.name +
+
+      " × " +
+
+      item.quantity +
+
+      " — " +
+
+      formatPrice(itemTotal) +
+
+      "\n";
+
+  });
+
+
+  text +=
+
+    "\nGesamt: " +
+
+    formatPrice(total);
+
+
+  if (navigator.share) {
+
+    try {
+
+      await navigator.share({
+
+        title:
+          "Kasrik Bakkal Einkaufsliste",
+
+        text: text
+
+      });
+
+    }
+
+    catch(error) {
+
+      // Teilen wurde abgebrochen.
+
+    }
+
+  }
+
+  else {
+
+    try {
+
+      await navigator.clipboard.writeText(text);
+
+      alert(
+        "Einkaufsliste wurde kopiert."
+      );
+
+    }
+
+    catch(error) {
+
+      alert(text);
+
+    }
+
+  }
+
+}
+
+
+/* KEIN AUTOMATISCHER KAMERA-START */
+
+</script>
+
+</body>
+</html>
