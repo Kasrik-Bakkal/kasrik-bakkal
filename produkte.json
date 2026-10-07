@@ -1,0 +1,4874 @@
+{
+  "40060140": {
+    "barcode": "40060140",
+    "marke": "Ülker",
+    "produkt": "Gofret cikolatali",
+    "preis": 0.7,
+    "paket": "",
+    "einheit": "€/St"
+  },
+  "90162565": {
+    "barcode": "90162565",
+    "marke": "RedBull",
+    "produkt": "RedBull",
+    "preis": 2.25,
+    "paket": "",
+    "einheit": "€/St"
+  },
+  "8001480021808": {
+    "barcode": "8001480021808",
+    "marke": "ACE",
+    "produkt": "ACE Wäscheweiß 2 Liter Bahar Kokulu",
+    "preis": 4.49,
+    "paket": "2000ml",
+    "einheit": "€/St"
+  },
+  "8001480020429": {
+    "barcode": "8001480020429",
+    "marke": "ACE",
+    "produkt": "ACE Wäschweiß 2 Liter Classic",
+    "preis": 4.49,
+    "paket": "2000ml",
+    "einheit": "€/St"
+  },
+  "8001480719750": {
+    "barcode": "8001480719750",
+    "marke": "ACE",
+    "produkt": "Camasir Suyu",
+    "preis": 3.5,
+    "paket": "1000ml",
+    "einheit": "€/St"
+  },
+  "8001480021785": {
+    "barcode": "8001480021785",
+    "marke": "ACE",
+    "produkt": "Camasir Suyu Lavanta 2L",
+    "preis": 4.49,
+    "paket": "2000ml",
+    "einheit": "€/St"
+  },
+  "8001480021846": {
+    "barcode": "8001480021846",
+    "marke": "ACE",
+    "produkt": "Camasir Suyu Lavanta 4L",
+    "preis": 7.99,
+    "paket": "4000ml",
+    "einheit": "€/St"
+  },
+  "8001480020474": {
+    "barcode": "8001480020474",
+    "marke": "ACE",
+    "produkt": "Waschmittel",
+    "preis": 7.99,
+    "paket": "4000ml",
+    "einheit": "€/St"
+  },
+  "3800230213174": {
+    "barcode": "3800230213174",
+    "marke": "Alvesta",
+    "produkt": "Tuvalet Kagidi",
+    "preis": 2.5,
+    "paket": "",
+    "einheit": "€/St"
+  },
+  "8693730000741": {
+    "barcode": "8693730000741",
+    "marke": "Ana",
+    "produkt": "Ana Ücgen Yufka",
+    "preis": 1.49,
+    "paket": "330g",
+    "einheit": "€/St"
+  },
+  "8690576929960": {
+    "barcode": "8690576929960",
+    "marke": "Ankara Makarnasi",
+    "produkt": "Ankara Irmik 500 g",
+    "preis": 1.49,
+    "paket": "",
+    "einheit": "€/St"
+  },
+  "8690576029806": {
+    "barcode": "8690576029806",
+    "marke": "Ankara Makarnasi",
+    "produkt": "Arpa Sehriye 500gr",
+    "preis": 1.49,
+    "paket": "500g",
+    "einheit": "€/St"
+  },
+  "8690576029158": {
+    "barcode": "8690576029158",
+    "marke": "Ankara Makarnasi",
+    "produkt": "Bamya Makarnasi",
+    "preis": 1.49,
+    "paket": "500g",
+    "einheit": "€/St"
+  },
+  "8690576029189": {
+    "barcode": "8690576029189",
+    "marke": "Ankara Makarnasi",
+    "produkt": "Boncuk Makarnasi",
+    "preis": 1.49,
+    "paket": "500g",
+    "einheit": "€/St"
+  },
+  "8690576029431": {
+    "barcode": "8690576029431",
+    "marke": "Ankara Makarnasi",
+    "produkt": "Burgu Makarnasi",
+    "preis": 1.49,
+    "paket": "500g",
+    "einheit": "€/St"
+  },
+  "8690576029226": {
+    "barcode": "8690576029226",
+    "marke": "Ankara Makarnasi",
+    "produkt": "Fiyonk Makarnasi",
+    "preis": 1.49,
+    "paket": "500g",
+    "einheit": "€/St"
+  },
+  "8690576029417": {
+    "barcode": "8690576029417",
+    "marke": "Ankara Makarnasi",
+    "produkt": "Kelebek Makarnasi",
+    "preis": 1.49,
+    "paket": "500g",
+    "einheit": "€/St"
+  },
+  "8690576029257": {
+    "barcode": "8690576029257",
+    "marke": "Ankara Makarnasi",
+    "produkt": "Makarna",
+    "preis": 1.49,
+    "paket": "500g",
+    "einheit": "€/St"
+  },
+  "8690576029264": {
+    "barcode": "8690576029264",
+    "marke": "Ankara Makarnasi",
+    "produkt": "Midye Makarnasi",
+    "preis": 1.49,
+    "paket": "500g",
+    "einheit": "€/St"
+  },
+  "8690576029172": {
+    "barcode": "8690576029172",
+    "marke": "Ankara Makarnasi",
+    "produkt": "Penne Makarnasi",
+    "preis": 1.49,
+    "paket": "500g",
+    "einheit": "€/St"
+  },
+  "8690576029813": {
+    "barcode": "8690576029813",
+    "marke": "Ankara Makarnasi",
+    "produkt": "Tel Sehriye 500gr",
+    "preis": 1.49,
+    "paket": "500g",
+    "einheit": "€/St"
+  },
+  "8690576029288": {
+    "barcode": "8690576029288",
+    "marke": "Ankara Makarnasi",
+    "produkt": "Yüksük Makarnasi",
+    "preis": 1.49,
+    "paket": "500g",
+    "einheit": "€/St"
+  },
+  "8697430885530": {
+    "barcode": "8697430885530",
+    "marke": "Arbella",
+    "produkt": "Tel Sehriye",
+    "preis": 1.49,
+    "paket": "500g",
+    "einheit": "€/St"
+  },
+  "8697430885554": {
+    "barcode": "8697430885554",
+    "marke": "Arbella",
+    "produkt": "Tel Sehriye",
+    "preis": 1.49,
+    "paket": "500g",
+    "einheit": "€/St"
+  },
+  "8697430885523": {
+    "barcode": "8697430885523",
+    "marke": "Arpella",
+    "produkt": "Arbella Arpa Sehriye 500 g",
+    "preis": 1.49,
+    "paket": "500g",
+    "einheit": "€/St"
+  },
+  "8697713838871": {
+    "barcode": "8697713838871",
+    "marke": "Asperox",
+    "produkt": "Ask Masali",
+    "preis": 2.49,
+    "paket": "1000ml",
+    "einheit": "€/St"
+  },
+  "8697713838024": {
+    "barcode": "8697713838024",
+    "marke": "Asperox",
+    "produkt": "Bahar Esintisi",
+    "preis": 5.99,
+    "paket": "2500 ml",
+    "einheit": "€/St"
+  },
+  "8697713838864": {
+    "barcode": "8697713838864",
+    "marke": "Asperox",
+    "produkt": "Bahar Esintisi",
+    "preis": 2.49,
+    "paket": "1000ml",
+    "einheit": "€/St"
+  },
+  "8697713839816": {
+    "barcode": "8697713839816",
+    "marke": "Asperox",
+    "produkt": "Diamond 40 kapsüllü",
+    "preis": 10.99,
+    "paket": "468 gr",
+    "einheit": "€/St"
+  },
+  "8697713828810": {
+    "barcode": "8697713828810",
+    "marke": "Asperox",
+    "produkt": "Kirec ve Kir Sökücü",
+    "preis": 2.89,
+    "paket": "750ml",
+    "einheit": "€/St"
+  },
+  "8697713837195": {
+    "barcode": "8697713837195",
+    "marke": "Asperox",
+    "produkt": "Mavi güc Ultra Kalk & Rostentferner",
+    "preis": 2.99,
+    "paket": "1000ml",
+    "einheit": "€/St"
+  },
+  "8697713836068": {
+    "barcode": "8697713836068",
+    "marke": "Asperox",
+    "produkt": "Sari Güc",
+    "preis": 3,
+    "paket": "1000ml",
+    "einheit": "€/St"
+  },
+  "8697713837997": {
+    "barcode": "8697713837997",
+    "marke": "Asperox",
+    "produkt": "Scent of Clean",
+    "preis": 5.99,
+    "paket": "2500 ml",
+    "einheit": "€/St"
+  },
+  "8697713838017": {
+    "barcode": "8697713838017",
+    "marke": "Asperox",
+    "produkt": "Sunshine",
+    "preis": 5.99,
+    "paket": "2500 ml",
+    "einheit": "€/St"
+  },
+  "8697713838857": {
+    "barcode": "8697713838857",
+    "marke": "Asperox",
+    "produkt": "Sunshine",
+    "preis": 2.49,
+    "paket": "1000ml",
+    "einheit": "€/St"
+  },
+  "8697713828803": {
+    "barcode": "8697713828803",
+    "marke": "Asperox",
+    "produkt": "Temizleyici",
+    "preis": 2.89,
+    "paket": "750ml",
+    "einheit": "€/St"
+  },
+  "8697713838840": {
+    "barcode": "8697713838840",
+    "marke": "Asperox",
+    "produkt": "Temizligin Kokusu",
+    "preis": 2.49,
+    "paket": "1000ml",
+    "einheit": "€/St"
+  },
+  "8697713828827": {
+    "barcode": "8697713828827",
+    "marke": "Asperox",
+    "produkt": "Yag ve Kir Sökücü",
+    "preis": 2.89,
+    "paket": "750ml",
+    "einheit": "€/St"
+  },
+  "4061458040846": {
+    "barcode": "4061458040846",
+    "marke": "Back Family",
+    "produkt": "Weizenmehl",
+    "preis": 0.99,
+    "paket": 1000,
+    "einheit": "€/St"
+  },
+  "8695336110374": {
+    "barcode": "8695336110374",
+    "marke": "Bagci",
+    "produkt": "Gemlik Siyah Zeytin",
+    "preis": 15,
+    "paket": "1000g",
+    "einheit": "€/St"
+  },
+  "8695336111586": {
+    "barcode": "8695336111586",
+    "marke": "Bagci",
+    "produkt": "Gemlik Siyah Zeytin",
+    "preis": 8,
+    "paket": "500g",
+    "einheit": "€/St"
+  },
+  "8690146164111": {
+    "barcode": "8690146164111",
+    "marke": "Bebeto",
+    "produkt": "Apple Rings",
+    "preis": 2.99,
+    "paket": "300g",
+    "einheit": "€/St"
+  },
+  "8690146164203": {
+    "barcode": "8690146164203",
+    "marke": "Bebeto",
+    "produkt": "Bears",
+    "preis": 2.99,
+    "paket": "300g",
+    "einheit": "€/St"
+  },
+  "8690146053477": {
+    "barcode": "8690146053477",
+    "marke": "Bebeto",
+    "produkt": "Beries Gummy Candy",
+    "preis": 1,
+    "paket": "70g",
+    "einheit": "€/St"
+  },
+  "8690146145875": {
+    "barcode": "8690146145875",
+    "marke": "Bebeto",
+    "produkt": "Cherry",
+    "preis": 1,
+    "paket": "80g",
+    "einheit": "€/St"
+  },
+  "8690146097327": {
+    "barcode": "8690146097327",
+    "marke": "Bebeto",
+    "produkt": "Cola",
+    "preis": 1,
+    "paket": "80g",
+    "einheit": "€/St"
+  },
+  "8690146659211": {
+    "barcode": "8690146659211",
+    "marke": "Bebeto",
+    "produkt": "Dracula",
+    "preis": 1,
+    "paket": "80g",
+    "einheit": "€/St"
+  },
+  "8690146164128": {
+    "barcode": "8690146164128",
+    "marke": "Bebeto",
+    "produkt": "Fizzy Cola Bottles",
+    "preis": 2.99,
+    "paket": "300g",
+    "einheit": "€/St"
+  },
+  "8690146164135": {
+    "barcode": "8690146164135",
+    "marke": "Bebeto",
+    "produkt": "Fizzy Strawberry",
+    "preis": 2.99,
+    "paket": "300g",
+    "einheit": "€/St"
+  },
+  "8690146164142": {
+    "barcode": "8690146164142",
+    "marke": "Bebeto",
+    "produkt": "Fizzy Watermelon",
+    "preis": 2.99,
+    "paket": "300g",
+    "einheit": "€/St"
+  },
+  "8690146183679": {
+    "barcode": "8690146183679",
+    "marke": "Bebeto",
+    "produkt": "Freeze Bubblegum Bottles",
+    "preis": 1.5,
+    "paket": "35g",
+    "einheit": "€/St"
+  },
+  "8690146186939": {
+    "barcode": "8690146186939",
+    "marke": "Bebeto",
+    "produkt": "Freeze Crunchy Bue Raspberry Rings",
+    "preis": 1.5,
+    "paket": "35g",
+    "einheit": "€/St"
+  },
+  "8690146182269": {
+    "barcode": "8690146182269",
+    "marke": "Bebeto",
+    "produkt": "Freeze Crunchy Watermelon",
+    "preis": 1.5,
+    "paket": "35g",
+    "einheit": "€/St"
+  },
+  "8690146182276": {
+    "barcode": "8690146182276",
+    "marke": "Bebeto",
+    "produkt": "Freeze Peach Ring",
+    "preis": 1.5,
+    "paket": "35g",
+    "einheit": "€/St"
+  },
+  "8690146658313": {
+    "barcode": "8690146658313",
+    "marke": "Bebeto",
+    "produkt": "Funny Bears",
+    "preis": 1,
+    "paket": "80g",
+    "einheit": "€/St"
+  },
+  "8690146123637": {
+    "barcode": "8690146123637",
+    "marke": "Bebeto",
+    "produkt": "Ice Cream",
+    "preis": 1,
+    "paket": "80g",
+    "einheit": "€/St"
+  },
+  "8690146658214": {
+    "barcode": "8690146658214",
+    "marke": "Bebeto",
+    "produkt": "Lovely Fruits",
+    "preis": 1,
+    "paket": "80g",
+    "einheit": "€/St"
+  },
+  "8690146658115": {
+    "barcode": "8690146658115",
+    "marke": "Bebeto",
+    "produkt": "Mix",
+    "preis": 1,
+    "paket": "80g",
+    "einheit": "€/St"
+  },
+  "8690146053347": {
+    "barcode": "8690146053347",
+    "marke": "Bebeto",
+    "produkt": "Ocean Park",
+    "preis": 1,
+    "paket": "80g",
+    "einheit": "€/St"
+  },
+  "8690146164166": {
+    "barcode": "8690146164166",
+    "marke": "Bebeto",
+    "produkt": "Oily Cola Bottles",
+    "preis": 2.99,
+    "paket": "300g",
+    "einheit": "€/St"
+  },
+  "8690146164180": {
+    "barcode": "8690146164180",
+    "marke": "Bebeto",
+    "produkt": "Oily Worms",
+    "preis": 2.99,
+    "paket": "300g",
+    "einheit": "€/St"
+  },
+  "8690146164104": {
+    "barcode": "8690146164104",
+    "marke": "Bebeto",
+    "produkt": "Peach Rings",
+    "preis": 2.99,
+    "paket": "300g",
+    "einheit": "€/St"
+  },
+  "8690146658412": {
+    "barcode": "8690146658412",
+    "marke": "Bebeto",
+    "produkt": "Peach Rings",
+    "preis": 1,
+    "paket": "80g",
+    "einheit": "€/St"
+  },
+  "8690146164098": {
+    "barcode": "8690146164098",
+    "marke": "Bebeto",
+    "produkt": "Sauer Mix",
+    "preis": 2.99,
+    "paket": "300g",
+    "einheit": "€/St"
+  },
+  "8690146679615": {
+    "barcode": "8690146679615",
+    "marke": "Bebeto",
+    "produkt": "Sour Apple",
+    "preis": 1,
+    "paket": "80g",
+    "einheit": "€/St"
+  },
+  "8690146156888": {
+    "barcode": "8690146156888",
+    "marke": "Bebeto",
+    "produkt": "Sour Blue Rasperry",
+    "preis": 1,
+    "paket": "80g",
+    "einheit": "€/St"
+  },
+  "8690146085164": {
+    "barcode": "8690146085164",
+    "marke": "Bebeto",
+    "produkt": "Sour Cola",
+    "preis": 1,
+    "paket": "80g",
+    "einheit": "€/St"
+  },
+  "5901888026517": {
+    "barcode": "5901888026517",
+    "marke": "Bebeto",
+    "produkt": "Sour Rainbow Brics",
+    "preis": 1,
+    "paket": "80g",
+    "einheit": "€/St"
+  },
+  "8690146679516": {
+    "barcode": "8690146679516",
+    "marke": "Bebeto",
+    "produkt": "Sour Strawberry",
+    "preis": 1,
+    "paket": "80g",
+    "einheit": "€/St"
+  },
+  "8690146659112": {
+    "barcode": "8690146659112",
+    "marke": "Bebeto",
+    "produkt": "Sour Worms",
+    "preis": 1,
+    "paket": "80g",
+    "einheit": "€/St"
+  },
+  "8690146160243": {
+    "barcode": "8690146160243",
+    "marke": "Bebeto",
+    "produkt": "Super Belt Fizz Strawberry",
+    "preis": 1.5,
+    "paket": "180g",
+    "einheit": "€/St"
+  },
+  "8690146160267": {
+    "barcode": "8690146160267",
+    "marke": "Bebeto",
+    "produkt": "Super Belt Fizzy Apple",
+    "preis": 1.5,
+    "paket": "180g",
+    "einheit": "€/St"
+  },
+  "8690146160250": {
+    "barcode": "8690146160250",
+    "marke": "Bebeto",
+    "produkt": "Super Belt Fizzy Cola",
+    "preis": 1.5,
+    "paket": "180g",
+    "einheit": "€/St"
+  },
+  "8690146160281": {
+    "barcode": "8690146160281",
+    "marke": "Bebeto",
+    "produkt": "Super Belt Fizzy Mix Fruit",
+    "preis": 1.5,
+    "paket": "180g",
+    "einheit": "€/St"
+  },
+  "8690146160274": {
+    "barcode": "8690146160274",
+    "marke": "Bebeto",
+    "produkt": "Super Belt Fizzy Raspberry",
+    "preis": 1.5,
+    "paket": "180g",
+    "einheit": "€/St"
+  },
+  "8690146164159": {
+    "barcode": "8690146164159",
+    "marke": "Bebeto",
+    "produkt": "Süß Mix",
+    "preis": 2.99,
+    "paket": "300g",
+    "einheit": "€/St"
+  },
+  "5901888027033": {
+    "barcode": "5901888027033",
+    "marke": "Bebeto",
+    "produkt": "Sweet Mix Kisses",
+    "preis": 1,
+    "paket": "80g",
+    "einheit": "€/St"
+  },
+  "8690146160212": {
+    "barcode": "8690146160212",
+    "marke": "Bebeto",
+    "produkt": "Wacky Sticks Cool Apple",
+    "preis": 1.5,
+    "paket": "180g",
+    "einheit": "€/St"
+  },
+  "8690146160205": {
+    "barcode": "8690146160205",
+    "marke": "Bebeto",
+    "produkt": "Wacky Sticks Cool Cola",
+    "preis": 1.5,
+    "paket": "180g",
+    "einheit": "€/St"
+  },
+  "8690146160229": {
+    "barcode": "8690146160229",
+    "marke": "Bebeto",
+    "produkt": "Wacky Sticks Cool Raspberry",
+    "preis": 1.5,
+    "paket": "180g",
+    "einheit": "€/St"
+  },
+  "8690146160168": {
+    "barcode": "8690146160168",
+    "marke": "Bebeto",
+    "produkt": "Wacky Sticks Fizzy Crazy Apple",
+    "preis": 1.5,
+    "paket": "180g",
+    "einheit": "€/St"
+  },
+  "8690146160151": {
+    "barcode": "8690146160151",
+    "marke": "Bebeto",
+    "produkt": "Wacky Sticks Fizzy Crazy Cola Flavour",
+    "preis": 1.5,
+    "paket": "180g",
+    "einheit": "€/St"
+  },
+  "8690146160144": {
+    "barcode": "8690146160144",
+    "marke": "Bebeto",
+    "produkt": "Wacky Sticks Fizzy Crazy Strawberry",
+    "preis": 1.5,
+    "paket": "180g",
+    "einheit": "€/St"
+  },
+  "8690146160182": {
+    "barcode": "8690146160182",
+    "marke": "Bebeto",
+    "produkt": "Wacky Sticks Fizzy Mix Fruit",
+    "preis": 1.5,
+    "paket": "180g",
+    "einheit": "€/St"
+  },
+  "8690146160175": {
+    "barcode": "8690146160175",
+    "marke": "Bebeto",
+    "produkt": "Wacky Sticks Fizzy Raspberry",
+    "preis": 1.5,
+    "paket": "180g",
+    "einheit": "€/St"
+  },
+  "8690146160236": {
+    "barcode": "8690146160236",
+    "marke": "Bebeto",
+    "produkt": "Wacky Sticks Mix Fruit",
+    "preis": 1.5,
+    "paket": "180g",
+    "einheit": "€/St"
+  },
+  "8690146124436": {
+    "barcode": "8690146124436",
+    "marke": "Bebeto",
+    "produkt": "Water Melon",
+    "preis": 1,
+    "paket": "80g",
+    "einheit": "€/St"
+  },
+  "8690146138167": {
+    "barcode": "8690146138167",
+    "marke": "Bebeto",
+    "produkt": "Worms",
+    "preis": 1,
+    "paket": "80g",
+    "einheit": "€/St"
+  },
+  "5412535005149": {
+    "barcode": "5412535005149",
+    "marke": "Bel´Sana ",
+    "produkt": "Tunus Hurmasi",
+    "preis": 5.99,
+    "paket": "1000g",
+    "einheit": "€/St"
+  },
+  "8691381000172": {
+    "barcode": "8691381000172",
+    "marke": "Beypazari",
+    "produkt": "Beypazari Soda sade 200 ml",
+    "preis": 0.79,
+    "paket": "",
+    "einheit": "€/St"
+  },
+  "8691381000035": {
+    "barcode": "8691381000035",
+    "marke": "Beypazari",
+    "produkt": "Beypazari Soda sade 6x200 ml",
+    "preis": 3.99,
+    "paket": "",
+    "einheit": "€/St"
+  },
+  "4260073354172": {
+    "barcode": "4260073354172",
+    "marke": "Biggies",
+    "produkt": "Süsse Rollen",
+    "preis": 1.8,
+    "paket": "80g",
+    "einheit": "€/St"
+  },
+  "4260073354158": {
+    "barcode": "4260073354158",
+    "marke": "Biggies",
+    "produkt": "Süsses Geschmeide",
+    "preis": 1.8,
+    "paket": "80g",
+    "einheit": "€/St"
+  },
+  "8690526516646": {
+    "barcode": "8690526516646",
+    "marke": "Bisküvit",
+    "produkt": "Burcak (yesil)",
+    "preis": 1.5,
+    "paket": "",
+    "einheit": "€/St"
+  },
+  "8690526361239": {
+    "barcode": "8690526361239",
+    "marke": "Bisküvit",
+    "produkt": "Cici Bebe",
+    "preis": 3,
+    "paket": "",
+    "einheit": "€/St"
+  },
+  "8681447715157": {
+    "barcode": "8681447715157",
+    "marke": "Burpak",
+    "produkt": "Cöp Sis",
+    "preis": 1.5,
+    "paket": "",
+    "einheit": "€/St"
+  },
+  "8699277189185": {
+    "barcode": "8699277189185",
+    "marke": "Bursam",
+    "produkt": "Lahana Tursusu",
+    "preis": 6,
+    "paket": "4000g",
+    "einheit": "€/St"
+  },
+  "8699277180670": {
+    "barcode": "8699277180670",
+    "marke": "Bursam",
+    "produkt": "Türlü Tursusu",
+    "preis": 6,
+    "paket": "4000g",
+    "einheit": "€/St"
+  },
+  "8690105001105": {
+    "barcode": "8690105001105",
+    "marke": "Caykur",
+    "produkt": "42 N. Tirebolu Cayi 500g",
+    "preis": 5.99,
+    "paket": "500g",
+    "einheit": "€/St"
+  },
+  "8690105002973": {
+    "barcode": "8690105002973",
+    "marke": "Caykur",
+    "produkt": "Altinbas 200g",
+    "preis": 4.5,
+    "paket": "200g",
+    "einheit": "€/St"
+  },
+  "8690105003994": {
+    "barcode": "8690105003994",
+    "marke": "Caykur",
+    "produkt": "Altinbas 400g",
+    "preis": 7,
+    "paket": "400g",
+    "einheit": "€/St"
+  },
+  "8690105000382": {
+    "barcode": "8690105000382",
+    "marke": "Caykur",
+    "produkt": "Altinbas 500gr",
+    "preis": 6.49,
+    "paket": "500g",
+    "einheit": "€/St"
+  },
+  "8690105000061": {
+    "barcode": "8690105000061",
+    "marke": "Caykur",
+    "produkt": "Cay Cicegi 500gr",
+    "preis": 5.5,
+    "paket": "500g",
+    "einheit": "€/St"
+  },
+  "8690105003703": {
+    "barcode": "8690105003703",
+    "marke": "Caykur",
+    "produkt": "Caykur Filiz Tee 500 g",
+    "preis": 4.99,
+    "paket": "",
+    "einheit": ""
+  },
+  "8690105005660": {
+    "barcode": "8690105005660",
+    "marke": "Caykur",
+    "produkt": "Caykur Organik Hemsin Tee 400 gr",
+    "preis": 6.89,
+    "paket": "",
+    "einheit": "€/St"
+  },
+  "8690105004045": {
+    "barcode": "8690105004045",
+    "marke": "Caykur",
+    "produkt": "Filiz Cayi 1000g",
+    "preis": 9.99,
+    "paket": "1000g",
+    "einheit": "€/St"
+  },
+  "8690105000115": {
+    "barcode": "8690105000115",
+    "marke": "Caykur",
+    "produkt": "Rize Turist Cay 1000g",
+    "preis": 9,
+    "paket": "1000g",
+    "einheit": "€/St"
+  },
+  "8690105000122": {
+    "barcode": "8690105000122",
+    "marke": "Caykur",
+    "produkt": "Rize Turist Cay 500g",
+    "preis": 5,
+    "paket": "500g",
+    "einheit": "€/St"
+  },
+  "8690105000436": {
+    "barcode": "8690105000436",
+    "marke": "Caykur",
+    "produkt": "Tiryaki Cay 1000g",
+    "preis": 9.99,
+    "paket": "1000g",
+    "einheit": "€/St"
+  },
+  "8690105000719": {
+    "barcode": "8690105000719",
+    "marke": "Caykur",
+    "produkt": "Tiryaki Cay 500gr",
+    "preis": 4.99,
+    "paket": "500g",
+    "einheit": "€/St"
+  },
+  "8681506011282": {
+    "barcode": "8681506011282",
+    "marke": "Cerezos",
+    "produkt": "Corn Ball",
+    "preis": 1.79,
+    "paket": "",
+    "einheit": "€/St"
+  },
+  "8681506014894": {
+    "barcode": "8681506014894",
+    "marke": "Cerezos",
+    "produkt": "Popcorn",
+    "preis": 1.79,
+    "paket": "",
+    "einheit": "€/St"
+  },
+  "8682631821838": {
+    "barcode": "8682631821838",
+    "marke": "Ciloglu",
+    "produkt": "Akide Sekeri",
+    "preis": 2,
+    "paket": "200g",
+    "einheit": "€/St"
+  },
+  "8682631821852": {
+    "barcode": "8682631821852",
+    "marke": "Ciloglu",
+    "produkt": "Akide Sekeri",
+    "preis": 1.5,
+    "paket": "200g",
+    "einheit": "€/St"
+  },
+  "8682631814045": {
+    "barcode": "8682631814045",
+    "marke": "Ciloglu",
+    "produkt": "Ay Cekirdegi  tuzlu",
+    "preis": 2,
+    "paket": "180g",
+    "einheit": "€/St"
+  },
+  "8682631816841": {
+    "barcode": "8682631816841",
+    "marke": "Ciloglu",
+    "produkt": "Ay Cekirdegi cok tuzlu",
+    "preis": 2,
+    "paket": "181g",
+    "einheit": "€/St"
+  },
+  "8682631814069": {
+    "barcode": "8682631814069",
+    "marke": "Ciloglu",
+    "produkt": "Ay Cekirdegi Tuzsuz",
+    "preis": 2,
+    "paket": "182g",
+    "einheit": "€/St"
+  },
+  "8697436520039": {
+    "barcode": "8697436520039",
+    "marke": "Ciloglu",
+    "produkt": "Bi-Ye Kagit Helva",
+    "preis": 0.3,
+    "paket": "45g",
+    "einheit": "€/St"
+  },
+  "8682631818630": {
+    "barcode": "8682631818630",
+    "marke": "Ciloglu",
+    "produkt": "Bi’ic Karadut",
+    "preis": 2,
+    "paket": "",
+    "einheit": "€/St"
+  },
+  "8682631818616": {
+    "barcode": "8682631818616",
+    "marke": "Ciloglu",
+    "produkt": "Bi’ic Kivi",
+    "preis": 2,
+    "paket": "",
+    "einheit": "€/St"
+  },
+  "8682631818593": {
+    "barcode": "8682631818593",
+    "marke": "Ciloglu",
+    "produkt": "Bi’ic Nar",
+    "preis": 2,
+    "paket": "",
+    "einheit": "€/St"
+  },
+  "8682631818531": {
+    "barcode": "8682631818531",
+    "marke": "Ciloglu",
+    "produkt": "Bi’ic Portakal",
+    "preis": 2,
+    "paket": "",
+    "einheit": "€/St"
+  },
+  "8682631818678": {
+    "barcode": "8682631818678",
+    "marke": "Ciloglu",
+    "produkt": "Bi’ic Visne",
+    "preis": 2,
+    "paket": "",
+    "einheit": "€/St"
+  },
+  "8682631815806": {
+    "barcode": "8682631815806",
+    "marke": "Ciloglu",
+    "produkt": "BisGo Findikli",
+    "preis": 2,
+    "paket": "500g",
+    "einheit": "€/St"
+  },
+  "8682631815783": {
+    "barcode": "8682631815783",
+    "marke": "Ciloglu",
+    "produkt": "BisGo Kakao",
+    "preis": 2,
+    "paket": "500g",
+    "einheit": "€/St"
+  },
+  "8682631807955": {
+    "barcode": "8682631807955",
+    "marke": "Ciloglu",
+    "produkt": "BisGo Oleyyy",
+    "preis": 2.5,
+    "paket": "",
+    "einheit": "€/St"
+  },
+  "8682631801946": {
+    "barcode": "8682631801946",
+    "marke": "Ciloglu",
+    "produkt": "Cigköfte Seti Etli icin",
+    "preis": 3.5,
+    "paket": "500g",
+    "einheit": "€/St"
+  },
+  "8682631801960": {
+    "barcode": "8682631801960",
+    "marke": "Ciloglu",
+    "produkt": "Cigköfte Seti Etsiz icin",
+    "preis": 3.5,
+    "paket": "500g",
+    "einheit": "€/St"
+  },
+  "8697436523498": {
+    "barcode": "8697436523498",
+    "marke": "Ciloglu",
+    "produkt": "Fistikli Helva",
+    "preis": 5,
+    "paket": "350g",
+    "einheit": "€/St"
+  },
+  "8697436524297": {
+    "barcode": "8697436524297",
+    "marke": "Ciloglu",
+    "produkt": "Geleneksel Tarhana",
+    "preis": 5,
+    "paket": "500g",
+    "einheit": "€/St"
+  },
+  "8682631801076": {
+    "barcode": "8682631801076",
+    "marke": "Ciloglu",
+    "produkt": "Nar aromali Icecek Tozu",
+    "preis": 2,
+    "paket": 150,
+    "einheit": "€/St"
+  },
+  "8697436523450": {
+    "barcode": "8697436523450",
+    "marke": "Ciloglu",
+    "produkt": "Sade Helva",
+    "preis": 3,
+    "paket": "350g",
+    "einheit": "€/St"
+  },
+  "8697436526208": {
+    "barcode": "8697436526208",
+    "marke": "Ciloglu",
+    "produkt": "Salep",
+    "preis": 4,
+    "paket": "",
+    "einheit": "€/St"
+  },
+  "8682631802127": {
+    "barcode": "8682631802127",
+    "marke": "Ciloglu",
+    "produkt": "Taze Tel Kadayif",
+    "preis": 2.5,
+    "paket": "500g",
+    "einheit": "€/St"
+  },
+  "8697436521203": {
+    "barcode": "8697436521203",
+    "marke": "Ciloglu",
+    "produkt": "Tel Pismaniye  Vanilya Aromali",
+    "preis": 1.5,
+    "paket": "250g",
+    "einheit": "€/St"
+  },
+  "8697436521241": {
+    "barcode": "8697436521241",
+    "marke": "Ciloglu",
+    "produkt": "Tel Pismaniye Antep Fistikli",
+    "preis": 1.5,
+    "paket": "250g",
+    "einheit": "€/St"
+  },
+  "8697436521227": {
+    "barcode": "8697436521227",
+    "marke": "Ciloglu",
+    "produkt": "Tel Pismaniye Karisik",
+    "preis": 1.5,
+    "paket": "250g",
+    "einheit": "€/St"
+  },
+  "8681506024152": {
+    "barcode": "8681506024152",
+    "marke": "Cipso",
+    "produkt": "Kaskaval Peynirli",
+    "preis": 1.79,
+    "paket": "",
+    "einheit": "€/St"
+  },
+  "8680782529221": {
+    "barcode": "8680782529221",
+    "marke": "Cipso",
+    "produkt": "Original Deniz Tuzlu",
+    "preis": 1.79,
+    "paket": "",
+    "einheit": "€/St"
+  },
+  "8690738000261": {
+    "barcode": "8690738000261",
+    "marke": "Colombo Orient Tea",
+    "produkt": "Ceylon Tee 1000g",
+    "preis": 9.99,
+    "paket": "1000g",
+    "einheit": "€/St"
+  },
+  "8690738000254": {
+    "barcode": "8690738000254",
+    "marke": "Colombo Orient Tea",
+    "produkt": "Ceylon Tee 500g",
+    "preis": 5.5,
+    "paket": "500g",
+    "einheit": "€/St"
+  },
+  "8681161448928": {
+    "barcode": "8681161448928",
+    "marke": "Cosby",
+    "produkt": "Oyuncak araba ",
+    "preis": 1,
+    "paket": "",
+    "einheit": "€/St"
+  },
+  "8051566123216": {
+    "barcode": "8051566123216",
+    "marke": "Dasty",
+    "produkt": "Glass&Multi Surface",
+    "preis": 3.5,
+    "paket": "700ml",
+    "einheit": "€/St"
+  },
+  "8051566123124": {
+    "barcode": "8051566123124",
+    "marke": "Dasty",
+    "produkt": "Stainless Steel",
+    "preis": 3.5,
+    "paket": "700ml",
+    "einheit": "€/St"
+  },
+  "8051566123193": {
+    "barcode": "8051566123193",
+    "marke": "Dasty",
+    "produkt": "Super Cleaner",
+    "preis": 3.5,
+    "paket": "700ml",
+    "einheit": "€/St"
+  },
+  "4260065873360": {
+    "barcode": "4260065873360",
+    "marke": "Dere",
+    "produkt": "Dere Pirinc 1kg",
+    "preis": 3.49,
+    "paket": "1000g",
+    "einheit": "€/St"
+  },
+  "4260193517808": {
+    "barcode": "4260193517808",
+    "marke": "Destan",
+    "produkt": "Beyaz Peynir / Weichkäse (45% F )",
+    "preis": 7.99,
+    "paket": "1500g",
+    "einheit": "€/St"
+  },
+  "4260193517822": {
+    "barcode": "4260193517822",
+    "marke": "Destan",
+    "produkt": "Beyaz Peynir / Weichkäse (55% F )",
+    "preis": 7.99,
+    "paket": "1500g",
+    "einheit": "€/St"
+  },
+  "4260193517846": {
+    "barcode": "4260193517846",
+    "marke": "Destan",
+    "produkt": "Beyaz Peynir / Weichkäse (60% F)",
+    "preis": 7.99,
+    "paket": "1500g",
+    "einheit": "€/St"
+  },
+  "8693354001285": {
+    "barcode": "8693354001285",
+    "marke": "Doganay",
+    "produkt": "Doganay Salgam Suyu (Aci) 330 ml",
+    "preis": 1.5,
+    "paket": "330ml",
+    "einheit": "€/St"
+  },
+  "8693354003418": {
+    "barcode": "8693354003418",
+    "marke": "Doganay",
+    "produkt": "Nare Üzüm Sirkesi",
+    "preis": 1.5,
+    "paket": "1000ml",
+    "einheit": "€/St"
+  },
+  "8693354003425": {
+    "barcode": "8693354003425",
+    "marke": "Doganay",
+    "produkt": "Üzüm Sirkesi",
+    "preis": 2.5,
+    "paket": "1000ml",
+    "einheit": "€/St"
+  },
+  "4260522930001": {
+    "barcode": "4260522930001",
+    "marke": "Dolu ",
+    "produkt": "Wasser",
+    "preis": 1.25,
+    "paket": "500ml",
+    "einheit": "€/St"
+  },
+  "8691440305231": {
+    "barcode": "8691440305231",
+    "marke": "Duru",
+    "produkt": "Duru Akdeniz Baldo Pirinc 1kg",
+    "preis": 4.49,
+    "paket": "1000g",
+    "einheit": "€/St"
+  },
+  "8691440710301": {
+    "barcode": "8691440710301",
+    "marke": "Duru",
+    "produkt": "Duru Baldo Pirinc 1kg",
+    "preis": 4.99,
+    "paket": "1000g",
+    "einheit": "€/St"
+  },
+  "8691440305408": {
+    "barcode": "8691440305408",
+    "marke": "Duru",
+    "produkt": "Duru Basbasi Pilavlik Tane Bulgur 2,5kg",
+    "preis": 6.99,
+    "paket": "2500g",
+    "einheit": "€/St"
+  },
+  "8691440301004": {
+    "barcode": "8691440301004",
+    "marke": "Duru",
+    "produkt": "Duru Cig Köftelik Bulgur 1kg",
+    "preis": 2.69,
+    "paket": "1000g",
+    "einheit": "€/St"
+  },
+  "8691440309543": {
+    "barcode": "8691440309543",
+    "marke": "Duru",
+    "produkt": "Duru Cig Köftelik Bulgur 2kg",
+    "preis": 4.99,
+    "paket": "2000g",
+    "einheit": "€/St"
+  },
+  "8691440710332": {
+    "barcode": "8691440710332",
+    "marke": "Duru",
+    "produkt": "Duru Asurelik Bugday 1kg",
+    "preis": 2.49,
+    "paket": "1000g",
+    "einheit": "€/St"
+  },
+  "8691440309116": {
+    "barcode": "8691440309116",
+    "marke": "Duru",
+    "produkt": "Duru Bakla Tüm 900g",
+    "preis": 3.99,
+    "paket": "900g",
+    "einheit": "€/St"
+  },
+  "8691440601005": {
+    "barcode": "8691440601005",
+    "marke": "Duru",
+    "produkt": "Duru Basbasi Bulgur 1kg",
+    "preis": 2.69,
+    "paket": "1000g",
+    "einheit": "€/St"
+  },
+  "8691440503002": {
+    "barcode": "8691440503002",
+    "marke": "Duru",
+    "produkt": "Duru Esmer Cig Köftelik Bulgur 1 kg",
+    "preis": 2.69,
+    "paket": "1000g",
+    "einheit": "€/St"
+  },
+  "8691440308508": {
+    "barcode": "8691440308508",
+    "marke": "Duru",
+    "produkt": "Duru Firik Bugday 1Kg",
+    "preis": 7.49,
+    "paket": "1000g",
+    "einheit": "€/St"
+  },
+  "8691440401001": {
+    "barcode": "8691440401001",
+    "marke": "Duru",
+    "produkt": "Duru Iri Pilavlik Bulgur 1 kg",
+    "preis": 2.69,
+    "paket": "1000g",
+    "einheit": "€/St"
+  },
+  "8691440305330": {
+    "barcode": "8691440305330",
+    "marke": "Duru",
+    "produkt": "Duru Kara Bugday-Grecka",
+    "preis": 3.69,
+    "paket": "1000g",
+    "einheit": "€/St"
+  },
+  "8691440308942": {
+    "barcode": "8691440308942",
+    "marke": "Duru",
+    "produkt": "Duru Kirmizi Mercimek-Rote Linsen",
+    "preis": 7.99,
+    "paket": "2000g",
+    "einheit": "€/St"
+  },
+  "8691440309352": {
+    "barcode": "8691440309352",
+    "marke": "Duru",
+    "produkt": "Duru Kuru Fasulye-Bohnen 7mm 2 kg",
+    "preis": 9.99,
+    "paket": "2000g",
+    "einheit": "€/St"
+  },
+  "8691440309567": {
+    "barcode": "8691440309567",
+    "marke": "Duru",
+    "produkt": "Duru Midyat Bulgur 2kg",
+    "preis": 4.99,
+    "paket": "2000g",
+    "einheit": "€/St"
+  },
+  "8691440309277": {
+    "barcode": "8691440309277",
+    "marke": "Duru",
+    "produkt": "Duru Yesil Mercimek-Grüne Linsen 1 kg",
+    "preis": 3.99,
+    "paket": "1000g",
+    "einheit": "€/St"
+  },
+  "8691440309550": {
+    "barcode": "8691440309550",
+    "marke": "Duru",
+    "produkt": "Duru Iri Pilavlik Bulgur 2kg",
+    "preis": 4.99,
+    "paket": "2000g",
+    "einheit": "€/St"
+  },
+  "8691440305149": {
+    "barcode": "8691440305149",
+    "marke": "Duru",
+    "produkt": "Duru Kepekli Köftelik Bulgur 1kg",
+    "preis": 2.69,
+    "paket": "1000g",
+    "einheit": "€/St"
+  },
+  "8691440305873": {
+    "barcode": "8691440305873",
+    "marke": "Duru",
+    "produkt": "Duru Kirmizi Mercimek",
+    "preis": 19.99,
+    "paket": "5000g",
+    "einheit": "€/St"
+  },
+  "8691440710349": {
+    "barcode": "8691440710349",
+    "marke": "Duru",
+    "produkt": "Duru Kirmizi Mercimek",
+    "preis": 3.99,
+    "paket": "1000g",
+    "einheit": "€/St"
+  },
+  "8691440710448": {
+    "barcode": "8691440710448",
+    "marke": "Duru",
+    "produkt": "Duru Kocbasi Nohut 8mm 1kg",
+    "preis": 3.99,
+    "paket": "1000g",
+    "einheit": "€/St"
+  },
+  "8691440200109": {
+    "barcode": "8691440200109",
+    "marke": "Duru",
+    "produkt": "Duru Köftelik Bulgur 1kg",
+    "preis": 2.69,
+    "paket": "1000g",
+    "einheit": "€/St"
+  },
+  "8691440309536": {
+    "barcode": "8691440309536",
+    "marke": "Duru",
+    "produkt": "Duru Köftelik Bulgur 2kg",
+    "preis": 4.99,
+    "paket": "2000g",
+    "einheit": "€/St"
+  },
+  "8691440305125": {
+    "barcode": "8691440305125",
+    "marke": "Duru",
+    "produkt": "Duru Midyat Bulguru 2,5kg",
+    "preis": 6.99,
+    "paket": "2500g",
+    "einheit": "€/St"
+  },
+  "8691440710172": {
+    "barcode": "8691440710172",
+    "marke": "Duru",
+    "produkt": "Duru Midyat Bulguru 1kg",
+    "preis": 2.69,
+    "paket": "1000g",
+    "einheit": "€/St"
+  },
+  "8691440710578": {
+    "barcode": "8691440710578",
+    "marke": "Duru",
+    "produkt": "Duru Osmancik Pirinc 1kg",
+    "preis": 3.99,
+    "paket": "1000g",
+    "einheit": "€/St"
+  },
+  "8691440101000": {
+    "barcode": "8691440101000",
+    "marke": "Duru",
+    "produkt": "Duru Pilavlik Bulgur 1kg",
+    "preis": 2.69,
+    "paket": "1000g",
+    "einheit": "€/St"
+  },
+  "8691440309529": {
+    "barcode": "8691440309529",
+    "marke": "Duru",
+    "produkt": "Duru Pilavlik Bulgur 2kg",
+    "preis": 4.99,
+    "paket": "2000g",
+    "einheit": "€/St"
+  },
+  "8691440305736": {
+    "barcode": "8691440305736",
+    "marke": "Duru",
+    "produkt": "Duru Pilavlik Pirinc 1kg",
+    "preis": 2.99,
+    "paket": "1000g",
+    "einheit": "€/St"
+  },
+  "8691440305439": {
+    "barcode": "8691440305439",
+    "marke": "Duru",
+    "produkt": "Duru Sehriyeli Pilavlik Bulgur 1kg",
+    "preis": 2.69,
+    "paket": "1000g",
+    "einheit": "€/St"
+  },
+  "8691440710387": {
+    "barcode": "8691440710387",
+    "marke": "Duru",
+    "produkt": "Duru Yerli Dermason Fasulye",
+    "preis": 4.99,
+    "paket": "1000g",
+    "einheit": "€/St"
+  },
+  "8691440710394": {
+    "barcode": "8691440710394",
+    "marke": "Duru",
+    "produkt": "Duru Yerli Kuru Fasulye",
+    "preis": 4.99,
+    "paket": "1000g",
+    "einheit": "€/St"
+  },
+  "8691440710363": {
+    "barcode": "8691440710363",
+    "marke": "Duru",
+    "produkt": "Duru Yesil Mercimek 1kg",
+    "preis": 3.99,
+    "paket": "1000g",
+    "einheit": "€/St"
+  },
+  "8690650080693": {
+    "barcode": "8690650080693",
+    "marke": "EGE",
+    "produkt": "Güllac",
+    "preis": 5.99,
+    "paket": "300g",
+    "einheit": "€/St"
+  },
+  "8690526743295": {
+    "barcode": "8690526743295",
+    "marke": "Eti",
+    "produkt": "Eti Benim’O",
+    "preis": 3.99,
+    "paket": "240g",
+    "einheit": "€/St"
+  },
+  "8690526840901": {
+    "barcode": "8690526840901",
+    "marke": "Eti",
+    "produkt": "Eti Browni classic",
+    "preis": 3.99,
+    "paket": "",
+    "einheit": "€/St"
+  },
+  "8690526679914": {
+    "barcode": "8690526679914",
+    "marke": "Eti",
+    "produkt": "Eti Burcak ",
+    "preis": 1.49,
+    "paket": "",
+    "einheit": "€/St"
+  },
+  "8690526204253": {
+    "barcode": "8690526204253",
+    "marke": "Eti",
+    "produkt": "Eti Pop Kakaolu Kek 35 g",
+    "preis": 0.99,
+    "paket": "",
+    "einheit": "€/St"
+  },
+  "8690526566955": {
+    "barcode": "8690526566955",
+    "marke": "Eti",
+    "produkt": "Eti Pop Muzlu Kek 35 g",
+    "preis": 0.99,
+    "paket": "",
+    "einheit": "€/St"
+  },
+  "8690526295381": {
+    "barcode": "8690526295381",
+    "marke": "Eti",
+    "produkt": "Eti Karam Gurme 44g",
+    "preis": 1.49,
+    "paket": "",
+    "einheit": "€/St"
+  },
+  "8690526394732": {
+    "barcode": "8690526394732",
+    "marke": "Eti",
+    "produkt": "Eti Tutku 80 g",
+    "preis": 1.49,
+    "paket": "",
+    "einheit": "€/St"
+  },
+  "8690526633572": {
+    "barcode": "8690526633572",
+    "marke": "Eti",
+    "produkt": "Eti Tutku 162 g",
+    "preis": 2.39,
+    "paket": "",
+    "einheit": "€/St"
+  },
+  "8690526006420": {
+    "barcode": "8690526006420",
+    "marke": "Eti",
+    "produkt": "Eti Pop Limonlu Kek 35 g",
+    "preis": 0.99,
+    "paket": "",
+    "einheit": "€/St"
+  },
+  "8690526410685": {
+    "barcode": "8690526410685",
+    "marke": "Eti",
+    "produkt": "Eti Cikolatali Gofret 29 g",
+    "preis": 1.19,
+    "paket": "",
+    "einheit": "€/St"
+  },
+  "8690526627540": {
+    "barcode": "8690526627540",
+    "marke": "Eti",
+    "produkt": "Eti Crax Tuzlu Cubuk 120 g",
+    "preis": 1.49,
+    "paket": "",
+    "einheit": "€/St"
+  },
+  "8690526615646": {
+    "barcode": "8690526615646",
+    "marke": "Eti",
+    "produkt": "Eti Ahenk Gurme 50 g",
+    "preis": 1.49,
+    "paket": "",
+    "einheit": "€/St"
+  },
+  "8690526140124": {
+    "barcode": "8690526140124",
+    "marke": "Eti",
+    "produkt": "Eti Crax Sesam 110 g",
+    "preis": 1.49,
+    "paket": "",
+    "einheit": ""
+  },
+  "8690526013954": {
+    "barcode": "8690526013954",
+    "marke": "Eti",
+    "produkt": "Eti Cin Cilekli 96 g",
+    "preis": 1.49,
+    "paket": "",
+    "einheit": "€/St"
+  },
+  "8690526023175": {
+    "barcode": "8690526023175",
+    "marke": "Eti",
+    "produkt": "Eti Cin 96 g",
+    "preis": 1.49,
+    "paket": "",
+    "einheit": "€/St"
+  },
+  "8690526077536": {
+    "barcode": "8690526077536",
+    "marke": "Eti",
+    "produkt": "Eti Cikol. Antep Fistikli 60 g",
+    "preis": 3.49,
+    "paket": "",
+    "einheit": "€/St"
+  },
+  "8690526753294": {
+    "barcode": "8690526753294",
+    "marke": "Eti",
+    "produkt": "Eti Benimo Lokum 80 g",
+    "preis": 1.49,
+    "paket": "",
+    "einheit": "€/St"
+  },
+  "8690526647777": {
+    "barcode": "8690526647777",
+    "marke": "Eti",
+    "produkt": "Eti Crax Baharatli 123 g",
+    "preis": 1.49,
+    "paket": "",
+    "einheit": "€/St"
+  },
+  "8690526324364": {
+    "barcode": "8690526324364",
+    "marke": "Eti",
+    "produkt": "Eti Cay Bisküvi 800 g",
+    "preis": 6.99,
+    "paket": "",
+    "einheit": "€/St"
+  },
+  "8690526060163": {
+    "barcode": "8690526060163",
+    "marke": "Eti",
+    "produkt": "Eti Puf Cocos 16 g",
+    "preis": 0.39,
+    "paket": "",
+    "einheit": "€/St"
+  },
+  "8690526060231": {
+    "barcode": "8690526060231",
+    "marke": "Eti",
+    "produkt": "Eti Puf Kakaolu 18 g",
+    "preis": 0.39,
+    "paket": "",
+    "einheit": "€/St"
+  },
+  "8690526060255": {
+    "barcode": "8690526060255",
+    "marke": "Eti",
+    "produkt": "Eti Puf Renkli 18 g",
+    "preis": 0.39,
+    "paket": "",
+    "einheit": "€/St"
+  },
+  "8690526200064": {
+    "barcode": "8690526200064",
+    "marke": "Eti",
+    "produkt": "Eti Gong Cheese",
+    "preis": 1.79,
+    "paket": "123g",
+    "einheit": "€/St"
+  },
+  "8690526063188": {
+    "barcode": "8690526063188",
+    "marke": "Eti",
+    "produkt": "Eti Mola",
+    "preis": 3.99,
+    "paket": "240g",
+    "einheit": "€/St"
+  },
+  "8690526094045": {
+    "barcode": "8690526094045",
+    "marke": "Eti",
+    "produkt": "Eti Pizza Kraker",
+    "preis": 1.49,
+    "paket": "95g",
+    "einheit": "€/St"
+  },
+  "8690526006468": {
+    "barcode": "8690526006468",
+    "marke": "Eti",
+    "produkt": "Pop Kek chocolate 144",
+    "preis": 2.99,
+    "paket": "",
+    "einheit": "€/St"
+  },
+  "8690526013510": {
+    "barcode": "8690526013510",
+    "marke": "Eti",
+    "produkt": "Pop Kek dark chocolate 144g",
+    "preis": 2.99,
+    "paket": "",
+    "einheit": "€/St"
+  },
+  "8690526693613": {
+    "barcode": "8690526693613",
+    "marke": "Eti",
+    "produkt": "Eti Pop Limonlu Kek 144 g",
+    "preis": 2.99,
+    "paket": "",
+    "einheit": "€/St"
+  },
+  "8690526016474": {
+    "barcode": "8690526016474",
+    "marke": "Eti",
+    "produkt": "Eti Pop Muzlu Kek 144 g",
+    "preis": 2.99,
+    "paket": "",
+    "einheit": "€/St"
+  },
+  "8690526060293": {
+    "barcode": "8690526060293",
+    "marke": "Eti",
+    "produkt": "Tea Biscuits",
+    "preis": 3.99,
+    "paket": "",
+    "einheit": "€/St"
+  },
+  "4260544050282": {
+    "barcode": "4260544050282",
+    "marke": "Exstase",
+    "produkt": "Energy  ",
+    "preis": 1.75,
+    "paket": "250ml",
+    "einheit": "€/St"
+  },
+  "8690524055536": {
+    "barcode": "8690524055536",
+    "marke": "Falim",
+    "produkt": "Falim Sakiz Cilekli",
+    "preis": 0.5,
+    "paket": "",
+    "einheit": "€/St"
+  },
+  "8690524155335": {
+    "barcode": "8690524155335",
+    "marke": "Falim",
+    "produkt": "Falim Sakiz Karbonat Nane Aromali",
+    "preis": 0.5,
+    "paket": "",
+    "einheit": "€/St"
+  },
+  "8690524055635": {
+    "barcode": "8690524055635",
+    "marke": "Falim",
+    "produkt": "Falim Sakiz Karisik Meyveli",
+    "preis": 0.5,
+    "paket": "",
+    "einheit": "€/St"
+  },
+  "8690524055130": {
+    "barcode": "8690524055130",
+    "marke": "Falim",
+    "produkt": "Falim Sakiz Nane Aromali",
+    "preis": 0.5,
+    "paket": "",
+    "einheit": "€/St"
+  },
+  "8690816983141": {
+    "barcode": "8690816983141",
+    "marke": "Fersan",
+    "produkt": "Fersan Nar Eksisi 100 %",
+    "preis": 4.49,
+    "paket": "",
+    "einheit": "€/St"
+  },
+  "8410525198878": {
+    "barcode": "8410525198878",
+    "marke": "Fini",
+    "produkt": "Banana Split",
+    "preis": 0.15,
+    "paket": "",
+    "einheit": "€/St"
+  },
+  "8410525210297": {
+    "barcode": "8410525210297",
+    "marke": "Fini",
+    "produkt": "BurgerGum",
+    "preis": 0.15,
+    "paket": "",
+    "einheit": "€/St"
+  },
+  "8410525196553": {
+    "barcode": "8410525196553",
+    "marke": "Fini",
+    "produkt": "DinoEggs",
+    "preis": 0.15,
+    "paket": "",
+    "einheit": "€/St"
+  },
+  "8410525185281": {
+    "barcode": "8410525185281",
+    "marke": "Fini",
+    "produkt": "Melons",
+    "preis": 0.15,
+    "paket": "",
+    "einheit": "€/St"
+  },
+  "8410525243653": {
+    "barcode": "8410525243653",
+    "marke": "Fini",
+    "produkt": "Missile Xplosion",
+    "preis": 0.15,
+    "paket": "",
+    "einheit": "€/St"
+  },
+  "8410525200229": {
+    "barcode": "8410525200229",
+    "marke": "Fini",
+    "produkt": "Pirate Barrels",
+    "preis": 0.15,
+    "paket": "",
+    "einheit": "€/St"
+  },
+  "8690804383335": {
+    "barcode": "8690804383335",
+    "marke": "Fire of Istanbul",
+    "produkt": "Gazoz ",
+    "preis": 1.75,
+    "paket": "330ml",
+    "einheit": "€/St"
+  },
+  "4061461631482": {
+    "barcode": "4061461631482",
+    "marke": "Flirtea",
+    "produkt": "Izetea",
+    "preis": 1.5,
+    "paket": "500ml",
+    "einheit": "€/St"
+  },
+  "4270004179170": {
+    "barcode": "4270004179170",
+    "marke": "Fresh",
+    "produkt": "Melon",
+    "preis": "",
+    "paket": "330ml",
+    "einheit": "€/St"
+  },
+  "4262483270493": {
+    "barcode": "4262483270493",
+    "marke": "Fresh",
+    "produkt": "Pistachio (Dubai Edition)",
+    "preis": "",
+    "paket": "330ml",
+    "einheit": "€/St"
+  },
+  "8225142699239": {
+    "barcode": "8225142699239",
+    "marke": "Gaco",
+    "produkt": "Ajwa-al-Madina",
+    "preis": 7.99,
+    "paket": "400g",
+    "einheit": "€/St"
+  },
+  "4002566009561": {
+    "barcode": "4002566009561",
+    "marke": "Gazi",
+    "produkt": "Gazi Erzurum Weichkäse 45% 800 g",
+    "preis": 7.99,
+    "paket": "",
+    "einheit": "€/St"
+  },
+  "4002566010178": {
+    "barcode": "4002566010178",
+    "marke": "Gazi",
+    "produkt": "Gazi Halloumi 250g",
+    "preis": 3.19,
+    "paket": "",
+    "einheit": "€/St"
+  },
+  "4002566006119": {
+    "barcode": "4002566006119",
+    "marke": "Gazi",
+    "produkt": "Gazi Hirtenkäse 55% 800 g Dose",
+    "preis": 8.99,
+    "paket": "",
+    "einheit": "€/St"
+  },
+  "4002566006126": {
+    "barcode": "4002566006126",
+    "marke": "Gazi",
+    "produkt": "Gazi Hirtenkäse 60% 800 g Dose",
+    "preis": 8.99,
+    "paket": "",
+    "einheit": "€/St"
+  },
+  "4002566004832": {
+    "barcode": "4002566004832",
+    "marke": "Gazi",
+    "produkt": "Gazi Kasar (Kashkaval) 400 g",
+    "preis": 4.99,
+    "paket": "",
+    "einheit": "€/St"
+  },
+  "4002566006331": {
+    "barcode": "4002566006331",
+    "marke": "Gazi",
+    "produkt": "Gazi Keci Peyniri 1kg Ds",
+    "preis": 13.99,
+    "paket": "",
+    "einheit": "€/St"
+  },
+  "4002566006355": {
+    "barcode": "4002566006355",
+    "marke": "Gazi",
+    "produkt": "Gazi Koyun (Schafkäse) 1 kg DS",
+    "preis": 13.99,
+    "paket": "",
+    "einheit": "€/St"
+  },
+  "4002566114616": {
+    "barcode": "4002566114616",
+    "marke": "Gazi",
+    "produkt": "Gazi Krem Kaymak",
+    "preis": 2,
+    "paket": "",
+    "einheit": "€/St"
+  },
+  "4002566003965": {
+    "barcode": "4002566003965",
+    "marke": "Gazi",
+    "produkt": "Gazi Tulum Peyniri-Nomadenkäse 900g\nFass",
+    "preis": 9.49,
+    "paket": "",
+    "einheit": "€/St"
+  },
+  "4002566006171": {
+    "barcode": "4002566006171",
+    "marke": "Gazi",
+    "produkt": "Gazi Yumusak Cremiger Weichkäse\n55% 800g dose",
+    "preis": 7.99,
+    "paket": "",
+    "einheit": "€/St"
+  },
+  "8690804388651": {
+    "barcode": "8690804388651",
+    "marke": "Gazoz",
+    "produkt": "Istanbul Mojito 330 ml DPG",
+    "preis": 1.5,
+    "paket": "",
+    "einheit": "€/St"
+  },
+  "4021209000116": {
+    "barcode": "4021209000116",
+    "marke": "Goran-Tee",
+    "produkt": "Mevlana Sade ",
+    "preis": 12,
+    "paket": "1000g",
+    "einheit": "€/St"
+  },
+  "8699273505569": {
+    "barcode": "8699273505569",
+    "marke": "Gülnida",
+    "produkt": "Kandil Simidi",
+    "preis": 2,
+    "paket": "",
+    "einheit": "€/St"
+  },
+  "8718951307698": {
+    "barcode": "8718951307698",
+    "marke": "Haci Sakir",
+    "produkt": "2si1 arada Sampuan Adacayi",
+    "preis": 3,
+    "paket": "500ml",
+    "einheit": "€/St"
+  },
+  "8718951307810": {
+    "barcode": "8718951307810",
+    "marke": "Haci Sakir",
+    "produkt": "2si1 arada Sampuan Badem Sütü",
+    "preis": 3,
+    "paket": "500ml",
+    "einheit": "€/St"
+  },
+  "8718951533257": {
+    "barcode": "8718951533257",
+    "marke": "Haci Sakir",
+    "produkt": "2si1 arada Sampuan Besleyici Badem",
+    "preis": 3,
+    "paket": "500ml",
+    "einheit": "€/St"
+  },
+  "8718951307773": {
+    "barcode": "8718951307773",
+    "marke": "Haci Sakir",
+    "produkt": "2si1 arada Sampuan Hindistan Cevizi Sütü",
+    "preis": 3,
+    "paket": "500ml",
+    "einheit": "€/St"
+  },
+  "8718951533608": {
+    "barcode": "8718951533608",
+    "marke": "Haci Sakir",
+    "produkt": "2si1 arada Sampuan Kokosnuss",
+    "preis": 3,
+    "paket": "500ml",
+    "einheit": "€/St"
+  },
+  "8718951533318": {
+    "barcode": "8718951533318",
+    "marke": "Haci Sakir",
+    "produkt": "2si1 arada Sampuan Koruyucu Nar",
+    "preis": 3,
+    "paket": "500ml",
+    "einheit": "€/St"
+  },
+  "8718951307735": {
+    "barcode": "8718951307735",
+    "marke": "Haci Sakir",
+    "produkt": "2si1 arada Sampuan Nar",
+    "preis": 3,
+    "paket": "500ml",
+    "einheit": "€/St"
+  },
+  "4260256417250": {
+    "barcode": "4260256417250",
+    "marke": "Hane",
+    "produkt": "Kirmizi Mercimek",
+    "preis": 2.49,
+    "paket": "1000g",
+    "einheit": "€/St"
+  },
+  "4260256417274": {
+    "barcode": "4260256417274",
+    "marke": "Hane",
+    "produkt": "Nohut",
+    "preis": 2.5,
+    "paket": "1000g",
+    "einheit": "€/St"
+  },
+  "8011845300554": {
+    "barcode": "8011845300554",
+    "marke": "Hayat Kaynagi",
+    "produkt": "Oliventresteröl",
+    "preis": 9.99,
+    "paket": "1000ml",
+    "einheit": "€/St"
+  },
+  "8410352910469": {
+    "barcode": "8410352910469",
+    "marke": "Hayat Kaynagi",
+    "produkt": "Oliventresteröl",
+    "preis": 9.99,
+    "paket": "1000ml",
+    "einheit": "€/St"
+  },
+  "4099936000839": {
+    "barcode": "4099936000839",
+    "marke": "Haydi ",
+    "produkt": "Ayran",
+    "preis": 1,
+    "paket": "250ml",
+    "einheit": "€/St"
+  },
+  "7439628277281": {
+    "barcode": "7439628277281",
+    "marke": "Hira",
+    "produkt": "Burger 6li",
+    "preis": 1.79,
+    "paket": "",
+    "einheit": "€/St"
+  },
+  "7439628277274": {
+    "barcode": "7439628277274",
+    "marke": "Hira",
+    "produkt": "Maxi Burger 4lü",
+    "preis": 1.79,
+    "paket": "",
+    "einheit": "€/St"
+  },
+  "4260243040782": {
+    "barcode": "4260243040782",
+    "marke": "Hotblood",
+    "produkt": "Cola",
+    "preis": 1.5,
+    "paket": "330ml",
+    "einheit": "€/St"
+  },
+  "4260243040904": {
+    "barcode": "4260243040904",
+    "marke": "Hotblood",
+    "produkt": "Cola Zero",
+    "preis": 1.5,
+    "paket": "330ml",
+    "einheit": "€/St"
+  },
+  "4260243040669": {
+    "barcode": "4260243040669",
+    "marke": "Hotblood",
+    "produkt": "Energy Classic",
+    "preis": 1.5,
+    "paket": "250ml",
+    "einheit": "€/St"
+  },
+  "4260243040607": {
+    "barcode": "4260243040607",
+    "marke": "Hotblood",
+    "produkt": "Energy Mojito",
+    "preis": 1.5,
+    "paket": "250ml",
+    "einheit": "€/St"
+  },
+  "4260243040768": {
+    "barcode": "4260243040768",
+    "marke": "Hotblood",
+    "produkt": "Exotic",
+    "preis": 1.5,
+    "paket": "330ml",
+    "einheit": "€/St"
+  },
+  "4260243041093": {
+    "barcode": "4260243041093",
+    "marke": "Hotblood",
+    "produkt": "Gazoz ",
+    "preis": 1.5,
+    "paket": "330ml",
+    "einheit": "€/St"
+  },
+  "4260243040317": {
+    "barcode": "4260243040317",
+    "marke": "Hotblood",
+    "produkt": "Ice Tea Lemon",
+    "preis": 1.5,
+    "paket": "330ml",
+    "einheit": "€/St"
+  },
+  "4260243040515": {
+    "barcode": "4260243040515",
+    "marke": "Hotblood",
+    "produkt": "Ice Tea Pfirsich",
+    "preis": 1.5,
+    "paket": "330ml",
+    "einheit": "€/St"
+  },
+  "4260243040492": {
+    "barcode": "4260243040492",
+    "marke": "Hotblood",
+    "produkt": "Lemonade Tropical",
+    "preis": 1.5,
+    "paket": "250ml",
+    "einheit": "€/St"
+  },
+  "4260243040508": {
+    "barcode": "4260243040508",
+    "marke": "Hotblood",
+    "produkt": "Tropical Cocos",
+    "preis": 1.5,
+    "paket": "330ml",
+    "einheit": "€/St"
+  },
+  "4260243040324": {
+    "barcode": "4260243040324",
+    "marke": "Hotblood",
+    "produkt": "Waldfrucht",
+    "preis": 1.5,
+    "paket": "250ml",
+    "einheit": "€/St"
+  },
+  "4260243040386": {
+    "barcode": "4260243040386",
+    "marke": "Hotblood",
+    "produkt": "Wasser Sprudel",
+    "preis": 1.25,
+    "paket": "500ml",
+    "einheit": "€/St"
+  },
+  "4260243040423": {
+    "barcode": "4260243040423",
+    "marke": "Hotblood",
+    "produkt": "Wasser Still",
+    "preis": 1.25,
+    "paket": "500ml",
+    "einheit": "€/St"
+  },
+  "4260243041031": {
+    "barcode": "4260243041031",
+    "marke": "Hotblood",
+    "produkt": "Wassermelone",
+    "preis": 1.5,
+    "paket": "250ml",
+    "einheit": "€/St"
+  },
+  "6287009831680": {
+    "barcode": "6287009831680",
+    "marke": "Hurma",
+    "produkt": "Almond Bademli Hurma",
+    "preis": 6.99,
+    "paket": "",
+    "einheit": "€/St"
+  },
+  "4270004179194": {
+    "barcode": "4270004179194",
+    "marke": "Icecek",
+    "produkt": "Black Gazoz",
+    "preis": 1.5,
+    "paket": "",
+    "einheit": "€/St"
+  },
+  "4099936005766": {
+    "barcode": "4099936005766",
+    "marke": "ICIM",
+    "produkt": "ICIM Beyaz Peynir % 45 800 g",
+    "preis": 6.99,
+    "paket": "",
+    "einheit": "€/St"
+  },
+  "4099936005780": {
+    "barcode": "4099936005780",
+    "marke": "ICIM",
+    "produkt": "ICIM Beyaz Peynir % 55 800 g",
+    "preis": 6.99,
+    "paket": "",
+    "einheit": "€/St"
+  },
+  "4099936005803": {
+    "barcode": "4099936005803",
+    "marke": "ICIM",
+    "produkt": "ICIM Beyaz Peynir % 60 800 g",
+    "preis": 6.99,
+    "paket": "",
+    "einheit": "€/St"
+  },
+  "8719327574720": {
+    "barcode": "8719327574720",
+    "marke": "Ilbays",
+    "produkt": "Ilbays Temizlik bezleri ",
+    "preis": 9.99,
+    "paket": "",
+    "einheit": "€/St"
+  },
+  "8697447297579": {
+    "barcode": "8697447297579",
+    "marke": "Ilgaz",
+    "produkt": "Limon Kolonyasi",
+    "preis": 5,
+    "paket": "500ml",
+    "einheit": "€/St"
+  },
+  "8697447292628": {
+    "barcode": "8697447292628",
+    "marke": "Ilgaz",
+    "produkt": "Limon Kolonyasi 400ml",
+    "preis": 4,
+    "paket": "400ml",
+    "einheit": "€/St"
+  },
+  "4388844175631": {
+    "barcode": "4388844175631",
+    "marke": "Ja",
+    "produkt": "Allzweck-Reiniger",
+    "preis": 1,
+    "paket": "1000ml",
+    "einheit": "€/St"
+  },
+  "8681254066183": {
+    "barcode": "8681254066183",
+    "marke": "Kayali",
+    "produkt": "Sofralik Siyah Zeytin 900g",
+    "preis": 12,
+    "paket": "900g",
+    "einheit": "€/St"
+  },
+  "8685106390006": {
+    "barcode": "8685106390006",
+    "marke": "Kemal Aga",
+    "produkt": "Dubai Chocolate",
+    "preis": 0.5,
+    "paket": "15g",
+    "einheit": "€/St"
+  },
+  "8685106390082": {
+    "barcode": "8685106390082",
+    "marke": "Kemal Aga",
+    "produkt": "Halep Chocolate",
+    "preis": 0.3,
+    "paket": "",
+    "einheit": "€/St"
+  },
+  "8685106390105": {
+    "barcode": "8685106390105",
+    "marke": "Kemal Aga",
+    "produkt": "Istanbul Chocolate",
+    "preis": 0.3,
+    "paket": "",
+    "einheit": "€/St"
+  },
+  "8685106390068": {
+    "barcode": "8685106390068",
+    "marke": "Kemal Aga",
+    "produkt": "Roma Chocolate",
+    "preis": 0.3,
+    "paket": "",
+    "einheit": "€/St"
+  },
+  "8694587101223": {
+    "barcode": "8694587101223",
+    "marke": "Kent Boringer",
+    "produkt": "Besin Türü Karbonat ",
+    "preis": 0.5,
+    "paket": "40g",
+    "einheit": "€/St"
+  },
+  "8694587157077": {
+    "barcode": "8694587157077",
+    "marke": "Kent Boringer",
+    "produkt": "Bitter Cikolatali Puding",
+    "preis": 1.5,
+    "paket": "100g",
+    "einheit": "€/St"
+  },
+  "8694587119587": {
+    "barcode": "8694587119587",
+    "marke": "Kent Boringer",
+    "produkt": "Cikolata Parcali Puding",
+    "preis": 1.5,
+    "paket": "100g",
+    "einheit": "€/St"
+  },
+  "8694587111611": {
+    "barcode": "8694587111611",
+    "marke": "Kent Boringer",
+    "produkt": "Cikolatali Sos ",
+    "preis": "",
+    "paket": "125g",
+    "einheit": "€/St"
+  },
+  "8694587137918": {
+    "barcode": "8694587137918",
+    "marke": "Kent Boringer",
+    "produkt": "Hamur Kabartma Tozu",
+    "preis": 1,
+    "paket": 10,
+    "einheit": "€/St"
+  },
+  "8694587101438": {
+    "barcode": "8694587101438",
+    "marke": "Kent Boringer",
+    "produkt": "Kakaolua Puding",
+    "preis": 1.5,
+    "paket": "147g",
+    "einheit": "€/St"
+  },
+  "8694587137826": {
+    "barcode": "8694587137826",
+    "marke": "Kent Boringer",
+    "produkt": "Sekerli Vanilin ",
+    "preis": "",
+    "paket": 5,
+    "einheit": "€/St"
+  },
+  "8690637835599": {
+    "barcode": "8690637835599",
+    "marke": "Knorr",
+    "produkt": "Kremali Mantar Corbasi",
+    "preis": 1,
+    "paket": "63g",
+    "einheit": "€/St"
+  },
+  "8690637661150": {
+    "barcode": "8690637661150",
+    "marke": "Knorr",
+    "produkt": "Yayla Corbasi",
+    "preis": 1,
+    "paket": "74g",
+    "einheit": "€/St"
+  },
+  "8690710135004": {
+    "barcode": "8690710135004",
+    "marke": "Koska",
+    "produkt": "Dut Pekmezi",
+    "preis": 5.5,
+    "paket": "800g",
+    "einheit": "€/St"
+  },
+  "8690710143610": {
+    "barcode": "8690710143610",
+    "marke": "Koska",
+    "produkt": "Helva Fistikli",
+    "preis": 6,
+    "paket": "350g",
+    "einheit": "€/St"
+  },
+  "8690710143696": {
+    "barcode": "8690710143696",
+    "marke": "Koska",
+    "produkt": "Helva Kakaolu",
+    "preis": 5,
+    "paket": "350g",
+    "einheit": "€/St"
+  },
+  "8690710143689": {
+    "barcode": "8690710143689",
+    "marke": "Koska",
+    "produkt": "Helva Sade",
+    "preis": 5,
+    "paket": "350g",
+    "einheit": "€/St"
+  },
+  "8690710137305": {
+    "barcode": "8690710137305",
+    "marke": "Koska",
+    "produkt": "Keciboynuzu Pekmezi ",
+    "preis": 6,
+    "paket": "800g",
+    "einheit": "€/St"
+  },
+  "8690710030354": {
+    "barcode": "8690710030354",
+    "marke": "Koska",
+    "produkt": "Üzüm Pekmezi",
+    "preis": 5.5,
+    "paket": "800g",
+    "einheit": "€/St"
+  },
+  "8690627021209": {
+    "barcode": "8690627021209",
+    "marke": "Kurukahveci M.Efendi",
+    "produkt": "Türk Kahvesi",
+    "preis": 3.5,
+    "paket": "100g",
+    "einheit": "€/St"
+  },
+  "8681569921955": {
+    "barcode": "8681569921955",
+    "marke": "Lalezar",
+    "produkt": "Lalezar Cay Bardagi",
+    "preis": "",
+    "paket": "",
+    "einheit": "€/St"
+  },
+  "4061458025140": {
+    "barcode": "4061458025140",
+    "marke": "Le Gusto",
+    "produkt": "Jodiertes Speisesalz",
+    "preis": "",
+    "paket": "500g",
+    "einheit": "€/St"
+  },
+  "8699462605483": {
+    "barcode": "8699462605483",
+    "marke": "LEXUS",
+    "produkt": "Hazelnut Cream",
+    "preis": 3,
+    "paket": 120,
+    "einheit": "€/St"
+  },
+  "8681657412716": {
+    "barcode": "8681657412716",
+    "marke": "LoliPop",
+    "produkt": "LoliPop",
+    "preis": 0.3,
+    "paket": "",
+    "einheit": "€/St"
+  },
+  "4012625440600": {
+    "barcode": "4012625440600",
+    "marke": "Marmara",
+    "produkt": "Antik Iri Boy",
+    "preis": 4.29,
+    "paket": "800g",
+    "einheit": "€/St"
+  },
+  "4012625442642": {
+    "barcode": "4012625442642",
+    "marke": "Marmara",
+    "produkt": "Devasa Cizik Zeytin",
+    "preis": 5.5,
+    "paket": "800g",
+    "einheit": "€/St"
+  },
+  "4012625440488": {
+    "barcode": "4012625440488",
+    "marke": "Marmara",
+    "produkt": "Efsane Büyük Boy",
+    "preis": 4.49,
+    "paket": "",
+    "einheit": "€/St"
+  },
+  "4012625440969": {
+    "barcode": "4012625440969",
+    "marke": "Marmara",
+    "produkt": "Grüne Oliven mit R.Paprika",
+    "preis": 3.99,
+    "paket": "800g",
+    "einheit": "€/St"
+  },
+  "4012625440846": {
+    "barcode": "4012625440846",
+    "marke": "Marmara",
+    "produkt": "Prenses Kücük Boy",
+    "preis": 3.79,
+    "paket": "",
+    "einheit": "€/St"
+  },
+  "4012625449382": {
+    "barcode": "4012625449382",
+    "marke": "Marmara",
+    "produkt": "Schwarze Oliven entsteint",
+    "preis": 3.99,
+    "paket": "800g",
+    "einheit": "€/St"
+  },
+  "4012625440242": {
+    "barcode": "4012625440242",
+    "marke": "Marmara",
+    "produkt": "Schwarze Oliven mit Stein",
+    "preis": 5.99,
+    "paket": "800g",
+    "einheit": "€/St"
+  },
+  "4012625440365": {
+    "barcode": "4012625440365",
+    "marke": "Marmara",
+    "produkt": "Schwarze Oliven mit Stein",
+    "preis": 5.49,
+    "paket": "800g",
+    "einheit": "€/St"
+  },
+  "4012625442406": {
+    "barcode": "4012625442406",
+    "marke": "Marmara",
+    "produkt": "Schwarze Oliven mit Stein",
+    "preis": 3.49,
+    "paket": "400g",
+    "einheit": "€/St"
+  },
+  "4012625440723": {
+    "barcode": "4012625440723",
+    "marke": "Marmara ",
+    "produkt": "Klasik Normal Boy",
+    "preis": 3.99,
+    "paket": "800g",
+    "einheit": "€/St"
+  },
+  "8690103111813": {
+    "barcode": "8690103111813",
+    "marke": "Marmarabirlik",
+    "produkt": "Dogal Siyah Zeytin",
+    "preis": 9.9,
+    "paket": "800g",
+    "einheit": "€/St"
+  },
+  "8690103119819": {
+    "barcode": "8690103119819",
+    "marke": "Marmarabirlik",
+    "produkt": "Dogal Siyah Zeytin",
+    "preis": 11.5,
+    "paket": "800g",
+    "einheit": "€/St"
+  },
+  "8690103279810": {
+    "barcode": "8690103279810",
+    "marke": "Marmarabirlik",
+    "produkt": "Gold Siyah Zeytin ",
+    "preis": 11.5,
+    "paket": "800g",
+    "einheit": "€/St"
+  },
+  "8690103292390": {
+    "barcode": "8690103292390",
+    "marke": "Marmarabirlik",
+    "produkt": "Kuru Sele 3XS",
+    "preis": 4.5,
+    "paket": "400g",
+    "einheit": "€/St"
+  },
+  "8690103292437": {
+    "barcode": "8690103292437",
+    "marke": "Marmarabirlik",
+    "produkt": "Kuru Sele 3XS ",
+    "preis": 8,
+    "paket": "815g",
+    "einheit": "€/St"
+  },
+  "8690103292383": {
+    "barcode": "8690103292383",
+    "marke": "Marmarabirlik",
+    "produkt": "Kuru Sele S ",
+    "preis": 5.5,
+    "paket": "400g",
+    "einheit": "€/St"
+  },
+  "8690103292888": {
+    "barcode": "8690103292888",
+    "marke": "Marmarabirlik",
+    "produkt": "Kuru Sele S ",
+    "preis": 10,
+    "paket": "815g",
+    "einheit": "€/St"
+  },
+  "8699073290306": {
+    "barcode": "8699073290306",
+    "marke": "Melis",
+    "produkt": "Biberiye Tursusu",
+    "preis": 1.99,
+    "paket": "180g",
+    "einheit": "€/St"
+  },
+  "8699073291716": {
+    "barcode": "8699073291716",
+    "marke": "Melis",
+    "produkt": "Biberiye Tursusu",
+    "preis": 9,
+    "paket": "870g",
+    "einheit": "€/St"
+  },
+  "8699073292256": {
+    "barcode": "8699073292256",
+    "marke": "Melis",
+    "produkt": "Kiraz Biber Tursusu",
+    "preis": 1.99,
+    "paket": "330g",
+    "einheit": "€/St"
+  },
+  "8699073290252": {
+    "barcode": "8699073290252",
+    "marke": "Melis",
+    "produkt": "Melis Jalapeno Biber Tursu 370g",
+    "preis": 1.99,
+    "paket": "",
+    "einheit": "€/St"
+  },
+  "8699073291525": {
+    "barcode": "8699073291525",
+    "marke": "Melis",
+    "produkt": "Melis Kirmizi Jalapeno Biber Tursusu\n370 ml",
+    "preis": 1.89,
+    "paket": "",
+    "einheit": "€/St"
+  },
+  "8699073291242": {
+    "barcode": "8699073291242",
+    "marke": "Melis",
+    "produkt": "Süs Biber Tursusu",
+    "preis": 2,
+    "paket": "160g",
+    "einheit": "€/St"
+  },
+  "8699073291273": {
+    "barcode": "8699073291273",
+    "marke": "Melis",
+    "produkt": "Süs Biber Tursusu",
+    "preis": 3,
+    "paket": "310g",
+    "einheit": "€/St"
+  },
+  "4260259454955": {
+    "barcode": "4260259454955",
+    "marke": "Mina",
+    "produkt": "Isot",
+    "preis": 2,
+    "paket": "60g",
+    "einheit": "€/St"
+  },
+  "4260259452609": {
+    "barcode": "4260259452609",
+    "marke": "Mina",
+    "produkt": "Pul Biber Aci",
+    "preis": 5.99,
+    "paket": "",
+    "einheit": "€/St"
+  },
+  "4260531061093": {
+    "barcode": "4260531061093",
+    "marke": "Mina",
+    "produkt": "Pul Biber Tatli",
+    "preis": 5.99,
+    "paket": "",
+    "einheit": "€/St"
+  },
+  "4042044112246": {
+    "barcode": "4042044112246",
+    "marke": "Minas Kava",
+    "produkt": "Kahve",
+    "preis": 6,
+    "paket": "250g",
+    "einheit": "€/St"
+  },
+  "8697462060028": {
+    "barcode": "8697462060028",
+    "marke": "Mis",
+    "produkt": "Erbaa Bag Yapragi 3kg",
+    "preis": 19.5,
+    "paket": "3000g",
+    "einheit": "€/St"
+  },
+  "8695543008150": {
+    "barcode": "8695543008150",
+    "marke": "Muratbey",
+    "produkt": "Dil Peynir",
+    "preis": 2.99,
+    "paket": "150g",
+    "einheit": "€/St"
+  },
+  "8695543008174": {
+    "barcode": "8695543008174",
+    "marke": "Muratbey",
+    "produkt": "Muratbey Anatolien Mix 150 g",
+    "preis": 2.99,
+    "paket": "",
+    "einheit": "€/St"
+  },
+  "8695543006941": {
+    "barcode": "8695543006941",
+    "marke": "Muratbey",
+    "produkt": "Muratbey Topi Cheese 150g",
+    "preis": 3.49,
+    "paket": "",
+    "einheit": "€/St"
+  },
+  "8695543008167": {
+    "barcode": "8695543008167",
+    "marke": "Muratbey",
+    "produkt": "Örgü Peynir",
+    "preis": 3.5,
+    "paket": "150g",
+    "einheit": "€/St"
+  },
+  "8695543008143": {
+    "barcode": "8695543008143",
+    "marke": "Muratbey",
+    "produkt": "Tel Peyniri",
+    "preis": 2.99,
+    "paket": "150g",
+    "einheit": "€/St"
+  },
+  "4260708493023": {
+    "barcode": "4260708493023",
+    "marke": "Nakis  Food",
+    "produkt": "Hamburger Köftesi",
+    "preis": 6,
+    "paket": "270g",
+    "einheit": "€/St"
+  },
+  "4260708492767": {
+    "barcode": "4260708492767",
+    "marke": "Nakis Food",
+    "produkt": "Adana Kebap",
+    "preis": 8.5,
+    "paket": "600g",
+    "einheit": "€/St"
+  },
+  "4260708490176": {
+    "barcode": "4260708490176",
+    "marke": "Nakis Food",
+    "produkt": "Antep Fistigi",
+    "preis": 5.69,
+    "paket": "200g",
+    "einheit": "€/St"
+  },
+  "4260708490138": {
+    "barcode": "4260708490138",
+    "marke": "Nakis Food",
+    "produkt": "Badem",
+    "preis": 2.29,
+    "paket": "200g",
+    "einheit": "€/St"
+  },
+  "4260708490145": {
+    "barcode": "4260708490145",
+    "marke": "Nakis Food",
+    "produkt": "Findik",
+    "preis": 4.19,
+    "paket": "200g",
+    "einheit": "€/St"
+  },
+  "4260708490152": {
+    "barcode": "4260708490152",
+    "marke": "Nakis Food",
+    "produkt": "Kajun",
+    "preis": 2.29,
+    "paket": "200g",
+    "einheit": "€/St"
+  },
+  "4260708493405": {
+    "barcode": "4260708493405",
+    "marke": "Nakis Food",
+    "produkt": "Tavuk döner pismis ",
+    "preis": 9.5,
+    "paket": "500g",
+    "einheit": "€/St"
+  },
+  "4260143892214": {
+    "barcode": "4260143892214",
+    "marke": "NakisFood",
+    "produkt": "Balli Baba",
+    "preis": 2.99,
+    "paket": "280g",
+    "einheit": "€/St"
+  },
+  "4260143892078": {
+    "barcode": "4260143892078",
+    "marke": "NakisFood",
+    "produkt": "Begonya Kakao",
+    "preis": 2.99,
+    "paket": "280g",
+    "einheit": "€/St"
+  },
+  "4260708492552": {
+    "barcode": "4260708492552",
+    "marke": "NakisFood",
+    "produkt": "Cigköfte",
+    "preis": 2.39,
+    "paket": "330g",
+    "einheit": "€/St"
+  },
+  "4260708492774": {
+    "barcode": "4260708492774",
+    "marke": "NakisFood",
+    "produkt": "Corbalik Köfte",
+    "preis": 4.5,
+    "paket": "400g",
+    "einheit": "€/St"
+  },
+  "4260708492989": {
+    "barcode": "4260708492989",
+    "marke": "NakisFood",
+    "produkt": "Falafel",
+    "preis": 4.99,
+    "paket": "500g",
+    "einheit": "€/St"
+  },
+  "4260708490060": {
+    "barcode": "4260708490060",
+    "marke": "NakisFood",
+    "produkt": "Fish",
+    "preis": 7.49,
+    "paket": "800g",
+    "einheit": "€/St"
+  },
+  "4238116000478": {
+    "barcode": "4238116000478",
+    "marke": "NakisFood",
+    "produkt": "Hähnchen Schnitzel",
+    "preis": 7.99,
+    "paket": "800g",
+    "einheit": "€/St"
+  },
+  "4260708492705": {
+    "barcode": "4260708492705",
+    "marke": "NakisFood",
+    "produkt": "karisik eriste 400g",
+    "preis": 2.79,
+    "paket": "400g",
+    "einheit": "€/St"
+  },
+  "4260708492538": {
+    "barcode": "4260708492538",
+    "marke": "NakisFood",
+    "produkt": "Katmer",
+    "preis": 4.49,
+    "paket": "180g",
+    "einheit": "€/St"
+  },
+  "675696140608": {
+    "barcode": "675696140608",
+    "marke": "NakisFood",
+    "produkt": "Kayseri Manti",
+    "preis": 39.99,
+    "paket": "5000g",
+    "einheit": "€/St"
+  },
+  "4260708491333": {
+    "barcode": "4260708491333",
+    "marke": "NakisFood",
+    "produkt": "Kayseri Manti",
+    "preis": 8.99,
+    "paket": "1000g",
+    "einheit": "€/St"
+  },
+  "4260708493399": {
+    "barcode": "4260708493399",
+    "marke": "NakisFood",
+    "produkt": "Kiyma Pismis Döner",
+    "preis": 11,
+    "paket": "500g",
+    "einheit": "€/St"
+  },
+  "4260143892382": {
+    "barcode": "4260143892382",
+    "marke": "NakisFood",
+    "produkt": "Kokoslum",
+    "preis": 2.99,
+    "paket": "280g",
+    "einheit": "€/St"
+  },
+  "4260708492545": {
+    "barcode": "4260708492545",
+    "marke": "NakisFood",
+    "produkt": "Künefe",
+    "preis": 5.99,
+    "paket": "270g",
+    "einheit": "€/St"
+  },
+  "4260708493146": {
+    "barcode": "4260708493146",
+    "marke": "NakisFood",
+    "produkt": "Uskumru",
+    "preis": 5.79,
+    "paket": "1000g",
+    "einheit": "€/St"
+  },
+  "4260708493375": {
+    "barcode": "4260708493375",
+    "marke": "NakisFood",
+    "produkt": "Meerbarbe / Barbun",
+    "preis": 7.49,
+    "paket": "1000g",
+    "einheit": "€/St"
+  },
+  "4260143892023": {
+    "barcode": "4260143892023",
+    "marke": "NakisFood",
+    "produkt": "Menekse Renkli",
+    "preis": 2.99,
+    "paket": "280g",
+    "einheit": "€/St"
+  },
+  "4260143892177": {
+    "barcode": "4260143892177",
+    "marke": "NakisFood",
+    "produkt": "Menekse Serpme",
+    "preis": 2.99,
+    "paket": "280g",
+    "einheit": "€/St"
+  },
+  "4260143892030": {
+    "barcode": "4260143892030",
+    "marke": "NakisFood",
+    "produkt": "Menekse Sütlü",
+    "preis": 2.99,
+    "paket": "280g",
+    "einheit": "€/St"
+  },
+  "4260708492811": {
+    "barcode": "4260708492811",
+    "marke": "NakisFood",
+    "produkt": "Pommes (Frittieren)",
+    "preis": 2.99,
+    "paket": "1000g",
+    "einheit": "€/St"
+  },
+  "4260708492699": {
+    "barcode": "4260708492699",
+    "marke": "NakisFood",
+    "produkt": "sade eriste 400g",
+    "preis": 2.79,
+    "paket": "400g",
+    "einheit": "€/St"
+  },
+  "4260708493153": {
+    "barcode": "4260708493153",
+    "marke": "NakisFood",
+    "produkt": "Sardellen / Hamsi",
+    "preis": 5.99,
+    "paket": "1000g",
+    "einheit": "€/St"
+  },
+  "4260143892306": {
+    "barcode": "4260143892306",
+    "marke": "NakisFood",
+    "produkt": "Susamlim",
+    "preis": 2.99,
+    "paket": "280g",
+    "einheit": "€/St"
+  },
+  "4260708492781": {
+    "barcode": "4260708492781",
+    "marke": "NakisFood",
+    "produkt": "Tavuk Burger",
+    "preis": 11.99,
+    "paket": "1170g",
+    "einheit": "€/St"
+  },
+  "4238116000447": {
+    "barcode": "4238116000447",
+    "marke": "NakisFood",
+    "produkt": "Tavuk Nuggets",
+    "preis": 7.99,
+    "paket": "750g",
+    "einheit": "€/St"
+  },
+  "4260708492798": {
+    "barcode": "4260708492798",
+    "marke": "NakisFood",
+    "produkt": "Tavuk Sosis Frikadellen",
+    "preis": 11.99,
+    "paket": "1300g",
+    "einheit": "€/St"
+  },
+  "4260143892153": {
+    "barcode": "4260143892153",
+    "marke": "NakisFood",
+    "produkt": "Üzümlüm",
+    "preis": 2.99,
+    "paket": "280g",
+    "einheit": "€/St"
+  },
+  "4260708493412": {
+    "barcode": "4260708493412",
+    "marke": "NaksEt",
+    "produkt": "Afyon Sucuk",
+    "preis": 9.99,
+    "paket": "500g",
+    "einheit": "€/St"
+  },
+  "4260708493061": {
+    "barcode": "4260708493061",
+    "marke": "NaksEt",
+    "produkt": "Kangal Sucuk",
+    "preis": 17,
+    "paket": "1000g",
+    "einheit": "€/St"
+  },
+  "783872500317": {
+    "barcode": "783872500317",
+    "marke": "NaksEt",
+    "produkt": "Lappen mit Knochen",
+    "preis": 11,
+    "paket": "Wiegen!",
+    "einheit": "€/Kg"
+  },
+  "4260708492958": {
+    "barcode": "4260708492958",
+    "marke": "NaksEt",
+    "produkt": "Parmak Sucuk",
+    "preis": 17,
+    "paket": "1000g",
+    "einheit": "€/St"
+  },
+  "4260708493115": {
+    "barcode": "4260708493115",
+    "marke": "NaksEt",
+    "produkt": "Pastirma Bel Eti",
+    "preis": 6,
+    "paket": "100g",
+    "einheit": "€/St"
+  },
+  "4260708493030": {
+    "barcode": "4260708493030",
+    "marke": "NaksEt",
+    "produkt": "Rindersalami ‚/ Sigir Salam Dilim",
+    "preis": 3.3,
+    "paket": "150g",
+    "einheit": "€/St"
+  },
+  "4260708492965": {
+    "barcode": "4260708492965",
+    "marke": "NaksEt",
+    "produkt": "Sadrazam Sucuk",
+    "preis": 17,
+    "paket": "1000g",
+    "einheit": "€/St"
+  },
+  "4260708493443": {
+    "barcode": "4260708493443",
+    "marke": "NaksEt",
+    "produkt": "Sigir Dilim Salam",
+    "preis": 3,
+    "paket": "150g",
+    "einheit": "€/St"
+  },
+  "4260708492842": {
+    "barcode": "4260708492842",
+    "marke": "NaksEt",
+    "produkt": "Sigir Izgara Sosis 500g",
+    "preis": 5.5,
+    "paket": "500g",
+    "einheit": "€/St"
+  },
+  "4260708493368": {
+    "barcode": "4260708493368",
+    "marke": "NaksEt",
+    "produkt": "Sigir Salam",
+    "preis": 6.5,
+    "paket": "500g",
+    "einheit": "€/St"
+  },
+  "4260708492835": {
+    "barcode": "4260708492835",
+    "marke": "NaksEt",
+    "produkt": "Sigir Sosis 500g",
+    "preis": 5.5,
+    "paket": "500g",
+    "einheit": "€/St"
+  },
+  "4260708493450": {
+    "barcode": "4260708493450",
+    "marke": "NaksEt",
+    "produkt": "Tavuk Dilim Salam",
+    "preis": 2,
+    "paket": "150g",
+    "einheit": "€/St"
+  },
+  "4260708492934": {
+    "barcode": "4260708492934",
+    "marke": "NaksEt",
+    "produkt": "Tavuk Izgara Sosis 500g",
+    "preis": 6.5,
+    "paket": "500g",
+    "einheit": "€/St"
+  },
+  "4260708493351": {
+    "barcode": "4260708493351",
+    "marke": "NaksEt",
+    "produkt": "Tavuk Salam",
+    "preis": 4.99,
+    "paket": "400g",
+    "einheit": "€/St"
+  },
+  "4260708493054": {
+    "barcode": "4260708493054",
+    "marke": "NaksEt",
+    "produkt": "Tavuk Sosis 500g",
+    "preis": 6.5,
+    "paket": "500g",
+    "einheit": "€/St"
+  },
+  "833742500033": {
+    "barcode": "833742500033",
+    "marke": "NaksEt",
+    "produkt": "Waden Fleisch Gefroren",
+    "preis": 11,
+    "paket": "Wiegen!",
+    "einheit": "€/Kg"
+  },
+  "783872500329": {
+    "barcode": "783872500329",
+    "marke": "Nalya",
+    "produkt": "Chocolate Dates",
+    "preis": 3.99,
+    "paket": "100g",
+    "einheit": "€/St"
+  },
+  "6287009831659": {
+    "barcode": "6287009831659",
+    "marke": "Nalya",
+    "produkt": "Enegy Balls Cashew",
+    "preis": 2.99,
+    "paket": "",
+    "einheit": "€/St"
+  },
+  "6287009831666": {
+    "barcode": "6287009831666",
+    "marke": "Nalya",
+    "produkt": "Energy Balls Pistazie",
+    "preis": 2.99,
+    "paket": "",
+    "einheit": "€/St"
+  },
+  "8721325691002": {
+    "barcode": "8721325691002",
+    "marke": "Nawaa",
+    "produkt": "Medjoul Dates",
+    "preis": 6.99,
+    "paket": "450g",
+    "einheit": "€/St"
+  },
+  "8698995517355": {
+    "barcode": "8698995517355",
+    "marke": "Nawras ",
+    "produkt": "Basmati Pirinc 4kg",
+    "preis": 11.9,
+    "paket": "4000g",
+    "einheit": "€/St"
+  },
+  "8682125001999": {
+    "barcode": "8682125001999",
+    "marke": "OBB",
+    "produkt": "Ordu Petekli Bal",
+    "preis": 3.5,
+    "paket": "220g",
+    "einheit": "€/St"
+  },
+  "8682125001586": {
+    "barcode": "8682125001586",
+    "marke": "OBB",
+    "produkt": "Ordu Yüksek Yayla Bali",
+    "preis": 4.3,
+    "paket": "",
+    "einheit": "€/St"
+  },
+  "8682125001616": {
+    "barcode": "8682125001616",
+    "marke": "OBB",
+    "produkt": "Petekli Bal",
+    "preis": 6,
+    "paket": "440g",
+    "einheit": "€/St"
+  },
+  "8684059055178": {
+    "barcode": "8684059055178",
+    "marke": "Omega",
+    "produkt": "Ceviz",
+    "preis": 2.99,
+    "paket": "",
+    "einheit": "€/St"
+  },
+  "8684059055024": {
+    "barcode": "8684059055024",
+    "marke": "Omega",
+    "produkt": "Gold Kuru Üzüm",
+    "preis": 2.79,
+    "paket": "",
+    "einheit": "€/St"
+  },
+  "8684059054669": {
+    "barcode": "8684059054669",
+    "marke": "Omega",
+    "produkt": "Leblebi",
+    "preis": 1.99,
+    "paket": "",
+    "einheit": "€/St"
+  },
+  "8684059055055": {
+    "barcode": "8684059055055",
+    "marke": "Omega",
+    "produkt": "Leblebi Beyaz",
+    "preis": 1.79,
+    "paket": "",
+    "einheit": "€/St"
+  },
+  "8684059054997": {
+    "barcode": "8684059054997",
+    "marke": "Omega",
+    "produkt": "Siyah Kuru Üzüm",
+    "preis": 2.49,
+    "paket": "",
+    "einheit": "€/St"
+  },
+  "4002566002111": {
+    "barcode": "4002566002111",
+    "marke": "Ömür",
+    "produkt": "Ömür Joghurt 1 Kg",
+    "preis": 2.49,
+    "paket": "",
+    "einheit": "€/St"
+  },
+  "4002566002142": {
+    "barcode": "4002566002142",
+    "marke": "Ömür",
+    "produkt": "Ömür Yogurt 2,5 kg",
+    "preis": 5.89,
+    "paket": "",
+    "einheit": "€/St"
+  },
+  "8693891196031": {
+    "barcode": "8693891196031",
+    "marke": "Öncü",
+    "produkt": "Aci Biber Salcasi 1650g",
+    "preis": 12.9,
+    "paket": "1650g",
+    "einheit": "€/St"
+  },
+  "8693891195881": {
+    "barcode": "8693891195881",
+    "marke": "Öncü",
+    "produkt": "Aci Biber Salcasi 700g",
+    "preis": 5.99,
+    "paket": "700g",
+    "einheit": "€/St"
+  },
+  "8693891400503": {
+    "barcode": "8693891400503",
+    "marke": "Öncü",
+    "produkt": "Dogal Siyah Zeytin",
+    "preis": 8,
+    "paket": "500g",
+    "einheit": "€/St"
+  },
+  "8693891400510": {
+    "barcode": "8693891400510",
+    "marke": "Öncü",
+    "produkt": "Dogal Siyah Zeytin",
+    "preis": 15,
+    "paket": "1000g",
+    "einheit": "€/St"
+  },
+  "8693891195843": {
+    "barcode": "8693891195843",
+    "marke": "Öncü",
+    "produkt": "Domates Salcasi",
+    "preis": 2.99,
+    "paket": "830g",
+    "einheit": "€/St"
+  },
+  "8693891196017": {
+    "barcode": "8693891196017",
+    "marke": "Öncü",
+    "produkt": "Domates Salcasi 1650g",
+    "preis": 7.99,
+    "paket": "1650g",
+    "einheit": "€/St"
+  },
+  "8693891196192": {
+    "barcode": "8693891196192",
+    "marke": "Öncü",
+    "produkt": "Domates Salcasi 4300g",
+    "preis": 14.99,
+    "paket": "4300g",
+    "einheit": "€/St"
+  },
+  "8693891196093": {
+    "barcode": "8693891196093",
+    "marke": "Öncü",
+    "produkt": "Domates Salcasi 700g",
+    "preis": 3.99,
+    "paket": "700g",
+    "einheit": "€/St"
+  },
+  "8691728000209": {
+    "barcode": "8691728000209",
+    "marke": "Öncü",
+    "produkt": "Karisik Salca 1650g",
+    "preis": 10.99,
+    "paket": "1650g",
+    "einheit": "€/St"
+  },
+  "8693891700900": {
+    "barcode": "8693891700900",
+    "marke": "Öncü",
+    "produkt": "Karisik Salca 700g",
+    "preis": 5.49,
+    "paket": "700g",
+    "einheit": "€/St"
+  },
+  "8693891195980": {
+    "barcode": "8693891195980",
+    "marke": "Öncü",
+    "produkt": "Nar Eksili Sos ",
+    "preis": 2,
+    "paket": "265ml",
+    "einheit": "€/St"
+  },
+  "8693891196505": {
+    "barcode": "8693891196505",
+    "marke": "Öncü",
+    "produkt": "Nar Eksili Sos ",
+    "preis": 5,
+    "paket": 700,
+    "einheit": "€/St"
+  },
+  "8693891196208": {
+    "barcode": "8693891196208",
+    "marke": "Öncü",
+    "produkt": "Nar Eksisi",
+    "preis": 6.499999999999999,
+    "paket": "",
+    "einheit": "€/St"
+  },
+  "8693891196130": {
+    "barcode": "8693891196130",
+    "marke": "Öncü",
+    "produkt": "Salata Sosu ",
+    "preis": 5,
+    "paket": 700,
+    "einheit": "€/St"
+  },
+  "8693891196048": {
+    "barcode": "8693891196048",
+    "marke": "Öncü",
+    "produkt": "Tatli Biber Salcasi 1650g",
+    "preis": 12.9,
+    "paket": "1650g",
+    "einheit": "€/St"
+  },
+  "8693891195942": {
+    "barcode": "8693891195942",
+    "marke": "Öncü",
+    "produkt": "Tatli Biber Salcasi 700g",
+    "preis": 5.99,
+    "paket": "700g",
+    "einheit": "€/St"
+  },
+  "8693730001823": {
+    "barcode": "8693730001823",
+    "marke": "ÖZ ",
+    "produkt": "Öz Hatay Ezmesi 250 g",
+    "preis": 2.99,
+    "paket": "",
+    "einheit": "€/St"
+  },
+  "8693730001861": {
+    "barcode": "8693730001861",
+    "marke": "ÖZ ",
+    "produkt": "Öz Karadeniz Acuka 250 g",
+    "preis": 2.99,
+    "paket": "",
+    "einheit": "€/St"
+  },
+  "8693730000017": {
+    "barcode": "8693730000017",
+    "marke": "ÖZ Yufka",
+    "produkt": "ÖZ Baklava Yufkasi 480 g",
+    "preis": 2.69,
+    "paket": "",
+    "einheit": "€/St"
+  },
+  "8693730001304": {
+    "barcode": "8693730001304",
+    "marke": "ÖZ Yufka",
+    "produkt": "Öz Ince Böreklik Yufka",
+    "preis": 3.59,
+    "paket": "",
+    "einheit": "€/St"
+  },
+  "8693730001809": {
+    "barcode": "8693730001809",
+    "marke": "ÖZ Yufka",
+    "produkt": "Öz Kayseri Cemen Kokusuz 250 g",
+    "preis": 2.99,
+    "paket": "",
+    "einheit": "€/St"
+  },
+  "8693730010108": {
+    "barcode": "8693730010108",
+    "marke": "ÖZ Yufka",
+    "produkt": "Sac Yufka",
+    "preis": 2.99,
+    "paket": "500g",
+    "einheit": "€/St"
+  },
+  "8693730010603": {
+    "barcode": "8693730010603",
+    "marke": "ÖZ Yufka",
+    "produkt": "Taze Kadayif",
+    "preis": 2.99,
+    "paket": "400g",
+    "einheit": "€/St"
+  },
+  "8693730010801": {
+    "barcode": "8693730010801",
+    "marke": "ÖZ Yufka",
+    "produkt": "Uzun Yufka",
+    "preis": 2.99,
+    "paket": "400g",
+    "einheit": "€/St"
+  },
+  "6253807551990": {
+    "barcode": "6253807551990",
+    "marke": "Palestines Garden",
+    "produkt": "Medjoul Hurmasi",
+    "preis": 14.99,
+    "paket": "900g",
+    "einheit": "€/St"
+  },
+  "6224008120513": {
+    "barcode": "6224008120513",
+    "marke": "Paradise",
+    "produkt": "Majdool Hurmasi",
+    "preis": 12.99,
+    "paket": "1000g",
+    "einheit": "€/St"
+  },
+  "680678041415": {
+    "barcode": "680678041415",
+    "marke": "Pasabahce",
+    "produkt": "Cay Tabagi",
+    "preis": "",
+    "paket": "",
+    "einheit": "€/St"
+  },
+  "8693357041417": {
+    "barcode": "8693357041417",
+    "marke": "Pasabahce",
+    "produkt": "Cay Tabagi",
+    "preis": "",
+    "paket": "",
+    "einheit": "€/St"
+  },
+  "8681506011268": {
+    "barcode": "8681506011268",
+    "marke": "Patos",
+    "produkt": "Rolls",
+    "preis": 1.79,
+    "paket": "",
+    "einheit": "€/St"
+  },
+  "7622300167660": {
+    "barcode": "7622300167660",
+    "marke": "Patos ",
+    "produkt": "Critos 3D",
+    "preis": 1.79,
+    "paket": "",
+    "einheit": "€/St"
+  },
+  "8681506021106": {
+    "barcode": "8681506021106",
+    "marke": "Patos ",
+    "produkt": "Rolls",
+    "preis": 1.79,
+    "paket": "",
+    "einheit": "€/St"
+  },
+  "8697713830769": {
+    "barcode": "8697713830769",
+    "marke": "Peros",
+    "produkt": "Cam Temizleyici",
+    "preis": 1.99,
+    "paket": "750ml",
+    "einheit": "€/St"
+  },
+  "8697713836815": {
+    "barcode": "8697713836815",
+    "marke": "Peros",
+    "produkt": "Lavanta & Neroli Cicegi",
+    "preis": 1.39,
+    "paket": "",
+    "einheit": "€/St"
+  },
+  "8697713834552": {
+    "barcode": "8697713834552",
+    "marke": "Peros",
+    "produkt": "Matik",
+    "preis": 9.99,
+    "paket": "4500g",
+    "einheit": "€/St"
+  },
+  "8697713834569": {
+    "barcode": "8697713834569",
+    "marke": "Peros",
+    "produkt": "Matik Canli Renkler",
+    "preis": 9.99,
+    "paket": "4500g",
+    "einheit": "€/St"
+  },
+  "8697713835337": {
+    "barcode": "8697713835337",
+    "marke": "Peros",
+    "produkt": "Sivi Deterjan beyazlar icin",
+    "preis": 9.99,
+    "paket": "",
+    "einheit": "€/St"
+  },
+  "8697713835344": {
+    "barcode": "8697713835344",
+    "marke": "Peros",
+    "produkt": "Sivi Deterjan renkliler icin",
+    "preis": 9.99,
+    "paket": "2310ml",
+    "einheit": "€/St"
+  },
+  "8697713837188": {
+    "barcode": "8697713837188",
+    "marke": "Peros",
+    "produkt": "Sivi Sabun Amber ",
+    "preis": 1.39,
+    "paket": "400ml",
+    "einheit": "€/St"
+  },
+  "8697713836808": {
+    "barcode": "8697713836808",
+    "marke": "Peros",
+    "produkt": "Sivi Sabun Aqua",
+    "preis": 1.39,
+    "paket": "               400ml",
+    "einheit": "€/St"
+  },
+  "8697713836891": {
+    "barcode": "8697713836891",
+    "marke": "Peros",
+    "produkt": "Sivi Sabun Zeytinyagi",
+    "preis": 1.39,
+    "paket": "400ml",
+    "einheit": "€/St"
+  },
+  "8697713834743": {
+    "barcode": "8697713834743",
+    "marke": "Peros",
+    "produkt": "Spülmittel",
+    "preis": 1.59,
+    "paket": "750 / 728 ml ",
+    "einheit": "€/St"
+  },
+  "8697713834705": {
+    "barcode": "8697713834705",
+    "marke": "Peros",
+    "produkt": "Spülmittel (Erdbeeren)",
+    "preis": 1.59,
+    "paket": "750 / 728 ml ",
+    "einheit": "€/St"
+  },
+  "8697713828193": {
+    "barcode": "8697713828193",
+    "marke": "Peros",
+    "produkt": "Ultra Güclü Jel",
+    "preis": 1.99,
+    "paket": "750ml",
+    "einheit": "€/St"
+  },
+  "8697713833852": {
+    "barcode": "8697713833852",
+    "marke": "Peros",
+    "produkt": "Weichspüler Lavendelgarten",
+    "preis": 4.99,
+    "paket": "1140g",
+    "einheit": "€/St"
+  },
+  "8697713833838": {
+    "barcode": "8697713833838",
+    "marke": "Peros",
+    "produkt": "Weichspüler Amberblüte",
+    "preis": 4.99,
+    "paket": "1140g",
+    "einheit": "€/St"
+  },
+  "8697713837300": {
+    "barcode": "8697713837300",
+    "marke": "Peros",
+    "produkt": "Weichspüler Blaue Orchidee&Lilie",
+    "preis": 4.99,
+    "paket": "1440ml",
+    "einheit": "€/St"
+  },
+  "8697713833845": {
+    "barcode": "8697713833845",
+    "marke": "Peros",
+    "produkt": "Weichspüler Japanische Blütenkirsche",
+    "preis": 4.99,
+    "paket": "1140g",
+    "einheit": "€/St"
+  },
+  "8697713833821": {
+    "barcode": "8697713833821",
+    "marke": "Peros",
+    "produkt": "Weichspüler Jasmin&Bitterorange",
+    "preis": 4.99,
+    "paket": "1440ml",
+    "einheit": "€/St"
+  },
+  "8697713839335": {
+    "barcode": "8697713839335",
+    "marke": "Peros",
+    "produkt": "Weichspüler Lavender Garden",
+    "preis": 5.99,
+    "paket": "3000g",
+    "einheit": "€/St"
+  },
+  "8697713839328": {
+    "barcode": "8697713839328",
+    "marke": "Peros",
+    "produkt": "Weichspüler Pink Roses",
+    "preis": 5.99,
+    "paket": "3000g",
+    "einheit": "€/St"
+  },
+  "8697713839069": {
+    "barcode": "8697713839069",
+    "marke": "Peros",
+    "produkt": "Yumusatici (Beyaz Cicekler)",
+    "preis": 2.5,
+    "paket": "1000ml",
+    "einheit": "€/St"
+  },
+  "8697713839083": {
+    "barcode": "8697713839083",
+    "marke": "Peros",
+    "produkt": "Yumusatici (Lavant Bahcesi)",
+    "preis": 2.5,
+    "paket": "1000ml",
+    "einheit": "€/St"
+  },
+  "8697713826236": {
+    "barcode": "8697713826236",
+    "marke": "Peros ",
+    "produkt": "Matic",
+    "preis": 17.99,
+    "paket": "9000g",
+    "einheit": "€/St"
+  },
+  "8697623207101": {
+    "barcode": "8697623207101",
+    "marke": "Phyt Flora",
+    "produkt": "Aloe Vera özlü sabun",
+    "preis": 2,
+    "paket": 125,
+    "einheit": "€/St"
+  },
+  "8697623206982": {
+    "barcode": "8697623206982",
+    "marke": "Phyt Flora",
+    "produkt": "Bugday özlü sabun",
+    "preis": 2,
+    "paket": 125,
+    "einheit": "€/St"
+  },
+  "8697623207118": {
+    "barcode": "8697623207118",
+    "marke": "Phyt Flora",
+    "produkt": "Isirgan özlü sabun",
+    "preis": 2,
+    "paket": 125,
+    "einheit": "€/St"
+  },
+  "8697623207071": {
+    "barcode": "8697623207071",
+    "marke": "Phyt Flora",
+    "produkt": "Yosun özlü sabun",
+    "preis": 2,
+    "paket": 125,
+    "einheit": "€/St"
+  },
+  "8690123210466": {
+    "barcode": "8690123210466",
+    "marke": "Pinar",
+    "produkt": "Aycekirdegi tuzlu",
+    "preis": 1.5,
+    "paket": "",
+    "einheit": "€/St"
+  },
+  "8690123216536": {
+    "barcode": "8690123216536",
+    "marke": "Pinar",
+    "produkt": "Aycekirdegi tuzsuz",
+    "preis": 1.5,
+    "paket": "",
+    "einheit": "€/St"
+  },
+  "8690565005071": {
+    "barcode": "8690565005071",
+    "marke": "Pinar",
+    "produkt": "Beyaz Peynir 45%",
+    "preis": 8.990000000000002,
+    "paket": "1000g",
+    "einheit": "€/St"
+  },
+  "8690565005088": {
+    "barcode": "8690565005088",
+    "marke": "Pinar",
+    "produkt": "Beyaz Peynir 55%",
+    "preis": 8.990000000000002,
+    "paket": "1000g",
+    "einheit": "€/St"
+  },
+  "8690565005095": {
+    "barcode": "8690565005095",
+    "marke": "Pinar",
+    "produkt": "Beyaz Peynir 60%",
+    "preis": 8.990000000000002,
+    "paket": "1000g",
+    "einheit": "€/St"
+  },
+  "8690565330036": {
+    "barcode": "8690565330036",
+    "marke": "Pinar",
+    "produkt": "Beyaz Peynir Tam Yagli",
+    "preis": 11.99,
+    "paket": "1000g",
+    "einheit": "€/St"
+  },
+  "8690802038244": {
+    "barcode": "8690802038244",
+    "marke": "Por Cöz",
+    "produkt": "Lavabo Acici",
+    "preis": 3,
+    "paket": "1000ml",
+    "einheit": "€/St"
+  },
+  "8690802038190": {
+    "barcode": "8690802038190",
+    "marke": "Pör Cöz",
+    "produkt": "Yag Cözücü",
+    "preis": 3.5,
+    "paket": "1000ml",
+    "einheit": "€/St"
+  },
+  "8690802038237": {
+    "barcode": "8690802038237",
+    "marke": "Pör Cöz",
+    "produkt": "Leke Cikarici",
+    "preis": 3.5,
+    "paket": "1000ml",
+    "einheit": "€/St"
+  },
+  "8690802038145": {
+    "barcode": "8690802038145",
+    "marke": "Pör Cöz",
+    "produkt": "Pas ve Kirec Cözücü",
+    "preis": 3.5,
+    "paket": "1000ml",
+    "einheit": "€/St"
+  },
+  "4061458061216": {
+    "barcode": "4061458061216",
+    "marke": "rio d’oro",
+    "produkt": "Apfel Kirsch",
+    "preis": 0.5,
+    "paket": "200ml",
+    "einheit": "€/St"
+  },
+  "4061461578695": {
+    "barcode": "4061461578695",
+    "marke": "rio d’oro",
+    "produkt": "Apfelschorle",
+    "preis": 1.5,
+    "paket": "500ml",
+    "einheit": "€/St"
+  },
+  "4061458144797": {
+    "barcode": "4061458144797",
+    "marke": "rio d’oro",
+    "produkt": "Multivitamin",
+    "preis": 0.5,
+    "paket": "200ml",
+    "einheit": "€/St"
+  },
+  "4061458061223": {
+    "barcode": "4061458061223",
+    "marke": "rio d’oro",
+    "produkt": "Orange",
+    "preis": 0.5,
+    "paket": "200ml",
+    "einheit": "€/St"
+  },
+  "8719326144122": {
+    "barcode": "8719326144122",
+    "marke": "Saudi (Datteln) Hurma",
+    "produkt": "Khodari Hurmasi",
+    "preis": 7,
+    "paket": "1000g",
+    "einheit": "€/St"
+  },
+  "5411944363628": {
+    "barcode": "5411944363628",
+    "marke": "Sebahat",
+    "produkt": "Gül Receli",
+    "preis": 2.5,
+    "paket": "360g",
+    "einheit": "€/St"
+  },
+  "5411944363505": {
+    "barcode": "5411944363505",
+    "marke": "Sebahat",
+    "produkt": "Kayisi Receli",
+    "preis": 2.5,
+    "paket": 360,
+    "einheit": "€/St"
+  },
+  "5411944369309": {
+    "barcode": "5411944369309",
+    "marke": "Sebahat",
+    "produkt": "Limon ",
+    "preis": "",
+    "paket": "220g",
+    "einheit": "€/St"
+  },
+  "5411944363949": {
+    "barcode": "5411944363949",
+    "marke": "Sebahat",
+    "produkt": "Pekmez",
+    "preis": 5,
+    "paket": "700g",
+    "einheit": "€/St"
+  },
+  "5411944369446": {
+    "barcode": "5411944369446",
+    "marke": "Sebahat",
+    "produkt": "Sahlep",
+    "preis": "",
+    "paket": "220g",
+    "einheit": "€/St"
+  },
+  "5411944364083": {
+    "barcode": "5411944364083",
+    "marke": "Sebahat",
+    "produkt": "Sebahat Cevizli Sucuk 80 g",
+    "preis": 1.2,
+    "paket": "",
+    "einheit": "€/St"
+  },
+  "5411944363031": {
+    "barcode": "5411944363031",
+    "marke": "Sebahat",
+    "produkt": "Sebahat Helva Fistik 350 g",
+    "preis": 13.99,
+    "paket": "",
+    "einheit": "€/St"
+  },
+  "5411944712761": {
+    "barcode": "5411944712761",
+    "marke": "Sebahat",
+    "produkt": "Sebahat Keciboynuzu Pekmezi",
+    "preis": 3.69,
+    "paket": "",
+    "einheit": "€/St"
+  },
+  "5411944363925": {
+    "barcode": "5411944363925",
+    "marke": "Sebahat",
+    "produkt": "Sebahat Pekmez Üzüm 400 g",
+    "preis": 2.99,
+    "paket": "",
+    "einheit": "€/St"
+  },
+  "5411944363963": {
+    "barcode": "5411944363963",
+    "marke": "Sebahat",
+    "produkt": "Sebahat Tahin 290 g",
+    "preis": 3.19,
+    "paket": "290g",
+    "einheit": "€/St"
+  },
+  "5411944363130": {
+    "barcode": "5411944363130",
+    "marke": "Sebahat",
+    "produkt": "Tahin ",
+    "preis": 15,
+    "paket": "1450g",
+    "einheit": "€/St"
+  },
+  "5411944363987": {
+    "barcode": "5411944363987",
+    "marke": "Sebahat",
+    "produkt": "Tahin ",
+    "preis": 6,
+    "paket": "550g",
+    "einheit": "€/St"
+  },
+  "5411944363581": {
+    "barcode": "5411944363581",
+    "marke": "Sebehat",
+    "produkt": "Brombeere Konfitüre",
+    "preis": 3,
+    "paket": "360g",
+    "einheit": "€/St"
+  },
+  "8690146619215": {
+    "barcode": "8690146619215",
+    "marke": "Sekerleme",
+    "produkt": "Bubble Gum",
+    "preis": 1.5,
+    "paket": "",
+    "einheit": "€/St"
+  },
+  "4260151110041": {
+    "barcode": "4260151110041",
+    "marke": "Sekerleme",
+    "produkt": "Kestane Sekeri ",
+    "preis": 2,
+    "paket": "",
+    "einheit": "€/St"
+  },
+  "8682059359012": {
+    "barcode": "8682059359012",
+    "marke": "Sencer",
+    "produkt": "Soft Candy – Kaubonbons",
+    "preis": 5,
+    "paket": "800g",
+    "einheit": "€/St"
+  },
+  "8682059359234": {
+    "barcode": "8682059359234",
+    "marke": "Sencer",
+    "produkt": "Tatly Stick",
+    "preis": 6,
+    "paket": "700g",
+    "einheit": "€/St"
+  },
+  "8698529300989": {
+    "barcode": "8698529300989",
+    "marke": "Seyidoglu",
+    "produkt": "Aprikosen Konfitüre",
+    "preis": 2,
+    "paket": "380g",
+    "einheit": "€/St"
+  },
+  "8698529303836": {
+    "barcode": "8698529303836",
+    "marke": "Seyidoglu",
+    "produkt": "Pfirsich Konfitüre",
+    "preis": 2,
+    "paket": "380g",
+    "einheit": "€/St"
+  },
+  "8698529300996": {
+    "barcode": "8698529300996",
+    "marke": "Seyidoglu",
+    "produkt": "Rosenblätter in Sirup",
+    "preis": 2,
+    "paket": "380g",
+    "einheit": "€/St"
+  },
+  "8683420901472": {
+    "barcode": "8683420901472",
+    "marke": "Sezgin",
+    "produkt": "Asma Yapragi",
+    "preis": 11,
+    "paket": "2000g",
+    "einheit": "€/St"
+  },
+  "8683420902684": {
+    "barcode": "8683420902684",
+    "marke": "Sezgin ",
+    "produkt": "Salamura Yaprak",
+    "preis": 9,
+    "paket": "700g",
+    "einheit": "€/St"
+  },
+  "8682241212606": {
+    "barcode": "8682241212606",
+    "marke": "Sleepy",
+    "produkt": "Sleepy Extra Glanz (sari)",
+    "preis": 3.49,
+    "paket": "",
+    "einheit": "€/St"
+  },
+  "8682241212880": {
+    "barcode": "8682241212880",
+    "marke": "Sleepy",
+    "produkt": "Sleepy Extra Hijyen (mavi)",
+    "preis": 3.49,
+    "paket": "",
+    "einheit": "€/St"
+  },
+  "8682241220342": {
+    "barcode": "8682241220342",
+    "marke": "Sleepy",
+    "produkt": "Sleepy Extra Sauberkeit (lila)",
+    "preis": 3.49,
+    "paket": "",
+    "einheit": "€/St"
+  },
+  "8682241220335": {
+    "barcode": "8682241220335",
+    "marke": "Sleepy",
+    "produkt": "Sleepy Extra Sauberkeit (pembe)",
+    "preis": 3.49,
+    "paket": "",
+    "einheit": "€/St"
+  },
+  "8682241208944": {
+    "barcode": "8682241208944",
+    "marke": "Sleepy",
+    "produkt": "Sleepy Extra Temizlik (yesil)",
+    "preis": 3.49,
+    "paket": "",
+    "einheit": "€/St"
+  },
+  "4005692000112": {
+    "barcode": "4005692000112",
+    "marke": "Sottos (Istanbul)",
+    "produkt": "Istanbul Kaffee 100 g",
+    "preis": 2.5,
+    "paket": "100g",
+    "einheit": "€/St"
+  },
+  "4005692000136": {
+    "barcode": "4005692000136",
+    "marke": "Sottos (Istanbul)",
+    "produkt": "Türk Kahvesi",
+    "preis": 12,
+    "paket": "500g",
+    "einheit": "€/St"
+  },
+  "4014400930115": {
+    "barcode": "4014400930115",
+    "marke": "Storck",
+    "produkt": "Nimm 2 Lolly Beeren",
+    "preis": 0.5,
+    "paket": "10g",
+    "einheit": "€/St"
+  },
+  "4014400930092": {
+    "barcode": "4014400930092",
+    "marke": "Storck",
+    "produkt": "Nimm 2 Lolly Kirsche",
+    "preis": 0.5,
+    "paket": "10g",
+    "einheit": "€/St"
+  },
+  "4014400930108": {
+    "barcode": "4014400930108",
+    "marke": "Storck",
+    "produkt": "Nimm 2 Lolly Limette",
+    "preis": 0.5,
+    "paket": "10g",
+    "einheit": "€/St"
+  },
+  "4014400930085": {
+    "barcode": "4014400930085",
+    "marke": "Storck",
+    "produkt": "Nimm 2 Lolly Orange Zitrone",
+    "preis": 0.5,
+    "paket": "10g",
+    "einheit": "€/St"
+  },
+  "8690804027079": {
+    "barcode": "8690804027079",
+    "marke": "Suntat",
+    "produkt": "Aci Pul Biber",
+    "preis": "",
+    "paket": "450g",
+    "einheit": "€/St"
+  },
+  "8690804027659": {
+    "barcode": "8690804027659",
+    "marke": "Suntat",
+    "produkt": "Alice",
+    "preis": 12,
+    "paket": "1000g",
+    "einheit": "€/St"
+  },
+  "8690804028731": {
+    "barcode": "8690804028731",
+    "marke": "Suntat",
+    "produkt": "Defne Yapragi",
+    "preis": 2,
+    "paket": "8g",
+    "einheit": "€/St"
+  },
+  "8690804028823": {
+    "barcode": "8690804028823",
+    "marke": "Suntat",
+    "produkt": "Dereotu",
+    "preis": 5,
+    "paket": "140g",
+    "einheit": "€/St"
+  },
+  "8690804408717": {
+    "barcode": "8690804408717",
+    "marke": "Suntat",
+    "produkt": "Erbsen",
+    "preis": 0.99,
+    "paket": "400g",
+    "einheit": "€/St"
+  },
+  "8690804362293": {
+    "barcode": "8690804362293",
+    "marke": "Suntat",
+    "produkt": "Fein Zucker",
+    "preis": 2,
+    "paket": "80g",
+    "einheit": "€/St"
+  },
+  "8690804381751": {
+    "barcode": "8690804381751",
+    "marke": "Suntat",
+    "produkt": "Gofret Cilek aromali",
+    "preis": 2,
+    "paket": "",
+    "einheit": "€/St"
+  },
+  "8690804025426": {
+    "barcode": "8690804025426",
+    "marke": "Suntat",
+    "produkt": "Karbonat",
+    "preis": 1.5,
+    "paket": "190g",
+    "einheit": "€/St"
+  },
+  "8690804374654": {
+    "barcode": "8690804374654",
+    "marke": "Suntat",
+    "produkt": "Kekik Suyu",
+    "preis": 3,
+    "paket": "80g",
+    "einheit": "€/St"
+  },
+  "8690804406614": {
+    "barcode": "8690804406614",
+    "marke": "Suntat",
+    "produkt": "Kichererbsen",
+    "preis": 0.99,
+    "paket": "400g",
+    "einheit": "€/St"
+  },
+  "8690804027727": {
+    "barcode": "8690804027727",
+    "marke": "Suntat",
+    "produkt": "Kimyon",
+    "preis": 9,
+    "paket": "450g",
+    "einheit": "€/St"
+  },
+  "8690804025396": {
+    "barcode": "8690804025396",
+    "marke": "Suntat",
+    "produkt": "Kus Üzümü",
+    "preis": 2,
+    "paket": "85g",
+    "einheit": "€/St"
+  },
+  "8690804341731": {
+    "barcode": "8690804341731",
+    "marke": "Suntat",
+    "produkt": "Limon Tuzu",
+    "preis": 10,
+    "paket": "80g",
+    "einheit": "€/St"
+  },
+  "8690804026331": {
+    "barcode": "8690804026331",
+    "marke": "Suntat",
+    "produkt": "Mavi Hashas",
+    "preis": 2,
+    "paket": "100g",
+    "einheit": "€/St"
+  },
+  "8690804028274": {
+    "barcode": "8690804028274",
+    "marke": "Suntat",
+    "produkt": "Maydanoz",
+    "preis": 5.5,
+    "paket": "110g",
+    "einheit": "€/St"
+  },
+  "8690804026300": {
+    "barcode": "8690804026300",
+    "marke": "Suntat",
+    "produkt": "Pommes baharati",
+    "preis": 1.49,
+    "paket": "140g",
+    "einheit": "€/St"
+  },
+  "8690804408205": {
+    "barcode": "8690804408205",
+    "marke": "Suntat",
+    "produkt": "Soyulmus Domates",
+    "preis": "",
+    "paket": "800g",
+    "einheit": "€/St"
+  },
+  "8690804006098": {
+    "barcode": "8690804006098",
+    "marke": "Suntat",
+    "produkt": "Suntat Bomba Fasulye Haslama 400 g",
+    "preis": 0.99,
+    "paket": "",
+    "einheit": "€/St"
+  },
+  "8690804006159": {
+    "barcode": "8690804006159",
+    "marke": "Suntat",
+    "produkt": "Suntat Kidneybohne Haslama 400 g",
+    "preis": 0.99,
+    "paket": "",
+    "einheit": "€/St"
+  },
+  "8690804027130": {
+    "barcode": "8690804027130",
+    "marke": "Suntat",
+    "produkt": "Susam",
+    "preis": 5,
+    "paket": "530g",
+    "einheit": "€/St"
+  },
+  "8690804027093": {
+    "barcode": "8690804027093",
+    "marke": "Suntat",
+    "produkt": "Tatli Toz Biber",
+    "preis": 5,
+    "paket": "450g",
+    "einheit": "€/St"
+  },
+  "8690804325779": {
+    "barcode": "8690804325779",
+    "marke": "Suntat",
+    "produkt": "Tavuk Baharati",
+    "preis": 8,
+    "paket": "80g",
+    "einheit": "€/St"
+  },
+  "8690804406515": {
+    "barcode": "8690804406515",
+    "marke": "Suntat",
+    "produkt": "Wachtelbohnen",
+    "preis": 1.5,
+    "paket": "400g",
+    "einheit": "€/St"
+  },
+  "8690804406416": {
+    "barcode": "8690804406416",
+    "marke": "Suntat",
+    "produkt": "Weiße Bohnen",
+    "preis": 0.99,
+    "paket": "400g",
+    "einheit": "€/St"
+  },
+  "8690804006104": {
+    "barcode": "8690804006104",
+    "marke": "Suntat",
+    "produkt": "Weiße Riesenbohnen",
+    "preis": 2,
+    "paket": "800g",
+    "einheit": "€/St"
+  },
+  "8690804324499": {
+    "barcode": "8690804324499",
+    "marke": "Suntat",
+    "produkt": "Zerdecal Toz",
+    "preis": "",
+    "paket": "80g",
+    "einheit": "€/St"
+  },
+  "4056546011839": {
+    "barcode": "4056546011839",
+    "marke": "Tadim",
+    "produkt": "Cekirdek az Tuzlu",
+    "preis": 2.49,
+    "paket": "270g",
+    "einheit": "€/St"
+  },
+  "4056546011846": {
+    "barcode": "4056546011846",
+    "marke": "Tadim",
+    "produkt": "Cekirdek cok Tuzlu",
+    "preis": 2.49,
+    "paket": "270g",
+    "einheit": "€/St"
+  },
+  "8692173200855": {
+    "barcode": "8692173200855",
+    "marke": "Tat",
+    "produkt": "Barbunya",
+    "preis": 0.01,
+    "paket": "1000g",
+    "einheit": "€/St"
+  },
+  "8692173200053": {
+    "barcode": "8692173200053",
+    "marke": "Tat",
+    "produkt": "Dermason Fasulye",
+    "preis": 2.49,
+    "paket": "1000g",
+    "einheit": "€/St"
+  },
+  "8692173201029": {
+    "barcode": "8692173201029",
+    "marke": "Tat",
+    "produkt": "Kirmizi Mercimek",
+    "preis": 2.99,
+    "paket": "1000g",
+    "einheit": "€/St"
+  },
+  "8692173200121": {
+    "barcode": "8692173200121",
+    "marke": "Tat",
+    "produkt": "Pilavlik Bulgur 1kg",
+    "preis": 1.5,
+    "paket": "1000g",
+    "einheit": "€/St"
+  },
+  "8690997156518": {
+    "barcode": "8690997156518",
+    "marke": "Tayas",
+    "produkt": "Damla Sour",
+    "preis": 2.5,
+    "paket": "250g",
+    "einheit": "€/St"
+  },
+  "8690997112545": {
+    "barcode": "8690997112545",
+    "marke": "Tayas",
+    "produkt": "Gift Cikolata",
+    "preis": 3,
+    "paket": "500g",
+    "einheit": "€/St"
+  },
+  "8690997133441": {
+    "barcode": "8690997133441",
+    "marke": "Tayas",
+    "produkt": "Orient Cikolata",
+    "preis": 4.5,
+    "paket": "500g",
+    "einheit": "€/St"
+  },
+  "8690158122345": {
+    "barcode": "8690158122345",
+    "marke": "TekSüt",
+    "produkt": "Cecil-Shallal",
+    "preis": 6.99,
+    "paket": "500g",
+    "einheit": "€/St"
+  },
+  "5011157630175": {
+    "barcode": "5011157630175",
+    "marke": "Tilda",
+    "produkt": "Tilda Basmati Reis 0,5 kg",
+    "preis": 3.49,
+    "paket": "500g",
+    "einheit": "€/St"
+  },
+  "4260151110010": {
+    "barcode": "4260151110010",
+    "marke": "Titiz",
+    "produkt": "Kestane Kebabi",
+    "preis": 2,
+    "paket": "",
+    "einheit": "€/St"
+  },
+  "4061459890617": {
+    "barcode": "4061459890617",
+    "marke": "Topsport",
+    "produkt": "ISO",
+    "preis": 1.5,
+    "paket": "500ml",
+    "einheit": "€/St"
+  },
+  "8018416024505": {
+    "barcode": "8018416024505",
+    "marke": "Tosya ",
+    "produkt": "Güllü Pirinc 5 KG - Kavak",
+    "preis": 13.99,
+    "paket": "5000g",
+    "einheit": "€/St"
+  },
+  "8018416024109": {
+    "barcode": "8018416024109",
+    "marke": "Tosya ",
+    "produkt": "Pirinc 1kg",
+    "preis": 3.49,
+    "paket": "1000g",
+    "einheit": "€/St"
+  },
+  "8018416025007": {
+    "barcode": "8018416025007",
+    "marke": "Tosya ",
+    "produkt": "Pirinc 2,5kg",
+    "preis": 7.49,
+    "paket": "2500g",
+    "einheit": "€/St"
+  },
+  "8690508101419": {
+    "barcode": "8690508101419",
+    "marke": "Tukas",
+    "produkt": "Domates Salcasi",
+    "preis": 3.99,
+    "paket": "700g",
+    "einheit": "€/St"
+  },
+  "8690508101426": {
+    "barcode": "8690508101426",
+    "marke": "Tukas",
+    "produkt": "Domates Salcasi",
+    "preis": 2.5,
+    "paket": "830g",
+    "einheit": "€/St"
+  },
+  "8690766066079": {
+    "barcode": "8690766066079",
+    "marke": "Ülker",
+    "produkt": "Dankek Lokmalik",
+    "preis": 2,
+    "paket": "",
+    "einheit": "€/St"
+  },
+  "8690504083733": {
+    "barcode": "8690504083733",
+    "marke": "Ülker",
+    "produkt": "Dankek Tart Kek Mini",
+    "preis": 2,
+    "paket": "",
+    "einheit": "€/St"
+  },
+  "8690504039518": {
+    "barcode": "8690504039518",
+    "marke": "Ülker",
+    "produkt": "Halley",
+    "preis": 2.99,
+    "paket": "",
+    "einheit": "€/St"
+  },
+  "8690723372304": {
+    "barcode": "8690723372304",
+    "marke": "Uludag",
+    "produkt": "Gazoz (Portakal)",
+    "preis": 1.5,
+    "paket": "330ml",
+    "einheit": "€/St"
+  },
+  "8690723373509": {
+    "barcode": "8690723373509",
+    "marke": "Uludag",
+    "produkt": "Gazoz (Portakal)",
+    "preis": "",
+    "paket": "1000ml",
+    "einheit": "€/St"
+  },
+  "4262505160108": {
+    "barcode": "4262505160108",
+    "marke": "Uludag",
+    "produkt": "Uludag Gazoz 1 Liter Flaschen",
+    "preis": 2.5,
+    "paket": "",
+    "einheit": "€/St"
+  },
+  "4262505160009": {
+    "barcode": "4262505160009",
+    "marke": "Uludag",
+    "produkt": "Uludag Gazoz 330 ml Dose",
+    "preis": 1.5,
+    "paket": "",
+    "einheit": "€/St"
+  },
+  "4262505160061": {
+    "barcode": "4262505160061",
+    "marke": "Uludag",
+    "produkt": "Uludag Gazoz 500 ml Flaschen",
+    "preis": 2,
+    "paket": "",
+    "einheit": "€/St"
+  },
+  "4262505160047": {
+    "barcode": "4262505160047",
+    "marke": "Uludag",
+    "produkt": "Uludag Gazoz Ohne Zucker 0,33l",
+    "preis": 1.5,
+    "paket": "",
+    "einheit": "€/St"
+  },
+  "8684072303928": {
+    "barcode": "8684072303928",
+    "marke": "Veg’n Snack",
+    "produkt": "Strips",
+    "preis": 1,
+    "paket": "200g",
+    "einheit": "€/St"
+  },
+  "8684072303935": {
+    "barcode": "8684072303935",
+    "marke": "Veg’n Snack",
+    "produkt": "Strips",
+    "preis": 1,
+    "paket": "200g",
+    "einheit": "€/St"
+  },
+  "8684072303959": {
+    "barcode": "8684072303959",
+    "marke": "Veg’n Snack",
+    "produkt": "Strips",
+    "preis": 1,
+    "paket": "200g",
+    "einheit": "€/St"
+  },
+  "8684072303966": {
+    "barcode": "8684072303966",
+    "marke": "Veg’n Snack",
+    "produkt": "Strips",
+    "preis": 1,
+    "paket": "200g",
+    "einheit": "€/St"
+  },
+  "8684072303973": {
+    "barcode": "8684072303973",
+    "marke": "Veg’n Snack",
+    "produkt": "Strips",
+    "preis": 1,
+    "paket": "200g",
+    "einheit": "€/St"
+  },
+  "8684072303997": {
+    "barcode": "8684072303997",
+    "marke": "Veg’n Snack",
+    "produkt": "Strips",
+    "preis": 1,
+    "paket": "200g",
+    "einheit": "€/St"
+  },
+  "3850104008443": {
+    "barcode": "3850104008443",
+    "marke": "Vegeta",
+    "produkt": "Würzmischung mit Gemüse",
+    "preis": 5,
+    "paket": "500g",
+    "einheit": "€/St"
+  },
+  "8684072302839": {
+    "barcode": "8684072302839",
+    "marke": "Vegn’Snack",
+    "produkt": "Straw Bites Sour",
+    "preis": 0.5,
+    "paket": "80g",
+    "einheit": "€/St"
+  },
+  "6253807550771": {
+    "barcode": "6253807550771",
+    "marke": "Watani ",
+    "produkt": "Madjul Filistin Hurma 5 kg",
+    "preis": 40,
+    "paket": "5000g",
+    "einheit": "€/St"
+  },
+  "4008452010222": {
+    "barcode": "4008452010222",
+    "marke": "Weihenstephan",
+    "produkt": "Buttter",
+    "preis": 1.99,
+    "paket": "250g",
+    "einheit": "€/St"
+  },
+  "4260193512681": {
+    "barcode": "4260193512681",
+    "marke": "Yörem",
+    "produkt": "Kars Küflü Peynir",
+    "preis": 1.89,
+    "paket": "100g",
+    "einheit": "€/St"
+  },
+  "4260193515408": {
+    "barcode": "4260193515408",
+    "marke": "Yörem",
+    "produkt": "Kasar Peyniri 800g",
+    "preis": 7.99,
+    "paket": "800g",
+    "einheit": "€/St"
+  },
+  "4260193517228": {
+    "barcode": "4260193517228",
+    "marke": "Yörem",
+    "produkt": "Schafskäse in Salzlake (50% F )",
+    "preis": 12.99,
+    "paket": "1500g",
+    "einheit": "€/St"
+  },
+  "4260193517242": {
+    "barcode": "4260193517242",
+    "marke": "Yörem",
+    "produkt": "Ziegenkäse in Salzlake (50% F)",
+    "preis": 12.99,
+    "paket": "1500g",
+    "einheit": "€/St"
+  },
+  "4260193514814": {
+    "barcode": "4260193514814",
+    "marke": "Yörem ",
+    "produkt": "Kasar Peyniri 400g",
+    "preis": 4.99,
+    "paket": "400g",
+    "einheit": "€/St"
+  },
+  "8682631806897": {
+    "barcode": "8682631806897",
+    "marke": "Yutty",
+    "produkt": "Candy – Kaubonbons",
+    "preis": 5,
+    "paket": "800g",
+    "einheit": "€/St"
+  },
+  "8682631806910": {
+    "barcode": "8682631806910",
+    "marke": "Yutty",
+    "produkt": "Candy – Kaubonbons",
+    "preis": 2,
+    "paket": "300g",
+    "einheit": "€/St"
+  },
+  "8682631815912": {
+    "barcode": "8682631815912",
+    "marke": "Yutty",
+    "produkt": "Filled Sticks",
+    "preis": 1,
+    "paket": "225g",
+    "einheit": "€/St"
+  },
+  "8682631815936": {
+    "barcode": "8682631815936",
+    "marke": "Yutty",
+    "produkt": "Filled Sticks",
+    "preis": 1,
+    "paket": "225g",
+    "einheit": "€/St"
+  },
+  "8682631820152": {
+    "barcode": "8682631820152",
+    "marke": "Yutty",
+    "produkt": "Filled Sticks",
+    "preis": 1,
+    "paket": "225g",
+    "einheit": "€/St"
+  },
+  "8682631820190": {
+    "barcode": "8682631820190",
+    "marke": "Yutty",
+    "produkt": "Filled Sticks",
+    "preis": 1,
+    "paket": "225g",
+    "einheit": "€/St"
+  },
+  "8682631820213": {
+    "barcode": "8682631820213",
+    "marke": "Yutty",
+    "produkt": "Filled Sticks",
+    "preis": 1,
+    "paket": "225g",
+    "einheit": "€/St"
+  },
+  "8697436528653": {
+    "barcode": "8697436528653",
+    "marke": "Yutty",
+    "produkt": "Pamuk Sekeri",
+    "preis": 1.5,
+    "paket": "50g",
+    "einheit": "€/St"
+  },
+  "8682631815899": {
+    "barcode": "8682631815899",
+    "marke": "Yutty",
+    "produkt": "Ribbons",
+    "preis": 1,
+    "paket": "225g",
+    "einheit": "€/St"
+  },
+  "8682631820039": {
+    "barcode": "8682631820039",
+    "marke": "Yutty",
+    "produkt": "Ribbons Cola",
+    "preis": 1,
+    "paket": "225g",
+    "einheit": "€/St"
+  },
+  "8697436522972": {
+    "barcode": "8697436522972",
+    "marke": "Yutty",
+    "produkt": "Snakes",
+    "preis": 1,
+    "paket": "225g",
+    "einheit": "€/St"
+  },
+  "8682631805852": {
+    "barcode": "8682631805852",
+    "marke": "Yutty",
+    "produkt": "Spaghetti",
+    "preis": 1,
+    "paket": "225g",
+    "einheit": "€/St"
+  },
+  "8682631805890": {
+    "barcode": "8682631805890",
+    "marke": "Yutty",
+    "produkt": "Spaghetti",
+    "preis": 1,
+    "paket": "225g",
+    "einheit": "€/St"
+  },
+  "8682631805951": {
+    "barcode": "8682631805951",
+    "marke": "Yutty",
+    "produkt": "Spaghetti",
+    "preis": 1,
+    "paket": "225g",
+    "einheit": "€/St"
+  },
+  "8682631815950": {
+    "barcode": "8682631815950",
+    "marke": "Yutty",
+    "produkt": "Spaghetti",
+    "preis": 1,
+    "paket": "225g",
+    "einheit": "€/St"
+  },
+  "5011157630274": {
+    "barcode": "5011157630274",
+    "marke": "Tilda",
+    "produkt": "Tilda Basmati Reis 1 kg",
+    "preis": 5.99,
+    "paket": "1000g",
+    "einheit": "€/St"
+  },
+  "5011157630373": {
+    "barcode": "5011157630373",
+    "marke": "Tilda",
+    "produkt": "Tilda Basmati Reis Pure 2 kg",
+    "preis": 9.99,
+    "paket": "2000g",
+    "einheit": "€/St"
+  },
+  "4262505160313": {
+    "barcode": "4262505160313",
+    "marke": "Uludag",
+    "produkt": "Uludag Limonade 1Liter Flaschen",
+    "preis": 2.5,
+    "paket": "",
+    "einheit": "€/St"
+  },
+  "4262505160122": {
+    "barcode": "4262505160122",
+    "marke": "Uludag",
+    "produkt": "Uludag Portakal 1 Liter Flaschen",
+    "preis": 2.5,
+    "paket": "",
+    "einheit": "€/St"
+  },
+  "4262505160085": {
+    "barcode": "4262505160085",
+    "marke": "Uludag",
+    "produkt": "Uludag Portakal 500 ml Flasche",
+    "preis": 2,
+    "paket": "",
+    "einheit": "€/St"
+  },
+  "8690804027147": {
+    "barcode": "8690804027147",
+    "marke": "Suntat",
+    "produkt": "Cörek Otu 500g",
+    "preis": 8,
+    "paket": "500g",
+    "einheit": "€/St"
+  },
+  "8690804361128": {
+    "barcode": "8690804361128",
+    "marke": "Suntat",
+    "produkt": "Oregano 500g",
+    "preis": 4,
+    "paket": "500g",
+    "einheit": "€/St"
+  },
+  "8682241217700": {
+    "barcode": "8682241217700",
+    "marke": "Sleepy",
+    "produkt": "Sleepy Extra Temizlik (mor)",
+    "preis": 3.49,
+    "paket": "",
+    "einheit": "€/St"
+  },
+  "8682241217717": {
+    "barcode": "8682241217717",
+    "marke": "Sleepy",
+    "produkt": "Sleepy Extra Temizlik (kirmizi)",
+    "preis": 3.49,
+    "paket": "",
+    "einheit": "€/St"
+  },
+  "8682241220311": {
+    "barcode": "8682241220311",
+    "marke": "Sleepy",
+    "produkt": "Sleepy Extra Temizlik (blue)",
+    "preis": 3.49,
+    "paket": "",
+    "einheit": "€/St"
+  },
+  "8682241225309": {
+    "barcode": "8682241225309",
+    "marke": "Sleepy",
+    "produkt": "Sleepy Extra Temizlik (limon)",
+    "preis": 3.49,
+    "paket": "",
+    "einheit": "€/St"
+  },
+  "8682241225293": {
+    "barcode": "8682241225293",
+    "marke": "Sleepy",
+    "produkt": "Sleepy Extra Temizlik (elma)",
+    "preis": 3.49,
+    "paket": "",
+    "einheit": "€/St"
+  },
+  "8684641550654": {
+    "barcode": "8684641550654",
+    "marke": "Funzi",
+    "produkt": "Eyeball",
+    "preis": 0.5,
+    "paket": "",
+    "einheit": "€/St"
+  }
+}
