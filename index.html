@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Kasrik Bakkal – Preisfinder</title>
 
   <script src="https://unpkg.com/html5-qrcode" type="text/javascript"></script>
@@ -12,62 +13,113 @@
       font-family: Arial, sans-serif;
       max-width: 600px;
       margin: 0 auto;
-      padding: 20px;
-      text-align: center;
-      background: #f7f7f7;
+      padding: 12px;
+      background: #f5f5f5;
     }
 
     h1 {
-      margin-bottom: 5px;
+      text-align: center;
+      margin: 8px 0 2px;
     }
 
     .subtitle {
+      text-align: center;
       color: #666;
-      margin-bottom: 20px;
+      margin-bottom: 12px;
     }
 
     #reader {
       background: white;
-      padding: 10px;
+      padding: 6px;
       border-radius: 12px;
-      margin-bottom: 20px;
+      max-width: 360px;
+      margin: 0 auto 12px;
     }
 
     .result {
       background: white;
       border-radius: 12px;
-      padding: 20px;
-      margin-top: 20px;
+      padding: 16px;
+      text-align: center;
       box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      margin-bottom: 12px;
     }
 
     .product {
       font-size: 22px;
       font-weight: bold;
-      margin-bottom: 10px;
+      margin-bottom: 6px;
     }
 
     .price {
-      font-size: 32px;
+      font-size: 34px;
       font-weight: bold;
+      margin-bottom: 12px;
+    }
+
+    button {
+      border: none;
+      border-radius: 8px;
+      padding: 10px 16px;
+      font-size: 16px;
+      cursor: pointer;
+      margin: 4px;
+    }
+
+    .scanButton {
+      background: #222;
+      color: white;
+    }
+
+    .cart {
+      background: white;
+      border-radius: 12px;
+      padding: 16px;
+      margin-top: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .cart h2 {
+      margin-top: 0;
+    }
+
+    .cartItem {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #ddd;
+      padding: 10px 0;
+      gap: 8px;
+    }
+
+    .cartName {
+      flex: 1;
+      text-align: left;
+    }
+
+    .quantity {
+      white-space: nowrap;
+    }
+
+    .total {
+      font-size: 24px;
+      font-weight: bold;
+      text-align: right;
+      margin-top: 15px;
+    }
+
+    .empty {
+      color: #777;
+      text-align: center;
     }
 
     input {
       width: 90%;
-      padding: 12px;
-      font-size: 18px;
-      margin-top: 15px;
+      padding: 11px;
+      font-size: 17px;
       border: 1px solid #ccc;
       border-radius: 8px;
-    }
-
-    button {
-      padding: 12px 20px;
-      font-size: 17px;
-      margin-top: 10px;
-      border: none;
-      border-radius: 8px;
-      cursor: pointer;
+      margin-top: 8px;
     }
 
     .not-found {
@@ -82,9 +134,18 @@
   <h1>🛒 Kasrik Bakkal</h1>
   <div class="subtitle">Preisfinder</div>
 
+  <!-- SCANNER -->
   <div id="reader"></div>
 
-  <div class="result">
+  <div style="text-align:center;">
+    <button class="scanButton" onclick="startScanner()">
+      📷 Weiter scannen
+    </button>
+  </div>
+
+  <!-- ERGEBNIS -->
+  <div class="result" id="resultBox">
+
     <div id="resultText">
       Bitte einen Barcode scannen.
     </div>
@@ -98,8 +159,36 @@
 
     <br>
 
-    <button onclick="searchManual()">Preis suchen</button>
+    <button onclick="searchManual()">
+      Preis suchen
+    </button>
+
   </div>
+
+
+  <!-- WARENKORB -->
+  <div class="cart">
+
+    <h2>🛒 Mein Warenkorb</h2>
+
+    <div id="cartItems">
+      <div class="empty">
+        Noch keine Artikel
+      </div>
+    </div>
+
+    <div class="total">
+      Gesamt: <span id="cartTotal">0,00 €</span>
+    </div>
+
+    <div style="text-align:center;">
+      <button onclick="clearCart()">
+        🗑️ Warenkorb leeren
+      </button>
+    </div>
+
+  </div>
+
 
 <script>
 
@@ -107,82 +196,82 @@ const products = {
 
   "200000000001": {
     name: "Spaghetti 500 g",
-    price: "1,49 €"
+    price: 1.49
   },
 
   "200000000002": {
     name: "Penne 500 g",
-    price: "1,59 €"
+    price: 1.59
   },
 
   "200000000003": {
     name: "Basmati Reis 1 kg",
-    price: "2,99 €"
+    price: 2.99
   },
 
   "200000000004": {
     name: "Tomaten gehackt 400 g",
-    price: "1,19 €"
+    price: 1.19
   },
 
   "200000000005": {
     name: "Kichererbsen 400 g",
-    price: "1,29 €"
+    price: 1.29
   },
 
   "200000000006": {
     name: "Weiße Bohnen 400 g",
-    price: "1,39 €"
+    price: 1.39
   },
 
   "200000000007": {
     name: "Oliven grün 500 g",
-    price: "3,49 €"
+    price: 3.49
   },
 
   "200000000008": {
     name: "Tomatenmark 200 g",
-    price: "0,99 €"
+    price: 0.99
   },
 
   "200000000009": {
     name: "Rote Linsen 500 g",
-    price: "2,19 €"
+    price: 2.19
   },
 
   "200000000010": {
     name: "Bulgur 1 kg",
-    price: "2,49 €"
+    price: 2.49
   },
 
   "4061461435721": {
     name: "Kräuterli",
-    price: "1,29 €"
+    price: 1.29
   }
 
 };
 
 
 let scanner = null;
+let scanning = false;
 let alreadyScanned = false;
 
+let cart = {};
+
+
+function formatPrice(price) {
+  return price.toFixed(2).replace(".", ",") + " €";
+}
+
+
+/* PRODUKT ANZEIGEN */
 
 function showProduct(code) {
 
   const result = document.getElementById("resultText");
   const product = products[code];
 
-  if (product) {
-
-    result.innerHTML =
-      '<div class="product">' +
-      product.name +
-      '</div>' +
-      '<div class="price">' +
-      product.price +
-      '</div>';
-
-  } else {
+  if (!product) {
 
     result.innerHTML =
       '<div class="not-found">' +
@@ -190,9 +279,162 @@ function showProduct(code) {
       'EAN: ' + code +
       '</div>';
 
+    return;
+
   }
+
+
+  result.innerHTML =
+    '<div class="product">' +
+    product.name +
+    '</div>' +
+
+    '<div class="price">' +
+    formatPrice(product.price) +
+    '</div>' +
+
+    '<button onclick="addToCart(\'' + code + '\')">' +
+    '➕ In Warenkorb' +
+    '</button>';
+
+
+  addToCart(code);
+
+  setTimeout(function() {
+
+    document.getElementById("resultBox").scrollIntoView({
+      behavior: "smooth",
+      block: "start"
+    });
+
+  }, 100);
+
 }
 
+
+/* WARENKORB */
+
+function addToCart(code) {
+
+  if (!products[code]) return;
+
+  if (cart[code]) {
+
+    cart[code].quantity++;
+
+  } else {
+
+    cart[code] = {
+      name: products[code].name,
+      price: products[code].price,
+      quantity: 1
+    };
+
+  }
+
+  updateCart();
+
+}
+
+
+function changeQuantity(code, change) {
+
+  if (!cart[code]) return;
+
+  cart[code].quantity += change;
+
+  if (cart[code].quantity <= 0) {
+    delete cart[code];
+  }
+
+  updateCart();
+
+}
+
+
+function updateCart() {
+
+  const container = document.getElementById("cartItems");
+
+  const codes = Object.keys(cart);
+
+  if (codes.length === 0) {
+
+    container.innerHTML =
+      '<div class="empty">Noch keine Artikel</div>';
+
+    document.getElementById("cartTotal").textContent =
+      "0,00 €";
+
+    return;
+
+  }
+
+
+  let html = "";
+  let total = 0;
+
+
+  codes.forEach(function(code) {
+
+    const item = cart[code];
+
+    const itemTotal =
+      item.price * item.quantity;
+
+    total += itemTotal;
+
+
+    html +=
+
+      '<div class="cartItem">' +
+
+        '<div class="cartName">' +
+          '<strong>' + item.name + '</strong><br>' +
+          formatPrice(item.price) +
+        '</div>' +
+
+        '<div class="quantity">' +
+
+          '<button onclick="changeQuantity(\'' +
+          code +
+          '\', -1)">−</button>' +
+
+          item.quantity +
+
+          '<button onclick="changeQuantity(\'' +
+          code +
+          '\', 1)">+</button>' +
+
+        '</div>' +
+
+        '<div>' +
+          formatPrice(itemTotal) +
+        '</div>' +
+
+      '</div>';
+
+  });
+
+
+  container.innerHTML = html;
+
+  document.getElementById("cartTotal").textContent =
+    formatPrice(total);
+
+}
+
+
+function clearCart() {
+
+  cart = {};
+
+  updateCart();
+
+}
+
+
+/* MANUELLE EINGABE */
 
 function searchManual() {
 
@@ -200,11 +442,15 @@ function searchManual() {
     document.getElementById("manualCode").value.trim();
 
   if (code) {
+
     showProduct(code);
+
   }
 
 }
 
+
+/* SCANNER */
 
 function onScanSuccess(decodedText) {
 
@@ -214,39 +460,49 @@ function onScanSuccess(decodedText) {
 
   showProduct(decodedText);
 
-  if (scanner) {
-    scanner.clear().catch(function(error) {
-      console.log(error);
-    });
-  }
+  stopScanner();
 
 }
 
 
 function onScanFailure(error) {
-  // Kein Problem – während des Suchens sind Fehlermeldungen normal.
+  // Während der Suche sind Fehlermeldungen normal.
 }
 
 
 function startScanner() {
 
-  scanner = new Html5Qrcode("reader");
+  if (scanning) return;
 
-  const config = {
-    fps: 15,
-    qrbox: {
-      width: 280,
-      height: 160
-    },
-    aspectRatio: 1.7777778
-  };
+  alreadyScanned = false;
+
+  if (!scanner) {
+
+    scanner = new Html5Qrcode("reader");
+
+  }
+
 
   scanner.start(
+
     { facingMode: "environment" },
-    config,
+
+    {
+      fps: 15,
+      qrbox: {
+        width: 280,
+        height: 130
+      }
+    },
+
     onScanSuccess,
     onScanFailure
-  ).catch(function(error) {
+
+  ).then(function() {
+
+    scanning = true;
+
+  }).catch(function(error) {
 
     document.getElementById("resultText").innerHTML =
       '<div class="not-found">' +
@@ -257,6 +513,25 @@ function startScanner() {
 
 }
 
+
+function stopScanner() {
+
+  if (!scanner || !scanning) return;
+
+  scanner.stop().then(function() {
+
+    scanning = false;
+
+  }).catch(function(error) {
+
+    scanning = false;
+
+  });
+
+}
+
+
+/* START */
 
 startScanner();
 
