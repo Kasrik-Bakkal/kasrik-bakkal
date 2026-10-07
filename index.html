@@ -963,9 +963,18 @@ async function shareCart() {
 
 }
 
+/* KAMERA AUTOMATISCH STARTEN */
 
-/* KEIN AUTOMATISCHER KAMERA-START */
+window.addEventListener("load", function() {
 
+  setTimeout(function() {
+
+    startScanner();
+
+  }, 500);
+
+});
+  
 </script>
 
 </body>
