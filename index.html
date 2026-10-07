@@ -9,6 +9,7 @@
 <script src="https://unpkg.com/html5-qrcode" type="text/javascript"></script>
 
 <style>
+
 :root {
   --red: #b5121b;
   --dark: #171717;
@@ -97,8 +98,9 @@ button:active {
   color: #111;
 }
 
+/* WICHTIG: Bordeaux statt Grün/Lila */
 .green-button {
-  background: var(--green);
+  background: #672635;
   color: white;
 }
 
@@ -298,6 +300,7 @@ input {
   font-size: 12px;
   margin: 20px 0;
 }
+
 </style>
 </head>
 
@@ -897,6 +900,16 @@ function clearCart() {
 
   updateCart();
 
+  /*
+     Auch das zuletzt angezeigte/gesuchte
+     Produkt löschen.
+  */
+
+  document
+    .getElementById("resultText")
+    .innerHTML =
+      "Bitte einen Barcode scannen oder einen Artikel suchen.";
+
 }
 
 
@@ -1447,6 +1460,19 @@ function startScanner() {
 
   alreadyScanned = false;
 
+  /*
+     Lichtstatus beim nächsten Scan
+     immer sauber zurücksetzen.
+  */
+
+  torchOn = false;
+
+  const torchButton =
+    document.getElementById("torchButton");
+
+  torchButton.textContent =
+    "🔦 Licht";
+
 
   if (!scanner) {
 
@@ -1521,6 +1547,17 @@ function stopScanner() {
 
       scanning = false;
 
+      /*
+         Taschenlampenstatus nach jedem
+         Scan zurücksetzen.
+      */
+
+      torchOn = false;
+
+      document
+        .getElementById("torchButton")
+        .textContent = "🔦 Licht";
+
     })
 
     .catch(function(error) {
@@ -1528,6 +1565,12 @@ function stopScanner() {
       console.error(error);
 
       scanning = false;
+
+      torchOn = false;
+
+      document
+        .getElementById("torchButton")
+        .textContent = "🔦 Licht";
 
     });
 
@@ -1557,8 +1600,10 @@ async function toggleTorch() {
       scanner.getRunningTrackCapabilities();
 
 
-    if (!capabilities ||
-        !capabilities.torch) {
+    if (
+      !capabilities ||
+      !capabilities.torch
+    ) {
 
       alert(
         "Die Taschenlampe wird von diesem Handy bzw. Browser nicht unterstützt."
