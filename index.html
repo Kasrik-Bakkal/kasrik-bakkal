@@ -10,12 +10,22 @@
 
 <style>
 
+/* =========================================================
+   KASRIK BAKKAL
+   VARIANTE 27 – BORDEAUX & SAND
+   ========================================================= */
+
 :root {
-  --red: #b5121b;
-  --dark: #171717;
-  --gold: #d6a72c;
-  --light: #f5f5f5;
-  --green: #167447;
+  --bordeaux: #672635;
+  --sand: #C8B08E;
+  --background: #F6F0E5;
+
+  --white: #ffffff;
+  --text: #292323;
+  --muted: #716966;
+  --border: #ddd2c5;
+  --soft: #faf7f2;
+  --danger: #8f2637;
 }
 
 * {
@@ -27,18 +37,22 @@ body {
   max-width: 600px;
   margin: 0 auto;
   padding: 12px;
-  background: var(--light);
-  color: var(--dark);
+  background: var(--background);
+  color: var(--text);
 }
 
+/* =========================================================
+   HEADER
+   ========================================================= */
+
 .header {
-  background: var(--dark);
+  background: var(--bordeaux);
   color: white;
-  border-radius: 14px;
-  padding: 16px;
+  border-radius: 16px;
+  padding: 18px 16px;
   text-align: center;
   margin-bottom: 12px;
-  border-bottom: 5px solid var(--gold);
+  border-bottom: 5px solid var(--sand);
 }
 
 .header h1 {
@@ -48,20 +62,67 @@ body {
 
 .header p {
   margin: 5px 0 0;
-  color: #eee;
+  color: #f4e9e3;
 }
 
+/* =========================================================
+   BOXEN
+   ========================================================= */
+
 .box {
-  background: white;
+  background: var(--white);
   border-radius: 14px;
   padding: 15px;
   margin-bottom: 12px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+  box-shadow: 0 2px 8px rgba(103, 38, 53, 0.10);
 }
+
+/* =========================================================
+   SUCHLEISTE
+   ========================================================= */
+
+.search-box {
+  position: relative;
+}
+
+.search-label {
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--bordeaux);
+  margin-bottom: 7px;
+}
+
+#mainSearch {
+  width: 100%;
+  padding: 14px;
+  font-size: 17px;
+  border: 2px solid var(--sand);
+  border-radius: 10px;
+  background: #fffdf9;
+  color: var(--text);
+  outline: none;
+}
+
+#mainSearch:focus {
+  border-color: var(--bordeaux);
+}
+
+.search-results {
+  margin-top: 8px;
+}
+
+/* =========================================================
+   SCANNER
+   ========================================================= */
 
 #reader {
   max-width: 360px;
   margin: auto;
+}
+
+.scanner-buttons {
+  text-align: center;
+  margin-top: 8px;
 }
 
 button {
@@ -78,14 +139,14 @@ button:active {
   transform: scale(0.97);
 }
 
-.red-button {
-  background: var(--red);
+.bordeaux-button {
+  background: var(--bordeaux);
   color: white;
 }
 
-.gold-button {
-  background: var(--gold);
-  color: #171717;
+.sand-button {
+  background: var(--sand);
+  color: var(--text);
 }
 
 .gray-button {
@@ -95,31 +156,66 @@ button:active {
 
 .light-button {
   background: #eee;
-  color: #111;
+  color: #222;
 }
 
-/* WICHTIG: Bordeaux statt Grün/Lila */
-.green-button {
-  background: #672635;
-  color: white;
-}
-
-input {
-  width: 100%;
-  padding: 12px;
-  font-size: 17px;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  margin-top: 7px;
-}
+/* =========================================================
+   TITEL
+   ========================================================= */
 
 .section-title {
-  font-size: 21px;
+  font-size: 20px;
   font-weight: bold;
   margin-bottom: 10px;
-  border-bottom: 3px solid var(--gold);
+  border-bottom: 3px solid var(--sand);
   padding-bottom: 8px;
+  color: var(--bordeaux);
 }
+
+/* =========================================================
+   SUCHERGEBNISSE
+   ========================================================= */
+
+.search-result {
+  background: var(--soft);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 12px;
+  margin-top: 8px;
+  cursor: pointer;
+}
+
+.search-result:active {
+  background: #f0e8de;
+}
+
+.search-result-brand {
+  font-weight: bold;
+  font-size: 15px;
+  color: var(--bordeaux);
+}
+
+.search-result-product {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 3px;
+}
+
+.search-result-package {
+  color: var(--muted);
+  margin-top: 3px;
+}
+
+.search-result-price {
+  color: var(--bordeaux);
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+/* =========================================================
+   ERGEBNIS
+   ========================================================= */
 
 .result {
   text-align: center;
@@ -133,94 +229,39 @@ input {
 
 .brand {
   font-size: 17px;
-  color: #555;
+  color: var(--muted);
 }
 
 .package {
   font-size: 16px;
-  color: #555;
+  color: var(--muted);
   margin-top: 4px;
 }
 
 .price {
-  color: var(--red);
+  color: var(--bordeaux);
   font-size: 36px;
   font-weight: bold;
   margin: 10px 0;
 }
 
 .not-found {
-  color: var(--red);
+  color: var(--danger);
   font-weight: bold;
 }
 
-.search-result {
-  background: #fafafa;
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  padding: 12px;
-  margin-top: 8px;
-  cursor: pointer;
-}
-
-.search-result:active {
-  background: #eee;
-}
-
-.search-result-brand {
-  font-weight: bold;
-  font-size: 15px;
-}
-
-.search-result-product {
-  font-size: 18px;
-  font-weight: bold;
-  margin-top: 3px;
-}
-
-.search-result-package {
-  color: #666;
-  margin-top: 3px;
-}
-
-.search-result-price {
-  color: var(--red);
-  font-size: 20px;
-  font-weight: bold;
-  margin-top: 5px;
-}
-
-.price-list-item {
-  border-bottom: 1px solid #ddd;
-  padding: 11px 0;
-}
-
-.price-list-item:last-child {
-  border-bottom: none;
-}
-
-.price-list-brand {
-  font-weight: bold;
-}
-
-.price-list-product {
-  font-size: 17px;
-}
-
-.price-list-package {
-  color: #666;
+.result-info {
+  color: var(--muted);
   font-size: 14px;
+  margin-top: 8px;
 }
 
-.price-list-price {
-  color: var(--red);
-  font-weight: bold;
-  font-size: 18px;
-  margin-top: 3px;
-}
+/* =========================================================
+   WARENKORB
+   ========================================================= */
 
 .cart-item {
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid var(--border);
   padding: 12px 0;
 }
 
@@ -234,12 +275,12 @@ input {
 }
 
 .cart-brand {
-  color: #555;
+  color: var(--muted);
   font-size: 14px;
 }
 
 .cart-package {
-  color: #555;
+  color: var(--muted);
   font-size: 14px;
 }
 
@@ -277,12 +318,12 @@ input {
   font-weight: bold;
   text-align: right;
   margin-top: 15px;
-  color: var(--red);
+  color: var(--bordeaux);
 }
 
 .empty {
   text-align: center;
-  color: #777;
+  color: var(--muted);
   padding: 12px;
 }
 
@@ -290,41 +331,100 @@ input {
   text-align: center;
 }
 
-.hidden {
-  display: none;
+/* =========================================================
+   ALLGEMEIN
+   ========================================================= */
+
+input {
+  width: 100%;
+  padding: 12px;
+  font-size: 17px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  margin-top: 7px;
 }
 
 .footer {
   text-align: center;
-  color: #888;
+  color: #8a7e78;
   font-size: 12px;
   margin: 20px 0;
+}
+
+.hidden {
+  display: none;
 }
 
 </style>
 </head>
 
+
 <body>
 
+
+<!-- =======================================================
+     HEADER
+     ======================================================= -->
+
 <div class="header">
+
   <h1>🛒 KASRIK BAKKAL</h1>
+
   <p>Preisfinder</p>
+
 </div>
 
 
-<!-- SCANNER -->
+<!-- =======================================================
+     GEMEINSAME SUCHLEISTE
+     ======================================================= -->
+
+<div class="box search-box">
+
+  <div class="search-label">
+    🔎 Suche
+  </div>
+
+  <input
+    type="text"
+    id="mainSearch"
+    placeholder="Barcode, Marke, Produkt ..."
+    autocomplete="off"
+  >
+
+  <div
+    id="searchResults"
+    class="search-results"
+  ></div>
+
+</div>
+
+
+<!-- =======================================================
+     SCANNER
+     ======================================================= -->
 
 <div class="box">
 
+  <div class="section-title">
+    📷 Barcode scannen
+  </div>
+
   <div id="reader"></div>
 
-  <div class="center">
+  <div class="scanner-buttons">
 
-    <button id="scanButton" class="red-button">
+    <button
+      id="scanButton"
+      class="bordeaux-button"
+    >
       📷 Scanner starten
     </button>
 
-    <button id="torchButton" class="gray-button">
+    <button
+      id="torchButton"
+      class="gray-button"
+    >
       🔦 Licht
     </button>
 
@@ -333,96 +433,31 @@ input {
 </div>
 
 
-<!-- EAN SUCHE -->
-
-<div class="box">
-
-  <div class="section-title">
-    🔢 EAN-Suche
-  </div>
-
-  <input
-    type="text"
-    id="manualCode"
-    placeholder="EAN / Barcode eingeben"
-    inputmode="numeric"
-  >
-
-  <div class="center">
-
-    <button id="manualSearchButton" class="red-button">
-      🔎 Preis suchen
-    </button>
-
-  </div>
-
-</div>
-
-
-<!-- TEXTSUCHE -->
-
-<div class="box">
-
-  <div class="section-title">
-    🔎 Produktsuche
-  </div>
-
-  <input
-    type="text"
-    id="textSearch"
-    placeholder="Marke, Produkt oder Packung suchen..."
-  >
-
-  <div id="searchResults"></div>
-
-</div>
-
-
-<!-- PREISLISTE -->
-
-<div class="box">
-
-  <div class="center">
-
-    <button id="priceListButton" class="gold-button">
-      📋 Preisliste anzeigen
-    </button>
-
-  </div>
-
-  <div id="priceListBox" class="hidden">
-
-    <input
-      type="text"
-      id="priceListSearch"
-      placeholder="Preisliste durchsuchen..."
-    >
-
-    <div id="priceList"></div>
-
-  </div>
-
-</div>
-
-
-<!-- ERGEBNIS -->
+<!-- =======================================================
+     ERGEBNIS
+     ======================================================= -->
 
 <div class="box result">
 
   <div id="resultText">
+
     Bitte einen Barcode scannen oder einen Artikel suchen.
+
   </div>
 
 </div>
 
 
-<!-- WARENKORB -->
+<!-- =======================================================
+     WARENKORB
+     ======================================================= -->
 
 <div class="box">
 
   <div class="section-title">
     🛒 Mein Warenkorb
   </div>
+
 
   <div id="cartItems">
 
@@ -432,18 +467,31 @@ input {
 
   </div>
 
+
   <div class="total">
+
     Gesamt:
-    <span id="cartTotal">0,00 €</span>
+    <span id="cartTotal">
+      0,00 €
+    </span>
+
   </div>
+
 
   <div class="center">
 
-    <button id="shareButton" class="gold-button">
+    <button
+      id="shareButton"
+      class="sand-button"
+    >
       📤 Einkaufsliste teilen
     </button>
 
-    <button id="clearButton" class="gray-button">
+
+    <button
+      id="clearButton"
+      class="gray-button"
+    >
       🗑️ Warenkorb leeren
     </button>
 
@@ -458,6 +506,7 @@ input {
 
 
 <script>
+
 
 /* =========================================================
    PRODUKTDATEN
@@ -493,41 +542,61 @@ async function loadProducts() {
   );
 
   if (!response.ok) {
+
     throw new Error(
       "Produktdaten konnten nicht geladen werden."
     );
+
   }
 
   products = await response.json();
 
   return products;
+
 }
 
 
 /* =========================================================
-   EINZELNES PRODUKT
+   EINZELNES PRODUKT LADEN
    ========================================================= */
 
 async function getProduct(code) {
 
-  const data = await loadProducts();
+  const data =
+    await loadProducts();
 
-  const cleanCode = String(code).trim();
+  const cleanCode =
+    String(code).trim();
 
-  const product = data[cleanCode];
+  const product =
+    data[cleanCode];
 
   if (!product) {
     return null;
   }
 
   return {
-    code: String(product.barcode),
-    name: product.produkt || "",
-    price: Number(product.preis) || 0,
-    marke: product.marke || "",
-    paket: product.paket || "",
-    einheit: product.einheit || ""
+
+    code:
+      String(product.barcode),
+
+    name:
+      product.produkt || "",
+
+    price:
+      Number(product.preis) || 0,
+
+    marke:
+      product.marke || "",
+
+    paket:
+      product.paket || "",
+
+    einheit:
+      product.einheit || ""
+
   };
+
 }
 
 
@@ -567,27 +636,38 @@ function escapeHtml(value) {
 async function showProduct(code) {
 
   const result =
-    document.getElementById("resultText");
+    document.getElementById(
+      "resultText"
+    );
 
   result.innerHTML =
     "🔎 Preis wird gesucht...";
+
 
   try {
 
     const product =
       await getProduct(code);
 
+
     if (!product) {
 
       result.innerHTML =
+
         '<div class="not-found">' +
+
         '❌ Artikel nicht gefunden' +
+
         '<br><br>' +
+
         'EAN: ' +
+
         escapeHtml(code) +
+
         '</div>';
 
       return;
+
     }
 
 
@@ -609,13 +689,20 @@ async function showProduct(code) {
       formatPrice(product.price) +
       '</div>' +
 
-      '<button id="addResultButton" class="green-button">' +
+      '<button ' +
+      'id="addResultButton" ' +
+      'class="bordeaux-button">' +
+
       '➕ In Warenkorb' +
+
       '</button>';
 
 
     const addButton =
-      document.getElementById("addResultButton");
+      document.getElementById(
+        "addResultButton"
+      );
+
 
     addButton.addEventListener(
       "click",
@@ -632,10 +719,15 @@ async function showProduct(code) {
     console.error(error);
 
     result.innerHTML =
+
       '<div class="not-found">' +
+
       '❌ Produktdaten konnten nicht geladen werden.' +
+
       '<br><br>' +
+
       'Bitte erneut versuchen.' +
+
       '</div>';
 
   }
@@ -644,12 +736,14 @@ async function showProduct(code) {
 
 
 /* =========================================================
-   WARENKORB
+   WARENKORB – ARTIKEL HINZUFÜGEN
    ========================================================= */
 
 function addToCart(product) {
 
-  const code = product.code;
+  const code =
+    product.code;
+
 
   if (cart[code]) {
 
@@ -659,21 +753,28 @@ function addToCart(product) {
 
     cart[code] = {
 
-      code: product.code,
+      code:
+        product.code,
 
-      name: product.name,
+      name:
+        product.name,
 
-      marke: product.marke,
+      marke:
+        product.marke,
 
-      paket: product.paket,
+      paket:
+        product.paket,
 
-      price: product.price,
+      price:
+        product.price,
 
-      quantity: 1
+      quantity:
+        1
 
     };
 
   }
+
 
   updateCart();
 
@@ -684,19 +785,28 @@ function addToCart(product) {
    MENGE ÄNDERN
    ========================================================= */
 
-function changeQuantity(code, change) {
+function changeQuantity(
+  code,
+  change
+) {
 
   if (!cart[code]) {
     return;
   }
 
-  cart[code].quantity += change;
 
-  if (cart[code].quantity <= 0) {
+  cart[code].quantity +=
+    change;
+
+
+  if (
+    cart[code].quantity <= 0
+  ) {
 
     delete cart[code];
 
   }
+
 
   updateCart();
 
@@ -710,23 +820,34 @@ function changeQuantity(code, change) {
 function updateCart() {
 
   const container =
-    document.getElementById("cartItems");
+    document.getElementById(
+      "cartItems"
+    );
+
 
   const codes =
     Object.keys(cart);
 
+
   if (codes.length === 0) {
 
     container.innerHTML =
+
       '<div class="empty">' +
+
       'Noch keine Artikel' +
+
       '</div>';
+
 
     document
       .getElementById("cartTotal")
-      .textContent = "0,00 €";
+      .textContent =
+      "0,00 €";
+
 
     return;
+
   }
 
 
@@ -735,157 +856,239 @@ function updateCart() {
   let total = 0;
 
 
-  codes.forEach(function(code) {
+  codes.forEach(
+    function(code) {
 
-    const item = cart[code];
-
-    const itemTotal =
-      item.price * item.quantity;
-
-    total += itemTotal;
+      const item =
+        cart[code];
 
 
-    const itemBox =
-      document.createElement("div");
-
-    itemBox.className = "cart-item";
-
-
-    const name =
-      document.createElement("div");
-
-    name.className = "cart-name";
-
-    name.textContent =
-      item.name;
+      const itemTotal =
+        item.price *
+        item.quantity;
 
 
-    const brand =
-      document.createElement("div");
-
-    brand.className = "cart-brand";
-
-    brand.textContent =
-      item.marke;
+      total +=
+        itemTotal;
 
 
-    const packageInfo =
-      document.createElement("div");
+      const itemBox =
+        document.createElement(
+          "div"
+        );
 
-    packageInfo.className = "cart-package";
-
-    packageInfo.textContent =
-      item.paket;
-
-
-    const controls =
-      document.createElement("div");
-
-    controls.className =
-      "cart-controls";
+      itemBox.className =
+        "cart-item";
 
 
-    const quantityControls =
-      document.createElement("div");
+      /* Produktname */
 
-    quantityControls.className =
-      "quantity-controls";
+      const name =
+        document.createElement(
+          "div"
+        );
 
+      name.className =
+        "cart-name";
 
-    const minus =
-      document.createElement("button");
-
-    minus.className =
-      "quantity-button";
-
-    minus.textContent = "−";
+      name.textContent =
+        item.name;
 
 
-    minus.addEventListener(
-      "click",
-      function() {
+      /* Marke */
 
-        changeQuantity(code, -1);
+      const brand =
+        document.createElement(
+          "div"
+        );
+
+      brand.className =
+        "cart-brand";
+
+      brand.textContent =
+        item.marke;
+
+
+      /* Packung */
+
+      const packageInfo =
+        document.createElement(
+          "div"
+        );
+
+      packageInfo.className =
+        "cart-package";
+
+      packageInfo.textContent =
+        item.paket;
+
+
+      /* Controls */
+
+      const controls =
+        document.createElement(
+          "div"
+        );
+
+      controls.className =
+        "cart-controls";
+
+
+      const quantityControls =
+        document.createElement(
+          "div"
+        );
+
+      quantityControls.className =
+        "quantity-controls";
+
+
+      /* Minus */
+
+      const minus =
+        document.createElement(
+          "button"
+        );
+
+      minus.className =
+        "quantity-button";
+
+      minus.textContent =
+        "−";
+
+
+      minus.addEventListener(
+        "click",
+        function() {
+
+          changeQuantity(
+            code,
+            -1
+          );
+
+        }
+      );
+
+
+      /* Menge */
+
+      const quantity =
+        document.createElement(
+          "span"
+        );
+
+      quantity.className =
+        "quantity-number";
+
+      quantity.textContent =
+        item.quantity;
+
+
+      /* Plus */
+
+      const plus =
+        document.createElement(
+          "button"
+        );
+
+      plus.className =
+        "quantity-button";
+
+      plus.textContent =
+        "+";
+
+
+      plus.addEventListener(
+        "click",
+        function() {
+
+          changeQuantity(
+            code,
+            1
+          );
+
+        }
+      );
+
+
+      quantityControls.appendChild(
+        minus
+      );
+
+      quantityControls.appendChild(
+        quantity
+      );
+
+      quantityControls.appendChild(
+        plus
+      );
+
+
+      /* Preis */
+
+      const price =
+        document.createElement(
+          "div"
+        );
+
+      price.className =
+        "cart-price";
+
+      price.textContent =
+        formatPrice(
+          itemTotal
+        );
+
+
+      controls.appendChild(
+        quantityControls
+      );
+
+      controls.appendChild(
+        price
+      );
+
+
+      itemBox.appendChild(
+        name
+      );
+
+
+      if (item.marke) {
+
+        itemBox.appendChild(
+          brand
+        );
 
       }
-    );
 
 
-    const quantity =
-      document.createElement("span");
+      if (item.paket) {
 
-    quantity.className =
-      "quantity-number";
-
-    quantity.textContent =
-      item.quantity;
-
-
-    const plus =
-      document.createElement("button");
-
-    plus.className =
-      "quantity-button";
-
-    plus.textContent = "+";
-
-
-    plus.addEventListener(
-      "click",
-      function() {
-
-        changeQuantity(code, 1);
+        itemBox.appendChild(
+          packageInfo
+        );
 
       }
-    );
 
 
-    quantityControls.appendChild(minus);
-
-    quantityControls.appendChild(quantity);
-
-    quantityControls.appendChild(plus);
+      itemBox.appendChild(
+        controls
+      );
 
 
-    const price =
-      document.createElement("div");
+      container.appendChild(
+        itemBox
+      );
 
-    price.className =
-      "cart-price";
-
-    price.textContent =
-      formatPrice(itemTotal);
-
-
-    controls.appendChild(
-      quantityControls
-    );
-
-    controls.appendChild(price);
-
-
-    itemBox.appendChild(name);
-
-    if (item.marke) {
-      itemBox.appendChild(brand);
     }
-
-    if (item.paket) {
-      itemBox.appendChild(packageInfo);
-    }
-
-    itemBox.appendChild(controls);
-
-
-    container.appendChild(itemBox);
-
-  });
+  );
 
 
   document
     .getElementById("cartTotal")
     .textContent =
-      formatPrice(total);
+    formatPrice(total);
 
 }
 
@@ -900,61 +1103,50 @@ function clearCart() {
 
   updateCart();
 
+
   /*
-     Auch das zuletzt angezeigte/gesuchte
+     Auch das zuletzt angezeigte
      Produkt löschen.
   */
 
   document
-    .getElementById("resultText")
+    .getElementById(
+      "resultText"
+    )
     .innerHTML =
-      "Bitte einen Barcode scannen oder einen Artikel suchen.";
+
+      "Bitte einen Barcode scannen " +
+      "oder einen Artikel suchen.";
 
 }
 
 
 /* =========================================================
-   MANUELLE EAN-SUCHE
+   HAUPTSUCHE
+   BARCODE + MARKE + PRODUKT + PACKUNG
    ========================================================= */
 
-function searchManual() {
+async function searchMain() {
 
   const input =
-    document.getElementById("manualCode");
+    document.getElementById(
+      "mainSearch"
+    );
 
-  const code =
-    input.value.trim();
-
-  if (!code) {
-
-    input.focus();
-
-    return;
-
-  }
-
-  showProduct(code);
-
-}
-
-
-/* =========================================================
-   TEXTSUCHE
-   ========================================================= */
-
-async function searchText() {
-
-  const input =
-    document.getElementById("textSearch");
 
   const search =
     input.value
       .trim()
       .toLowerCase();
 
-  const container =
-    document.getElementById("searchResults");
 
+  const container =
+    document.getElementById(
+      "searchResults"
+    );
+
+
+  /* Keine Eingabe */
 
   if (!search) {
 
@@ -975,31 +1167,133 @@ async function searchText() {
       await loadProducts();
 
 
-    const matches =
-      Object.values(data).filter(
-        function(product) {
+    /*
+       Wenn es eine exakte
+       Barcode-Suche ist,
+       Produkt direkt anzeigen.
+    */
 
-          const text = (
+    const exactProduct =
+      data[input.value.trim()];
 
-            String(product.marke || "") +
-            " " +
-            String(product.produkt || "") +
-            " " +
-            String(product.paket || "")
 
-          ).toLowerCase();
+    if (exactProduct) {
 
-          return text.includes(search);
+      container.innerHTML = "";
+
+
+      const result =
+        document.createElement(
+          "div"
+        );
+
+      result.className =
+        "search-result";
+
+
+      result.innerHTML =
+
+        '<div class="search-result-brand">' +
+        escapeHtml(
+          exactProduct.marke || ""
+        ) +
+        '</div>' +
+
+        '<div class="search-result-product">' +
+        escapeHtml(
+          exactProduct.produkt || ""
+        ) +
+        '</div>' +
+
+        '<div class="search-result-package">' +
+        escapeHtml(
+          exactProduct.paket || ""
+        ) +
+        '</div>' +
+
+        '<div class="search-result-price">' +
+        formatPrice(
+          exactProduct.preis
+        ) +
+        '</div>';
+
+
+      result.addEventListener(
+        "click",
+        function() {
+
+          showProduct(
+            exactProduct.barcode
+          );
+
+          container.innerHTML = "";
 
         }
       );
 
 
-    if (matches.length === 0) {
+      container.appendChild(
+        result
+      );
+
+
+      return;
+
+    }
+
+
+    /*
+       Normale Textsuche
+    */
+
+    const matches =
+      Object.values(data)
+        .filter(
+          function(product) {
+
+            const text =
+
+              String(
+                product.barcode || ""
+              ) +
+
+              " " +
+
+              String(
+                product.marke || ""
+              ) +
+
+              " " +
+
+              String(
+                product.produkt || ""
+              ) +
+
+              " " +
+
+              String(
+                product.paket || ""
+              );
+
+
+            return text
+              .toLowerCase()
+              .includes(search);
+
+          }
+        );
+
+
+    if (
+      matches.length === 0
+    ) {
 
       container.innerHTML =
+
         '<div class="empty">' +
+
         'Keine Artikel gefunden.' +
+
         '</div>';
 
       return;
@@ -1010,426 +1304,157 @@ async function searchText() {
     container.innerHTML = "";
 
 
-    matches.forEach(function(product) {
+    matches.forEach(
+      function(product) {
 
-      const result =
-        document.createElement("div");
-
-      result.className =
-        "search-result";
-
-
-      const brand =
-        document.createElement("div");
-
-      brand.className =
-        "search-result-brand";
-
-      brand.textContent =
-        product.marke || "";
-
-
-      const name =
-        document.createElement("div");
-
-      name.className =
-        "search-result-product";
-
-      name.textContent =
-        product.produkt || "";
-
-
-      const packageInfo =
-        document.createElement("div");
-
-      packageInfo.className =
-        "search-result-package";
-
-      packageInfo.textContent =
-        product.paket || "";
-
-
-      const price =
-        document.createElement("div");
-
-      price.className =
-        "search-result-price";
-
-      price.textContent =
-        formatPrice(product.preis);
-
-
-      result.appendChild(brand);
-
-      result.appendChild(name);
-
-      if (product.paket) {
-        result.appendChild(packageInfo);
-      }
-
-      result.appendChild(price);
-
-
-      result.addEventListener(
-        "click",
-        function() {
-
-          const normalized = {
-
-            code: String(product.barcode),
-
-            name: product.produkt || "",
-
-            marke: product.marke || "",
-
-            paket: product.paket || "",
-
-            price: Number(product.preis) || 0,
-
-            einheit: product.einheit || ""
-
-          };
-
-
-          showProduct(
-            product.barcode
+        const result =
+          document.createElement(
+            "div"
           );
 
-          addToCart(normalized);
+        result.className =
+          "search-result";
+
+
+        const brand =
+          document.createElement(
+            "div"
+          );
+
+        brand.className =
+          "search-result-brand";
+
+        brand.textContent =
+          product.marke || "";
+
+
+        const name =
+          document.createElement(
+            "div"
+          );
+
+        name.className =
+          "search-result-product";
+
+        name.textContent =
+          product.produkt || "";
+
+
+        const packageInfo =
+          document.createElement(
+            "div"
+          );
+
+        packageInfo.className =
+          "search-result-package";
+
+        packageInfo.textContent =
+          product.paket || "";
+
+
+        const price =
+          document.createElement(
+            "div"
+          );
+
+        price.className =
+          "search-result-price";
+
+        price.textContent =
+          formatPrice(
+            product.preis
+          );
+
+
+        result.appendChild(
+          brand
+        );
+
+        result.appendChild(
+          name
+        );
+
+
+        if (product.paket) {
+
+          result.appendChild(
+            packageInfo
+          );
 
         }
-      );
 
 
-      container.appendChild(result);
+        result.appendChild(
+          price
+        );
 
-    });
 
+        /*
+           WICHTIG:
+           Nur Produkt anzeigen.
+           NICHT automatisch
+           zum Warenkorb hinzufügen.
+        */
 
-  } catch (error) {
+        result.addEventListener(
+          "click",
+          function() {
 
-    console.error(error);
+            showProduct(
+              product.barcode
+            );
 
-    container.innerHTML =
-      '<div class="not-found">' +
-      '❌ Suche konnte nicht ausgeführt werden.' +
-      '</div>';
-
-  }
-
-}
-
-
-/* =========================================================
-   PREISLISTE
-   ========================================================= */
-
-async function showPriceList() {
-
-  const box =
-    document.getElementById("priceListBox");
-
-  const button =
-    document.getElementById("priceListButton");
-
-
-  if (!box.classList.contains("hidden")) {
-
-    box.classList.add("hidden");
-
-    button.textContent =
-      "📋 Preisliste anzeigen";
-
-    return;
-
-  }
-
-
-  box.classList.remove("hidden");
-
-  button.textContent =
-    "📋 Preisliste schließen";
-
-
-  await renderPriceList();
-
-}
-
-
-/* =========================================================
-   PREISLISTE RENDERN
-   ========================================================= */
-
-async function renderPriceList() {
-
-  const container =
-    document.getElementById("priceList");
-
-  container.innerHTML =
-    "🔎 Preisliste wird geladen...";
-
-
-  try {
-
-    const data =
-      await loadProducts();
-
-
-    const productsArray =
-      Object.values(data);
-
-
-    productsArray.sort(
-      function(a, b) {
-
-        const aText =
-          (
-            String(a.marke || "") +
-            " " +
-            String(a.produkt || "")
-          ).toLowerCase();
-
-        const bText =
-          (
-            String(b.marke || "") +
-            " " +
-            String(b.produkt || "")
-          ).toLowerCase();
-
-        return aText.localeCompare(bText);
-
-      }
-    );
-
-
-    renderPriceListItems(
-      productsArray
-    );
-
-
-  } catch (error) {
-
-    console.error(error);
-
-    container.innerHTML =
-      '<div class="not-found">' +
-      '❌ Preisliste konnte nicht geladen werden.' +
-      '</div>';
-
-  }
-
-}
-
-
-/* =========================================================
-   PREISLISTE FILTER
-   ========================================================= */
-
-async function filterPriceList() {
-
-  const search =
-    document
-      .getElementById("priceListSearch")
-      .value
-      .trim()
-      .toLowerCase();
-
-
-  try {
-
-    const data =
-      await loadProducts();
-
-
-    let list =
-      Object.values(data);
-
-
-    if (search) {
-
-      list =
-        list.filter(
-          function(product) {
-
-            const text = (
-
-              String(product.marke || "") +
-              " " +
-              String(product.produkt || "") +
-              " " +
-              String(product.paket || "")
-
-            ).toLowerCase();
-
-            return text.includes(search);
+            container.innerHTML = "";
 
           }
         );
 
-    }
 
-
-    list.sort(
-      function(a, b) {
-
-        return (
-          String(a.produkt || "")
-        ).localeCompare(
-          String(b.produkt || "")
+        container.appendChild(
+          result
         );
 
       }
     );
 
 
-    renderPriceListItems(list);
-
-
   } catch (error) {
 
     console.error(error);
 
-  }
-
-}
-
-
-/* =========================================================
-   PREISLISTE ARTIKEL
-   ========================================================= */
-
-function renderPriceListItems(list) {
-
-  const container =
-    document.getElementById("priceList");
-
-  container.innerHTML = "";
-
-
-  if (list.length === 0) {
-
     container.innerHTML =
-      '<div class="empty">' +
-      'Keine Artikel gefunden.' +
+
+      '<div class="not-found">' +
+
+      '❌ Suche konnte nicht ausgeführt werden.' +
+
       '</div>';
 
-    return;
-
   }
-
-
-  list.forEach(function(product) {
-
-    const item =
-      document.createElement("div");
-
-    item.className =
-      "price-list-item";
-
-
-    const brand =
-      document.createElement("div");
-
-    brand.className =
-      "price-list-brand";
-
-    brand.textContent =
-      product.marke || "";
-
-
-    const name =
-      document.createElement("div");
-
-    name.className =
-      "price-list-product";
-
-    name.textContent =
-      product.produkt || "";
-
-
-    const packageInfo =
-      document.createElement("div");
-
-    packageInfo.className =
-      "price-list-package";
-
-    packageInfo.textContent =
-      product.paket || "";
-
-
-    const price =
-      document.createElement("div");
-
-    price.className =
-      "price-list-price";
-
-    price.textContent =
-      formatPrice(product.preis);
-
-
-    item.appendChild(brand);
-
-    item.appendChild(name);
-
-    if (product.paket) {
-      item.appendChild(packageInfo);
-    }
-
-    item.appendChild(price);
-
-
-    item.addEventListener(
-      "click",
-      function() {
-
-        const normalized = {
-
-          code: String(product.barcode),
-
-          name: product.produkt || "",
-
-          marke: product.marke || "",
-
-          paket: product.paket || "",
-
-          price: Number(product.preis) || 0,
-
-          einheit: product.einheit || ""
-
-        };
-
-
-        addToCart(normalized);
-
-        window.scrollTo({
-          top: document.body.scrollHeight,
-          behavior: "smooth"
-        });
-
-      }
-    );
-
-
-    container.appendChild(item);
-
-  });
 
 }
 
 
 /* =========================================================
-   SCANNER
+   SCANNER – ERFOLGREICHER SCAN
    ========================================================= */
 
-function onScanSuccess(decodedText) {
+function onScanSuccess(
+  decodedText
+) {
 
   if (alreadyScanned) {
     return;
   }
 
+
   alreadyScanned = true;
 
-  showProduct(decodedText);
+
+  showProduct(
+    decodedText
+  );
+
 
   stopScanner();
 
@@ -1437,18 +1462,23 @@ function onScanSuccess(decodedText) {
 
 
 /* =========================================================
-   SCANNER FEHLER
+   SCANNER – FEHLER
    ========================================================= */
 
-function onScanFailure(error) {
+function onScanFailure(
+  error
+) {
 
-  // normale Scanfehler ignorieren
+  /*
+     Normale Scanfehler
+     werden ignoriert.
+  */
 
 }
 
 
 /* =========================================================
-   SCANNER START
+   SCANNER STARTEN
    ========================================================= */
 
 function startScanner() {
@@ -1460,15 +1490,20 @@ function startScanner() {
 
   alreadyScanned = false;
 
+
   /*
-     Lichtstatus beim nächsten Scan
-     immer sauber zurücksetzen.
+     Taschenlampenstatus
+     für neuen Scan zurücksetzen.
   */
 
   torchOn = false;
 
+
   const torchButton =
-    document.getElementById("torchButton");
+    document.getElementById(
+      "torchButton"
+    );
+
 
   torchButton.textContent =
     "🔦 Licht";
@@ -1477,7 +1512,9 @@ function startScanner() {
   if (!scanner) {
 
     scanner =
-      new Html5Qrcode("reader");
+      new Html5Qrcode(
+        "reader"
+      );
 
   }
 
@@ -1485,7 +1522,8 @@ function startScanner() {
   scanner.start(
 
     {
-      facingMode: "environment"
+      facingMode:
+        "environment"
     },
 
     {
@@ -1504,75 +1542,106 @@ function startScanner() {
 
   )
 
-  .then(function() {
 
-    scanning = true;
+  .then(
+    function() {
 
-  })
+      scanning = true;
 
-  .catch(function(error) {
+    }
+  )
 
-    console.error(error);
 
-    scanning = false;
+  .catch(
+    function(error) {
 
-    document
-      .getElementById("resultText")
-      .innerHTML =
-        '<div class="not-found">' +
-        '❌ Kamera konnte nicht gestartet werden.' +
-        '<br><br>' +
-        'Bitte Kamera-Berechtigung prüfen.' +
-        '</div>';
+      console.error(error);
 
-  });
+      scanning = false;
+
+
+      document
+        .getElementById(
+          "resultText"
+        )
+        .innerHTML =
+
+          '<div class="not-found">' +
+
+          '❌ Kamera konnte nicht gestartet werden.' +
+
+          '<br><br>' +
+
+          'Bitte Kamera-Berechtigung prüfen.' +
+
+          '</div>';
+
+    }
+  );
 
 }
 
 
 /* =========================================================
-   SCANNER STOPP
+   SCANNER STOPPEN
    ========================================================= */
 
 function stopScanner() {
 
-  if (!scanner || !scanning) {
+  if (
+    !scanner ||
+    !scanning
+  ) {
     return;
   }
 
 
   scanner.stop()
 
-    .then(function() {
+    .then(
+      function() {
 
-      scanning = false;
+        scanning = false;
 
-      /*
-         Taschenlampenstatus nach jedem
-         Scan zurücksetzen.
-      */
+        /*
+           Wichtig:
+           Nach dem Scannen wird
+           der Lichtstatus zurückgesetzt.
+        */
 
-      torchOn = false;
+        torchOn = false;
 
-      document
-        .getElementById("torchButton")
-        .textContent = "🔦 Licht";
 
-    })
+        document
+          .getElementById(
+            "torchButton"
+          )
+          .textContent =
+          "🔦 Licht";
 
-    .catch(function(error) {
+      }
+    )
 
-      console.error(error);
 
-      scanning = false;
+    .catch(
+      function(error) {
 
-      torchOn = false;
+        console.error(error);
 
-      document
-        .getElementById("torchButton")
-        .textContent = "🔦 Licht";
+        scanning = false;
 
-    });
+        torchOn = false;
+
+
+        document
+          .getElementById(
+            "torchButton"
+          )
+          .textContent =
+          "🔦 Licht";
+
+      }
+    );
 
 }
 
@@ -1583,7 +1652,10 @@ function stopScanner() {
 
 async function toggleTorch() {
 
-  if (!scanner || !scanning) {
+  if (
+    !scanner ||
+    !scanning
+  ) {
 
     alert(
       "Bitte zuerst den Scanner starten."
@@ -1614,15 +1686,19 @@ async function toggleTorch() {
     }
 
 
-    torchOn = !torchOn;
+    torchOn =
+      !torchOn;
 
 
     await scanner.applyVideoConstraints({
 
       advanced: [
+
         {
-          torch: torchOn
+          torch:
+            torchOn
         }
+
       ]
 
     });
@@ -1635,8 +1711,11 @@ async function toggleTorch() {
 
 
     button.textContent =
+
       torchOn
+
         ? "🔦 Licht aus"
+
         : "🔦 Licht";
 
 
@@ -1654,7 +1733,7 @@ async function toggleTorch() {
 
 
 /* =========================================================
-   TEILEN
+   EINKAUFSLISTE TEILEN
    ========================================================= */
 
 async function shareCart() {
@@ -1663,7 +1742,9 @@ async function shareCart() {
     Object.keys(cart);
 
 
-  if (codes.length === 0) {
+  if (
+    codes.length === 0
+  ) {
 
     alert(
       "Der Warenkorb ist noch leer."
@@ -1688,8 +1769,11 @@ async function shareCart() {
     now.toLocaleTimeString(
       "de-DE",
       {
-        hour: "2-digit",
-        minute: "2-digit"
+        hour:
+          "2-digit",
+
+        minute:
+          "2-digit"
       }
     );
 
@@ -1697,13 +1781,16 @@ async function shareCart() {
   let text =
     "🛒 KASRIK BAKKAL\n";
 
+
   text +=
     "--------------------------------\n";
+
 
   text +=
     "Datum: " +
     date +
     "\n";
+
 
   text +=
     "Uhrzeit: " +
@@ -1714,57 +1801,74 @@ async function shareCart() {
   let total = 0;
 
 
-  codes.forEach(function(code) {
+  codes.forEach(
+    function(code) {
 
-    const item =
-      cart[code];
-
-
-    const itemTotal =
-      item.price *
-      item.quantity;
+      const item =
+        cart[code];
 
 
-    total += itemTotal;
+      const itemTotal =
+        item.price *
+        item.quantity;
 
 
-    text +=
-      (item.marke || "") +
-      "\n";
+      total +=
+        itemTotal;
 
-    text +=
-      (item.name || "") +
-      "\n";
 
-    text +=
-      (item.paket || "") +
-      "\n";
+      text +=
+        (item.marke || "") +
+        "\n";
 
-    text +=
-      item.quantity +
-      " × " +
-      formatPrice(item.price) +
-      " = " +
-      formatPrice(itemTotal) +
-      "\n\n";
 
-  });
+      text +=
+        (item.name || "") +
+        "\n";
+
+
+      text +=
+        (item.paket || "") +
+        "\n";
+
+
+      text +=
+        item.quantity +
+        " × " +
+        formatPrice(
+          item.price
+        ) +
+        " = " +
+        formatPrice(
+          itemTotal
+        ) +
+        "\n\n";
+
+    }
+  );
 
 
   text +=
     "--------------------------------\n";
+
 
   text +=
     "GESAMT: " +
     formatPrice(total) +
     "\n\n";
 
+
   text +=
     "Vielen Dank für Ihren Einkauf!\n";
+
 
   text +=
     "Kasrik Bakkal";
 
+
+  /*
+     Handy-Teilen
+  */
 
   if (
     navigator.share
@@ -1777,7 +1881,8 @@ async function shareCart() {
         title:
           "Kasrik Bakkal Einkaufsliste",
 
-        text: text
+        text:
+          text
 
       });
 
@@ -1789,17 +1894,24 @@ async function shareCart() {
 
     }
 
+
   } else {
+
+    /*
+       Falls navigator.share
+       nicht verfügbar ist.
+    */
 
     try {
 
-      await navigator.clipboard.writeText(
-        text
-      );
+      await navigator.clipboard
+        .writeText(text);
+
 
       alert(
         "Einkaufsliste wurde kopiert."
       );
+
 
     } catch (error) {
 
@@ -1816,72 +1928,57 @@ async function shareCart() {
    BUTTONS / EVENTS
    ========================================================= */
 
+
+/*
+   Scanner
+*/
+
 document
-  .getElementById("scanButton")
+  .getElementById(
+    "scanButton"
+  )
   .addEventListener(
     "click",
     startScanner
   );
 
 
+/*
+   Taschenlampe
+*/
+
 document
-  .getElementById("torchButton")
+  .getElementById(
+    "torchButton"
+  )
   .addEventListener(
     "click",
     toggleTorch
   );
 
 
-document
-  .getElementById("manualSearchButton")
-  .addEventListener(
-    "click",
-    searchManual
-  );
-
+/*
+   Suche
+*/
 
 document
-  .getElementById("priceListButton")
-  .addEventListener(
-    "click",
-    showPriceList
-  );
-
-
-document
-  .getElementById("shareButton")
-  .addEventListener(
-    "click",
-    shareCart
-  );
-
-
-document
-  .getElementById("clearButton")
-  .addEventListener(
-    "click",
-    clearCart
-  );
-
-
-document
-  .getElementById("textSearch")
+  .getElementById(
+    "mainSearch"
+  )
   .addEventListener(
     "input",
-    searchText
+    searchMain
   );
 
 
-document
-  .getElementById("priceListSearch")
-  .addEventListener(
-    "input",
-    filterPriceList
-  );
-
+/*
+   Enter in der Suchleiste
+*/
 
 document
-  .getElementById("manualCode")
+  .getElementById(
+    "mainSearch"
+  )
   .addEventListener(
     "keydown",
     function(event) {
@@ -1890,11 +1987,39 @@ document
         event.key === "Enter"
       ) {
 
-        searchManual();
+        searchMain();
 
       }
 
     }
+  );
+
+
+/*
+   Warenkorb teilen
+*/
+
+document
+  .getElementById(
+    "shareButton"
+  )
+  .addEventListener(
+    "click",
+    shareCart
+  );
+
+
+/*
+   Warenkorb leeren
+*/
+
+document
+  .getElementById(
+    "clearButton"
+  )
+  .addEventListener(
+    "click",
+    clearCart
   );
 
 
