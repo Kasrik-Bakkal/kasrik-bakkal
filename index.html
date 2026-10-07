@@ -1,1 +1,227 @@
-Kasrik Bakkal - Preisfinder
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kasrik Bakkal – Preisfinder</title>
+
+  <script src="https://unpkg.com/html5-qrcode" type="text/javascript"></script>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+      text-align: center;
+      background: #f7f7f7;
+    }
+
+    h1 {
+      margin-bottom: 5px;
+    }
+
+    .subtitle {
+      color: #666;
+      margin-bottom: 20px;
+    }
+
+    #reader {
+      background: white;
+      padding: 10px;
+      border-radius: 12px;
+      margin-bottom: 20px;
+    }
+
+    .result {
+      background: white;
+      border-radius: 12px;
+      padding: 20px;
+      margin-top: 20px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .product {
+      font-size: 22px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .price {
+      font-size: 32px;
+      font-weight: bold;
+    }
+
+    input {
+      width: 90%;
+      padding: 12px;
+      font-size: 18px;
+      margin-top: 15px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+
+    button {
+      padding: 12px 20px;
+      font-size: 17px;
+      margin-top: 10px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    .not-found {
+      color: #b00020;
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>🛒 Kasrik Bakkal</h1>
+  <div class="subtitle">Preisfinder</div>
+
+  <div id="reader"></div>
+
+  <div class="result">
+    <div id="resultText">
+      Bitte einen Barcode scannen.
+    </div>
+
+    <input
+      type="text"
+      id="manualCode"
+      placeholder="EAN manuell eingeben"
+      inputmode="numeric"
+    >
+
+    <br>
+
+    <button onclick="searchManual()">Preis suchen</button>
+  </div>
+
+<script>
+
+  // TESTPRODUKTE
+  const products = {
+
+    "200000000001": {
+      name: "Spaghetti 500 g",
+      price: "1,49 €"
+    },
+
+    "200000000002": {
+      name: "Penne 500 g",
+      price: "1,59 €"
+    },
+
+    "200000000003": {
+      name: "Basmati Reis 1 kg",
+      price: "2,99 €"
+    },
+
+    "200000000004": {
+      name: "Tomaten gehackt 400 g",
+      price: "1,19 €"
+    },
+
+    "200000000005": {
+      name: "Kichererbsen 400 g",
+      price: "1,29 €"
+    },
+
+    "200000000006": {
+      name: "Weiße Bohnen 400 g",
+      price: "1,39 €"
+    },
+
+    "200000000007": {
+      name: "Oliven grün 500 g",
+      price: "3,49 €"
+    },
+
+    "200000000008": {
+      name: "Tomatenmark 200 g",
+      price: "0,99 €"
+    },
+
+    "200000000009": {
+      name: "Rote Linsen 500 g",
+      price: "2,19 €"
+    },
+
+    "200000000010": {
+      name: "Bulgur 1 kg",
+      price: "2,49 €"
+    }
+
+  };
+
+
+  function showProduct(code) {
+
+    const result = document.getElementById("resultText");
+    const product = products[code];
+
+    if (product) {
+
+      result.innerHTML =
+        '<div class="product">' + product.name + '</div>' +
+        '<div class="price">' + product.price + '</div>';
+
+    } else {
+
+      result.innerHTML =
+        '<div class="not-found">' +
+        'Artikel nicht gefunden<br><br>' +
+        'EAN: ' + code +
+        '</div>';
+
+    }
+  }
+
+
+  function searchManual() {
+
+    const code =
+      document.getElementById("manualCode").value.trim();
+
+    if (code) {
+      showProduct(code);
+    }
+
+  }
+
+
+  function onScanSuccess(decodedText) {
+
+    showProduct(decodedText);
+
+  }
+
+
+  function onScanFailure(error) {
+    // Während des Scannens sind Fehlermeldungen normal.
+  }
+
+
+  const scanner = new Html5QrcodeScanner(
+    "reader",
+    {
+      fps: 10,
+      qrbox: {
+        width: 250,
+        height: 150
+      }
+    },
+    false
+  );
+
+
+  scanner.render(onScanSuccess, onScanFailure);
+
+</script>
+
+</body>
+</html>
