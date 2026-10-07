@@ -1,22 +1,37 @@
 <!DOCTYPE html>
 <html lang="de">
+
 <head>
+
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta
+  name="viewport"
+  content="width=device-width, initial-scale=1.0">
 
 <title>Kasrik Bakkal – Preisfinder</title>
 
-<script src="https://unpkg.com/html5-qrcode" type="text/javascript"></script>
+<script
+  src="https://unpkg.com/html5-qrcode"
+  type="text/javascript">
+</script>
+
 
 <style>
 
+/* =========================
+   GRUNDLAYOUT
+   ========================= */
+
 :root {
+
   --red: #b5121b;
   --dark: #171717;
   --gold: #d6a72c;
   --cream: #fffaf0;
   --light: #f5f5f5;
   --green: #167447;
+
 }
 
 * {
@@ -24,194 +39,569 @@
 }
 
 body {
+
   font-family: Arial, sans-serif;
+
   max-width: 600px;
+
   margin: 0 auto;
+
   padding: 12px;
+
   background: var(--light);
+
   color: var(--dark);
+
 }
 
-/* KOPF */
+
+/* =========================
+   KOPF
+   ========================= */
 
 .header {
+
   background: var(--dark);
+
   color: white;
+
   border-radius: 14px;
+
   padding: 16px;
+
   text-align: center;
+
   margin-bottom: 12px;
+
   border-bottom: 5px solid var(--gold);
+
 }
 
 .header h1 {
+
   margin: 0;
+
   font-size: 25px;
+
 }
 
 .header p {
+
   margin: 5px 0 0;
+
   color: #eee;
+
 }
 
-/* SCANNER */
+
+/* =========================
+   SCANNER
+   ========================= */
 
 .scanner-box {
+
   background: white;
+
   border-radius: 14px;
+
   padding: 7px;
+
   margin-bottom: 10px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+
+  box-shadow:
+    0 2px 8px rgba(0,0,0,0.12);
+
 }
 
 #reader {
+
   max-width: 360px;
+
   margin: auto;
+
 }
 
-/* BUTTONS */
+.scan-controls {
+
+  text-align: center;
+
+}
+
+
+/* =========================
+   BUTTONS
+   ========================= */
 
 button {
+
   border: none;
+
   border-radius: 9px;
+
   padding: 11px 16px;
+
   font-size: 16px;
+
   font-weight: bold;
+
   cursor: pointer;
+
   margin: 4px;
+
 }
 
 .scan-button {
+
   background: var(--red);
+
   color: white;
+
 }
 
 .share-button {
+
   background: var(--gold);
+
   color: #171717;
+
 }
 
 .clear-button {
+
   background: #777;
+
   color: white;
+
+}
+
+.torch-button {
+
+  background: #333;
+
+  color: white;
+
+}
+
+.torch-button:disabled {
+
+  background: #bbb;
+
+  cursor: not-allowed;
+
+}
+
+.price-list-button {
+
+  background: var(--green);
+
+  color: white;
+
+  width: 90%;
+
 }
 
 .quantity-button {
+
   background: #eee;
+
   color: #111;
+
   padding: 6px 11px;
+
   margin: 0 3px;
+
 }
 
-/* ERGEBNIS */
+
+/* =========================
+   ERGEBNIS
+   ========================= */
 
 .result {
+
   background: white;
+
   border-radius: 14px;
+
   padding: 17px;
+
   text-align: center;
+
   margin-bottom: 12px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+
+  box-shadow:
+    0 2px 8px rgba(0,0,0,0.12);
+
 }
 
 .product {
+
   font-size: 23px;
+
   font-weight: bold;
+
   margin-bottom: 5px;
+
 }
 
 .price {
+
   color: var(--red);
+
   font-size: 36px;
+
   font-weight: bold;
+
   margin-bottom: 10px;
+
 }
 
 input {
+
   width: 90%;
+
   padding: 11px;
+
   font-size: 17px;
+
   border: 1px solid #ccc;
+
   border-radius: 8px;
+
   margin-top: 8px;
+
 }
 
-/* WARENKORB */
+.search-row {
+
+  display: flex;
+
+  gap: 6px;
+
+  align-items: center;
+
+  justify-content: center;
+
+  margin-top: 8px;
+
+}
+
+.search-row input {
+
+  width: 65%;
+
+  margin-top: 0;
+
+}
+
+.search-row button {
+
+  margin: 0;
+
+}
+
+
+/* =========================
+   TEXTSUCHE
+   ========================= */
+
+.search-results {
+
+  margin-top: 12px;
+
+  text-align: left;
+
+}
+
+.search-result {
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  gap: 10px;
+
+  padding: 10px;
+
+  border: 1px solid #ddd;
+
+  border-radius: 9px;
+
+  margin-top: 7px;
+
+  background: #fafafa;
+
+}
+
+.search-result-info {
+
+  flex: 1;
+
+}
+
+.search-result-price {
+
+  font-weight: bold;
+
+  color: var(--red);
+
+  white-space: nowrap;
+
+}
+
+
+/* =========================
+   PREISLISTE
+   ========================= */
+
+.price-list-box {
+
+  background: white;
+
+  border-radius: 14px;
+
+  padding: 12px;
+
+  margin-bottom: 12px;
+
+  box-shadow:
+    0 2px 8px rgba(0,0,0,0.12);
+
+  text-align: center;
+
+}
+
+#priceList {
+
+  margin-top: 10px;
+
+}
+
+#priceListSearch {
+
+  width: 90%;
+
+  margin-bottom: 10px;
+
+}
+
+.price-list-item {
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  gap: 10px;
+
+  text-align: left;
+
+  border-bottom: 1px solid #ddd;
+
+  padding: 11px 4px;
+
+}
+
+.price-list-info {
+
+  flex: 1;
+
+}
+
+.price-list-info strong {
+
+  font-size: 15px;
+
+}
+
+.price-list-info span {
+
+  color: #777;
+
+  font-size: 14px;
+
+}
+
+.price-list-price {
+
+  font-weight: bold;
+
+  color: var(--red);
+
+  white-space: nowrap;
+
+}
+
+
+/* =========================
+   WARENKORB
+   ========================= */
 
 .cart {
+
   background: white;
+
   border-radius: 14px;
+
   padding: 17px;
+
   margin-top: 12px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+
+  box-shadow:
+    0 2px 8px rgba(0,0,0,0.12);
+
 }
 
 .cart-title {
+
   font-size: 22px;
+
   font-weight: bold;
+
   border-bottom: 3px solid var(--gold);
+
   padding-bottom: 8px;
+
   margin-bottom: 8px;
+
 }
 
 .cart-item {
+
   display: flex;
+
   justify-content: space-between;
+
   align-items: center;
+
   gap: 7px;
+
   border-bottom: 1px solid #ddd;
+
   padding: 10px 0;
+
 }
 
 .cart-name {
+
   flex: 1;
+
   text-align: left;
+
 }
 
 .cart-price {
+
   white-space: nowrap;
+
   font-weight: bold;
+
 }
 
 .total {
+
   font-size: 25px;
+
   font-weight: bold;
+
   text-align: right;
+
   margin-top: 15px;
+
   color: var(--red);
+
 }
 
 .cart-buttons {
+
   text-align: center;
+
   margin-top: 12px;
+
 }
+
+
+/* =========================
+   SONSTIGES
+   ========================= */
 
 .empty {
+
   text-align: center;
+
   color: #777;
+
   padding: 12px;
+
 }
 
-/* FEHLER */
-
 .not-found {
+
   color: var(--red);
+
   font-weight: bold;
+
 }
 
 .footer {
+
   text-align: center;
+
   color: #888;
+
   font-size: 12px;
+
   margin: 20px 0;
+
+}
+
+
+/* =========================
+   MOBILE
+   ========================= */
+
+@media (max-width: 480px) {
+
+  .search-row {
+
+    flex-direction: column;
+
+  }
+
+  .search-row input {
+
+    width: 90%;
+
+  }
+
+  .search-row button {
+
+    width: auto;
+
+  }
+
+  .cart-item {
+
+    flex-wrap: wrap;
+
+  }
+
 }
 
 </style>
+
 </head>
+
 
 <body>
 
-<!-- KOPF -->
+
+<!-- =========================
+     KOPF
+     ========================= -->
 
 <div class="header">
 
@@ -222,7 +612,9 @@ input {
 </div>
 
 
-<!-- SCANNER -->
+<!-- =========================
+     SCANNER
+     ========================= -->
 
 <div class="scanner-box">
 
@@ -231,7 +623,7 @@ input {
 </div>
 
 
-<div style="text-align:center;">
+<div class="scan-controls">
 
   <button
     class="scan-button"
@@ -241,12 +633,28 @@ input {
 
   </button>
 
+
+  <button
+    id="torchButton"
+    class="torch-button"
+    onclick="toggleTorch()"
+    disabled>
+
+    🔦 Licht an
+
+  </button>
+
 </div>
 
 
-<!-- ERGEBNIS -->
+<!-- =========================
+     SUCHBEREICH
+     ========================= -->
 
-<div class="result" id="resultBox">
+<div
+  class="result"
+  id="resultBox">
+
 
   <div id="resultText">
 
@@ -255,26 +663,98 @@ input {
   </div>
 
 
-  <input
-    type="text"
-    id="manualCode"
-    placeholder="EAN manuell eingeben"
-    inputmode="numeric">
+  <!-- EAN -->
 
-  <br>
+  <div class="search-row">
 
-  <button onclick="searchManual()">
+    <input
+      type="text"
+      id="manualCode"
+      placeholder="EAN manuell eingeben"
+      inputmode="numeric">
 
-    Preis suchen
+    <button
+      onclick="searchManual()">
 
-  </button>
+      Preis suchen
+
+    </button>
+
+  </div>
+
+
+  <!-- TEXTSUCHE -->
+
+  <div class="search-row">
+
+    <input
+      type="text"
+      id="textSearch"
+      placeholder="Marke oder Produkt suchen">
+
+    <button
+      onclick="searchText()">
+
+      🔎 Suchen
+
+    </button>
+
+  </div>
+
+
+  <div
+    id="searchResults"
+    class="search-results">
+  </div>
+
 
 </div>
 
 
-<!-- WARENKORB -->
+<!-- =========================
+     PREISLISTE
+     ========================= -->
+
+<div class="price-list-box">
+
+
+  <button
+    class="price-list-button"
+    onclick="togglePriceList()">
+
+    📋 Preisliste anzeigen
+
+  </button>
+
+
+  <div
+    id="priceList"
+    style="display:none;">
+
+
+    <input
+      type="text"
+      id="priceListSearch"
+      placeholder="Preisliste durchsuchen..."
+      oninput="filterPriceList()">
+
+
+    <div id="priceListItems">
+
+    </div>
+
+
+  </div>
+
+</div>
+
+
+<!-- =========================
+     WARENKORB
+     ========================= -->
 
 <div class="cart">
+
 
   <div class="cart-title">
 
@@ -299,13 +779,16 @@ input {
     Gesamt:
 
     <span id="cartTotal">
+
       0,00 €
+
     </span>
 
   </div>
 
 
   <div class="cart-buttons">
+
 
     <button
       class="scan-button"
@@ -317,15 +800,17 @@ input {
 
     <br>
 
+
     <button
       class="share-button"
       onclick="shareCart()">
 
-      📸 Einkaufsliste speichern / teilen
+      🧾 Rechnung teilen
 
     </button>
 
     <br>
+
 
     <button
       class="clear-button"
@@ -334,6 +819,7 @@ input {
       🗑️ Warenkorb leeren
 
     </button>
+
 
   </div>
 
@@ -347,78 +833,163 @@ input {
 </div>
 
 
+
 <script>
 
-/* PRODUKTDATEN */
+
+/* =====================================================
+   PRODUKTDATEN
+   ===================================================== */
 
 const PRODUCT_DATA_URL = "produkte.json";
 
 let products = null;
 
 
-/* PRODUKTDATEN LADEN */
+/* =====================================================
+   PRODUKTDATEN LADEN
+   ===================================================== */
 
 async function loadProducts() {
 
+
   if (products) {
+
     return products;
+
   }
+
 
   const response = await fetch(
-    PRODUCT_DATA_URL + "?v=" + Date.now()
+
+    PRODUCT_DATA_URL +
+    "?v=" +
+    Date.now()
+
   );
 
+
   if (!response.ok) {
-    throw new Error("Produktdaten konnten nicht geladen werden.");
+
+    throw new Error(
+      "Produktdaten konnten nicht geladen werden."
+    );
+
   }
 
-  products = await response.json();
+
+  products =
+    await response.json();
+
 
   return products;
+
 }
 
 
-/* PRODUKT SUCHEN */
+/* =====================================================
+   EINZELNES PRODUKT SUCHEN
+   ===================================================== */
 
 async function getProduct(code) {
 
-  const data = await loadProducts();
 
-  const product = data[String(code).trim()];
+  const data =
+    await loadProducts();
+
+
+  const product =
+    data[
+      String(code).trim()
+    ];
+
 
   if (!product) {
+
     return null;
+
   }
 
+
   return {
-    code: String(product.barcode),
-    name: product.produkt,
-    price: Number(product.preis),
-    marke: product.marke,
-    paket: product.paket,
-    einheit: product.einheit
+
+    code:
+      String(product.barcode),
+
+    name:
+      product.produkt,
+
+    price:
+      Number(product.preis),
+
+    marke:
+      product.marke || "",
+
+    paket:
+      product.paket || "",
+
+    einheit:
+      product.einheit || ""
+
   };
 
 }
 
 
-/* PREIS FORMATIEREN */
+/* =====================================================
+   PREIS FORMATIEREN
+   ===================================================== */
 
 function formatPrice(price) {
 
   return Number(price)
+
     .toFixed(2)
-    .replace(".", ",") + " €";
+
+    .replace(".", ",") +
+
+    " €";
 
 }
 
 
-/* PRODUKT ANZEIGEN */
+/* =====================================================
+   HTML SICHER MACHEN
+   ===================================================== */
+
+function escapeHtml(value) {
+
+  return String(
+    value == null
+      ? ""
+      : value
+  )
+
+    .replace(/&/g, "&amp;")
+
+    .replace(/</g, "&lt;")
+
+    .replace(/>/g, "&gt;")
+
+    .replace(/"/g, "&quot;")
+
+    .replace(/'/g, "&#039;");
+
+}
+
+
+/* =====================================================
+   PRODUKT ANZEIGEN
+   ===================================================== */
 
 async function showProduct(code) {
 
+
   const result =
-    document.getElementById("resultText");
+    document.getElementById(
+      "resultText"
+    );
+
 
   result.innerHTML =
     "🔎 Preis wird gesucht...";
@@ -426,21 +997,28 @@ async function showProduct(code) {
 
   try {
 
+
     const product =
       await getProduct(code);
 
 
     if (!product) {
 
+
       result.innerHTML =
 
         '<div class="not-found">' +
 
-        'Artikel nicht gefunden<br><br>' +
+        'Artikel nicht gefunden' +
 
-        'EAN: ' + code +
+        '<br><br>' +
+
+        'EAN: ' +
+
+        escapeHtml(code) +
 
         '</div>';
+
 
       return;
 
@@ -451,23 +1029,40 @@ async function showProduct(code) {
 
       '<div class="product">' +
 
-      product.name +
+      escapeHtml(
+        product.name
+      ) +
 
       '</div>' +
+
 
       '<div>' +
 
-      (product.marke || '') +
+      escapeHtml(
+        product.marke
+      ) +
 
-      (product.paket
-        ? ' · ' + product.paket
-        : '') +
+      (
+
+        product.paket
+
+          ? ' · ' +
+            escapeHtml(
+              product.paket
+            )
+
+          : ""
+
+      ) +
 
       '</div>' +
 
+
       '<div class="price">' +
 
-      formatPrice(product.price) +
+      formatPrice(
+        product.price
+      ) +
 
       '</div>';
 
@@ -477,8 +1072,12 @@ async function showProduct(code) {
 
     setTimeout(function() {
 
+
       document
-        .getElementById("resultBox")
+        .getElementById(
+          "resultBox"
+        )
+
         .scrollIntoView({
 
           behavior: "smooth",
@@ -487,13 +1086,17 @@ async function showProduct(code) {
 
         });
 
+
     }, 100);
+
 
   }
 
   catch(error) {
 
+
     console.error(error);
+
 
     result.innerHTML =
 
@@ -512,31 +1115,47 @@ async function showProduct(code) {
 }
 
 
-/* WARENKORB */
+/* =====================================================
+   WARENKORB
+   ===================================================== */
 
 let cart = {};
 
 
 function addToCart(product) {
 
-  const code = product.code;
+
+  const code =
+    product.code;
 
 
   if (cart[code]) {
 
+
     cart[code].quantity++;
+
 
   }
 
   else {
 
+
     cart[code] = {
 
-      name: product.name,
+      name:
+        product.name,
 
-      price: product.price,
+      marke:
+        product.marke || "",
 
-      quantity: 1
+      paket:
+        product.paket || "",
+
+      price:
+        product.price,
+
+      quantity:
+        1
 
     };
 
@@ -548,17 +1167,34 @@ function addToCart(product) {
 }
 
 
-function changeQuantity(code, change) {
+/* =====================================================
+   MENGE ÄNDERN
+   ===================================================== */
 
-  if (!cart[code]) return;
+function changeQuantity(
+  code,
+  change
+) {
 
 
-  cart[code].quantity += change;
+  if (!cart[code]) {
+
+    return;
+
+  }
 
 
-  if (cart[code].quantity <= 0) {
+  cart[code].quantity +=
+    change;
+
+
+  if (
+    cart[code].quantity <= 0
+  ) {
+
 
     delete cart[code];
+
 
   }
 
@@ -568,17 +1204,27 @@ function changeQuantity(code, change) {
 }
 
 
+/* =====================================================
+   WARENKORB AKTUALISIEREN
+   ===================================================== */
+
 function updateCart() {
 
+
   const container =
-    document.getElementById("cartItems");
+    document.getElementById(
+      "cartItems"
+    );
 
 
   const codes =
     Object.keys(cart);
 
 
-  if (codes.length === 0) {
+  if (
+    codes.length === 0
+  ) {
+
 
     container.innerHTML =
 
@@ -590,8 +1236,12 @@ function updateCart() {
 
 
     document
-      .getElementById("cartTotal")
-      .textContent = "0,00 €";
+      .getElementById(
+        "cartTotal"
+      )
+
+      .textContent =
+        "0,00 €";
 
 
     return;
@@ -604,92 +1254,127 @@ function updateCart() {
   let total = 0;
 
 
-  codes.forEach(function(code) {
-
-    const item = cart[code];
-
-
-    const itemTotal =
-      item.price * item.quantity;
+  codes.forEach(
+    function(code) {
 
 
-    total += itemTotal;
+      const item =
+        cart[code];
 
 
-    html +=
-
-      '<div class="cart-item">' +
-
-        '<div class="cart-name">' +
-
-          '<strong>' +
-
-          item.name +
-
-          '</strong><br>' +
-
-          formatPrice(item.price) +
-
-        '</div>' +
+      const itemTotal =
+        item.price *
+        item.quantity;
 
 
-        '<div>' +
-
-          '<button ' +
-
-          'class="quantity-button" ' +
-
-          'onclick="changeQuantity(\'' +
-
-          code +
-
-          '\', -1)">' +
-
-          '−' +
-
-          '</button>' +
-
-          item.quantity +
-
-          '<button ' +
-
-          'class="quantity-button" ' +
-
-          'onclick="changeQuantity(\'' +
-
-          code +
-
-          '\', 1)">' +
-
-          '+' +
-
-          '</button>' +
-
-        '</div>' +
+      total +=
+        itemTotal;
 
 
-        '<div class="cart-price">' +
+      html +=
 
-          formatPrice(itemTotal) +
-
-        '</div>' +
-
-      '</div>';
-
-  });
+        '<div class="cart-item">' +
 
 
-  container.innerHTML = html;
+          '<div class="cart-name">' +
+
+            '<strong>' +
+
+            escapeHtml(
+              item.marke
+            ) +
+
+            '</strong><br>' +
+
+            escapeHtml(
+              item.name
+            ) +
+
+            (
+
+              item.paket
+
+                ? '<br><small>' +
+                  escapeHtml(
+                    item.paket
+                  ) +
+                  '</small>'
+
+                : ""
+
+            ) +
+
+          '</div>' +
+
+
+          '<div>' +
+
+            '<button ' +
+
+            'class="quantity-button" ' +
+
+            'onclick="changeQuantity(\\'' +
+
+            code +
+
+            '\\', -1)">' +
+
+            '−' +
+
+            '</button>' +
+
+            item.quantity +
+
+            '<button ' +
+
+            'class="quantity-button" ' +
+
+            'onclick="changeQuantity(\\'' +
+
+            code +
+
+            '\\', 1)">' +
+
+            '+' +
+
+            '</button>' +
+
+          '</div>' +
+
+
+          '<div class="cart-price">' +
+
+            formatPrice(
+              itemTotal
+            ) +
+
+          '</div>' +
+
+
+        '</div>';
+
+    }
+  );
+
+
+  container.innerHTML =
+    html;
 
 
   document
-    .getElementById("cartTotal")
-    .textContent = formatPrice(total);
+    .getElementById(
+      "cartTotal"
+    )
+
+    .textContent =
+      formatPrice(total);
 
 }
 
 
-/* WARENKORB LEEREN */
+/* =====================================================
+   WARENKORB LEEREN
+   ===================================================== */
 
 function clearCart() {
 
@@ -700,14 +1385,22 @@ function clearCart() {
 }
 
 
-/* MANUELLE EAN */
+/* =====================================================
+   MANUELLE EAN-SUCHE
+   ===================================================== */
 
 function searchManual() {
 
+
   const code =
     document
-      .getElementById("manualCode")
+
+      .getElementById(
+        "manualCode"
+      )
+
       .value
+
       .trim();
 
 
@@ -720,7 +1413,590 @@ function searchManual() {
 }
 
 
-/* SCANNER */
+/* =====================================================
+   TEXTSUCHE
+   ===================================================== */
+
+async function searchText() {
+
+
+  const query =
+    document
+
+      .getElementById(
+        "textSearch"
+      )
+
+      .value
+
+      .trim()
+
+      .toLowerCase();
+
+
+  const resultsBox =
+    document.getElementById(
+      "searchResults"
+    );
+
+
+  if (
+    query.length < 2
+  ) {
+
+
+    resultsBox.innerHTML =
+
+      '<div class="empty">' +
+
+      'Bitte mindestens 2 Zeichen eingeben.' +
+
+      '</div>';
+
+
+    return;
+
+  }
+
+
+  try {
+
+
+    const data =
+      await loadProducts();
+
+
+    const matches =
+
+      Object.values(data)
+
+        .filter(
+          function(product) {
+
+
+            const searchable = [
+
+              product.marke,
+
+              product.produkt,
+
+              product.paket
+
+            ]
+
+              .filter(Boolean)
+
+              .join(" ")
+
+              .toLowerCase();
+
+
+            return searchable.includes(
+              query
+            );
+
+          }
+        )
+
+        .slice(0, 50);
+
+
+    if (
+      matches.length === 0
+    ) {
+
+
+      resultsBox.innerHTML =
+
+        '<div class="not-found">' +
+
+        'Kein passender Artikel gefunden.' +
+
+        '</div>';
+
+
+      return;
+
+    }
+
+
+    resultsBox.innerHTML =
+
+      matches
+
+        .map(
+          function(product) {
+
+
+            const code =
+              String(
+                product.barcode
+              );
+
+
+            const brand =
+              product.marke || "";
+
+
+            const name =
+              product.produkt || "";
+
+
+            const packageText =
+              product.paket
+                ? " · " +
+                  product.paket
+                : "";
+
+
+            return
+
+              '<div class="search-result">' +
+
+
+                '<div class="search-result-info">' +
+
+                  '<strong>' +
+
+                  escapeHtml(
+                    brand
+                  ) +
+
+                  '</strong><br>' +
+
+                  escapeHtml(
+                    name
+                  ) +
+
+                  escapeHtml(
+                    packageText
+                  ) +
+
+                '</div>' +
+
+
+                '<div class="search-result-price">' +
+
+                  formatPrice(
+                    product.preis
+                  ) +
+
+                '</div>' +
+
+
+                '<button ' +
+
+                  'class="scan-button" ' +
+
+                  'onclick="selectSearchResult(\\'' +
+
+                  code +
+
+                  '\\')">' +
+
+                  '+' +
+
+                '</button>' +
+
+
+              '</div>';
+
+          }
+        )
+
+        .join("");
+
+  }
+
+
+  catch(error) {
+
+
+    console.error(error);
+
+
+    resultsBox.innerHTML =
+
+      '<div class="not-found">' +
+
+      'Textsuche konnte nicht ausgeführt werden.' +
+
+      '</div>';
+
+  }
+
+}
+
+
+/* =====================================================
+   TEXTSUCHERGEBNIS AUSWÄHLEN
+   ===================================================== */
+
+async function selectSearchResult(
+  code
+) {
+
+
+  const product =
+    await getProduct(code);
+
+
+  if (!product) {
+
+    return;
+
+  }
+
+
+  addToCart(product);
+
+
+  showProductWithoutAdding(
+    product
+  );
+
+}
+
+
+/* =====================================================
+   PRODUKT ANZEIGEN
+   OHNE DOPPELT IN WARENKORB ZU LEGEN
+   ===================================================== */
+
+function showProductWithoutAdding(
+  product
+) {
+
+
+  const result =
+    document.getElementById(
+      "resultText"
+    );
+
+
+  result.innerHTML =
+
+    '<div class="product">' +
+
+    escapeHtml(
+      product.name
+    ) +
+
+    '</div>' +
+
+
+    '<div>' +
+
+    escapeHtml(
+      product.marke || ""
+    ) +
+
+    (
+
+      product.paket
+
+        ? ' · ' +
+          escapeHtml(
+            product.paket
+          )
+
+        : ""
+
+    ) +
+
+    '</div>' +
+
+
+    '<div class="price">' +
+
+    formatPrice(
+      product.price
+    ) +
+
+    '</div>';
+
+
+  document
+    .getElementById(
+      "resultBox"
+    )
+
+    .scrollIntoView({
+
+      behavior: "smooth",
+
+      block: "start"
+
+    });
+
+}
+
+
+/* =====================================================
+   PREISLISTE ÖFFNEN / SCHLIESSEN
+   ===================================================== */
+
+async function togglePriceList() {
+
+
+  const list =
+    document.getElementById(
+      "priceList"
+    );
+
+
+  const button =
+    document.querySelector(
+      ".price-list-button"
+    );
+
+
+  if (
+    list.style.display ===
+    "none"
+  ) {
+
+
+    list.style.display =
+      "block";
+
+
+    button.textContent =
+      "📋 Preisliste schließen";
+
+
+    await renderPriceList();
+
+
+  }
+
+  else {
+
+
+    list.style.display =
+      "none";
+
+
+    button.textContent =
+      "📋 Preisliste anzeigen";
+
+  }
+
+}
+
+
+/* =====================================================
+   PREISLISTE ERSTELLEN
+   ===================================================== */
+
+async function renderPriceList() {
+
+
+  const container =
+    document.getElementById(
+      "priceListItems"
+    );
+
+
+  try {
+
+
+    const data =
+      await loadProducts();
+
+
+    const productsArray =
+      Object.values(data);
+
+
+    productsArray.sort(
+      function(a, b) {
+
+
+        const aText =
+
+          (
+
+            (a.marke || "") +
+
+            " " +
+
+            (a.produkt || "")
+
+          )
+
+          .toLowerCase();
+
+
+        const bText =
+
+          (
+
+            (b.marke || "") +
+
+            " " +
+
+            (b.produkt || "")
+
+          )
+
+          .toLowerCase();
+
+
+        return aText.localeCompare(
+          bText
+        );
+
+      }
+    );
+
+
+    container.innerHTML =
+
+      productsArray
+
+        .map(
+          function(product) {
+
+
+            return
+
+              '<div class="price-list-item">' +
+
+
+                '<div class="price-list-info">' +
+
+
+                  '<strong>' +
+
+                  escapeHtml(
+                    product.marke || ""
+                  ) +
+
+                  '</strong>' +
+
+
+                  '<br>' +
+
+
+                  escapeHtml(
+                    product.produkt || ""
+                  ) +
+
+
+                  (
+
+                    product.paket
+
+                      ? '<br>' +
+
+                        '<span>' +
+
+                        escapeHtml(
+                          product.paket
+                        ) +
+
+                        '</span>'
+
+                      : ""
+
+                  ) +
+
+
+                '</div>' +
+
+
+                '<div class="price-list-price">' +
+
+                  formatPrice(
+                    product.preis
+                  ) +
+
+                '</div>' +
+
+
+              '</div>';
+
+          }
+        )
+
+        .join("");
+
+  }
+
+
+  catch(error) {
+
+
+    console.error(error);
+
+
+    container.innerHTML =
+
+      '<div class="not-found">' +
+
+      'Preisliste konnte nicht geladen werden.' +
+
+      '</div>';
+
+  }
+
+}
+
+
+/* =====================================================
+   PREISLISTE DURCHSUCHEN
+   ===================================================== */
+
+function filterPriceList() {
+
+
+  const query =
+    document
+
+      .getElementById(
+        "priceListSearch"
+      )
+
+      .value
+
+      .trim()
+
+      .toLowerCase();
+
+
+  const items =
+    document.querySelectorAll(
+      ".price-list-item"
+    );
+
+
+  items.forEach(
+    function(item) {
+
+
+      const text =
+        item.textContent
+          .toLowerCase();
+
+
+      item.style.display =
+
+        text.includes(query)
+
+          ? "flex"
+
+          : "none";
+
+    }
+  );
+
+}
+
+
+/* =====================================================
+   SCANNER
+   ===================================================== */
 
 let scanner = null;
 
@@ -728,16 +2004,34 @@ let scanning = false;
 
 let alreadyScanned = false;
 
-
-function onScanSuccess(decodedText) {
-
-  if (alreadyScanned) return;
+let torchOn = false;
 
 
-  alreadyScanned = true;
+/* =====================================================
+   SCAN ERFOLGREICH
+   ===================================================== */
+
+function onScanSuccess(
+  decodedText
+) {
 
 
-  showProduct(decodedText);
+  if (
+    alreadyScanned
+  ) {
+
+    return;
+
+  }
+
+
+  alreadyScanned =
+    true;
+
+
+  showProduct(
+    decodedText
+  );
 
 
   stopScanner();
@@ -745,27 +2039,47 @@ function onScanSuccess(decodedText) {
 }
 
 
-function onScanFailure(error) {
+/* =====================================================
+   SCAN FEHLER
+   ===================================================== */
 
-  // Fehler während des normalen Scannens ignorieren.
+function onScanFailure(
+  error
+) {
+
+  /*
+    Fehler beim normalen
+    Scannen ignorieren.
+  */
 
 }
 
 
-/* KAMERA STARTEN */
+/* =====================================================
+   KAMERA STARTEN
+   ===================================================== */
 
 function startScanner() {
 
-  if (scanning) return;
+
+  if (scanning) {
+
+    return;
+
+  }
 
 
-  alreadyScanned = false;
+  alreadyScanned =
+    false;
 
 
   if (!scanner) {
 
+
     scanner =
-      new Html5Qrcode("reader");
+      new Html5Qrcode(
+        "reader"
+      );
 
   }
 
@@ -773,8 +2087,10 @@ function startScanner() {
   scanner.start(
 
     {
-      facingMode: "environment"
+      facingMode:
+        "environment"
     },
+
 
     {
 
@@ -790,169 +2106,485 @@ function startScanner() {
 
     },
 
+
     onScanSuccess,
 
     onScanFailure
 
   )
 
-  .then(function() {
 
-    scanning = true;
-
-  })
-
-  .catch(function(error) {
-
-    scanning = false;
+  .then(
+    function() {
 
 
-    document
-      .getElementById("resultText")
-      .innerHTML =
+      scanning =
+        true;
 
-      '<div class="not-found">' +
 
-      'Kamera konnte nicht gestartet werden.' +
+      torchOn =
+        false;
 
-      '<br><br>' +
 
-      'Bitte Kamera-Berechtigung prüfen.' +
+      updateTorchButton();
 
-      '</div>';
+    }
+  )
 
-  });
+
+  .catch(
+    function(error) {
+
+
+      console.error(error);
+
+
+      scanning =
+        false;
+
+
+      document
+        .getElementById(
+          "resultText"
+        )
+
+        .innerHTML =
+
+          '<div class="not-found">' +
+
+          'Kamera konnte nicht gestartet werden.' +
+
+          '<br><br>' +
+
+          'Bitte Kamera-Berechtigung prüfen.' +
+
+          '</div>';
+
+
+    }
+  );
 
 }
 
 
-/* KAMERA STOPPEN */
+/* =====================================================
+   TASCHENLAMPE BUTTON
+   ===================================================== */
 
-function stopScanner() {
-
-  if (!scanner || !scanning) return;
-
-
-  scanner.stop()
-
-    .then(function() {
-
-      scanning = false;
-
-    })
-
-    .catch(function() {
-
-      scanning = false;
-
-    });
-
-}
+function updateTorchButton() {
 
 
-/* EINKAUFSLISTE */
-
-async function shareCart() {
-
-  const codes =
-    Object.keys(cart);
-
-
-  if (codes.length === 0) {
-
-    alert(
-      "Der Warenkorb ist noch leer."
+  const button =
+    document.getElementById(
+      "torchButton"
     );
+
+
+  if (!button) {
 
     return;
 
   }
 
 
+  button.textContent =
+
+    torchOn
+
+      ? "🔦 Licht aus"
+
+      : "🔦 Licht an";
+
+
+  button.disabled =
+    !scanning;
+
+}
+
+
+/* =====================================================
+   TASCHENLAMPE EIN/AUS
+   ===================================================== */
+
+async function toggleTorch() {
+
+
+  if (
+    !scanner ||
+    !scanning
+  ) {
+
+    return;
+
+  }
+
+
+  try {
+
+
+    const capabilities =
+      scanner
+        .getRunningTrackCapabilities();
+
+
+    if (
+      !capabilities ||
+      !capabilities.torch
+    ) {
+
+
+      alert(
+
+        "Die Taschenlampe wird " +
+
+        "von diesem Handy oder " +
+
+        "Browser nicht unterstützt."
+
+      );
+
+
+      return;
+
+    }
+
+
+    const newState =
+      !torchOn;
+
+
+    await scanner
+      .applyVideoConstraints({
+
+        advanced: [
+
+          {
+            torch:
+              newState
+          }
+
+        ]
+
+      });
+
+
+    torchOn =
+      newState;
+
+
+    updateTorchButton();
+
+
+  }
+
+
+  catch(error) {
+
+
+    console.error(error);
+
+
+    alert(
+
+      "Die Taschenlampe konnte " +
+
+      "nicht eingeschaltet werden."
+
+    );
+
+  }
+
+}
+
+
+/* =====================================================
+   KAMERA STOPPEN
+   ===================================================== */
+
+function stopScanner() {
+
+
+  if (
+    !scanner ||
+    !scanning
+  ) {
+
+    return;
+
+  }
+
+
+  scanner.stop()
+
+
+    .then(
+      function() {
+
+
+        scanning =
+          false;
+
+
+        torchOn =
+          false;
+
+
+        updateTorchButton();
+
+      }
+    )
+
+
+    .catch(
+      function() {
+
+
+        scanning =
+          false;
+
+
+        torchOn =
+          false;
+
+
+        updateTorchButton();
+
+      }
+    );
+
+}
+
+
+/* =====================================================
+   RECHNUNG / EINKAUF TEILEN
+   ===================================================== */
+
+async function shareCart() {
+
+
+  const codes =
+    Object.keys(cart);
+
+
+  if (
+    codes.length === 0
+  ) {
+
+
+    alert(
+
+      "Der Warenkorb ist noch leer."
+
+    );
+
+
+    return;
+
+  }
+
+
+  const now =
+    new Date();
+
+
+  const date =
+    now.toLocaleDateString(
+      "de-DE"
+    );
+
+
+  const time =
+    now.toLocaleTimeString(
+      "de-DE",
+      {
+
+        hour:
+          "2-digit",
+
+        minute:
+          "2-digit"
+
+      }
+    );
+
+
+  let total =
+    0;
+
+
   let text =
-    "🛒 KASRIK BAKKAL\n";
+
+    "🛒 KASRIK BAKKAL\n" +
+
+    "--------------------------------\n" +
+
+    "Datum: " +
+    date +
+    "\n" +
+
+    "Uhrzeit: " +
+    time +
+    "\n\n";
+
+
+  codes.forEach(
+    function(code) {
+
+
+      const item =
+        cart[code];
+
+
+      const itemTotal =
+        item.price *
+        item.quantity;
+
+
+      total +=
+        itemTotal;
+
+
+      text +=
+
+        (
+          item.marke ||
+          "Marke unbekannt"
+        ) +
+
+        "\n";
+
+
+      text +=
+
+        (
+          item.name ||
+          "Produkt"
+        ) +
+
+        "\n";
+
+
+      if (
+        item.paket
+      ) {
+
+
+        text +=
+
+          item.paket +
+          "\n";
+
+      }
+
+
+      text +=
+
+        item.quantity +
+
+        " × " +
+
+        formatPrice(
+          item.price
+        ) +
+
+        " = " +
+
+        formatPrice(
+          itemTotal
+        ) +
+
+        "\n\n";
+
+    }
+  );
+
 
   text +=
-    "Einkaufsliste\n\n";
+
+    "--------------------------------\n" +
+
+    "GESAMT: " +
+
+    formatPrice(
+      total
+    ) +
+
+    "\n\n" +
+
+    "Vielen Dank für Ihren Einkauf!\n" +
+
+    "Kasrik Bakkal";
 
 
-  let total = 0;
+  /* =========================
+     HANDY-TEILEN
+     ========================= */
 
+  if (
+    navigator.share
+  ) {
 
-  codes.forEach(function(code) {
-
-    const item = cart[code];
-
-
-    const itemTotal =
-      item.price * item.quantity;
-
-
-    total += itemTotal;
-
-
-    text +=
-
-      item.name +
-
-      " × " +
-
-      item.quantity +
-
-      " — " +
-
-      formatPrice(itemTotal) +
-
-      "\n";
-
-  });
-
-
-  text +=
-
-    "\nGesamt: " +
-
-    formatPrice(total);
-
-
-  if (navigator.share) {
 
     try {
+
 
       await navigator.share({
 
         title:
-          "Kasrik Bakkal Einkaufsliste",
+          "Kasrik Bakkal Einkauf",
 
-        text: text
+        text:
+          text
 
       });
+
 
     }
 
     catch(error) {
 
-      // Teilen wurde abgebrochen.
+
+      /*
+        Teilen wurde vom
+        Benutzer abgebrochen.
+      */
 
     }
 
   }
 
+
+  /* =========================
+     FALLBACK: KOPIEREN
+     ========================= */
+
   else {
+
 
     try {
 
-      await navigator.clipboard.writeText(text);
+
+      await navigator
+        .clipboard
+        .writeText(
+          text
+        );
+
 
       alert(
-        "Einkaufsliste wurde kopiert."
+        "Rechnung wurde kopiert."
       );
+
 
     }
 
+
     catch(error) {
 
-      alert(text);
+
+      alert(
+        text
+      );
 
     }
 
@@ -961,19 +2593,92 @@ async function shareCart() {
 }
 
 
-/* KAMERA AUTOMATISCH STARTEN */
+/* =====================================================
+   ENTER-TASTE
+   ===================================================== */
 
-window.addEventListener("load", function() {
+document.addEventListener(
+  "DOMContentLoaded",
+  function() {
 
-  setTimeout(function() {
 
-    startScanner();
+    document
+      .getElementById(
+        "manualCode"
+      )
 
-  }, 500);
+      .addEventListener(
+        "keydown",
+        function(event) {
 
-});
+
+          if (
+            event.key ===
+            "Enter"
+          ) {
+
+
+            searchManual();
+
+          }
+
+        }
+      );
+
+
+    document
+      .getElementById(
+        "textSearch"
+      )
+
+      .addEventListener(
+        "keydown",
+        function(event) {
+
+
+          if (
+            event.key ===
+            "Enter"
+          ) {
+
+
+            searchText();
+
+          }
+
+        }
+      );
+
+  }
+);
+
+
+/* =====================================================
+   SCANNER AUTOMATISCH STARTEN
+   ===================================================== */
+
+window.addEventListener(
+  "load",
+  function() {
+
+
+    setTimeout(
+      function() {
+
+
+        startScanner();
+
+
+      },
+      500
+    );
+
+  }
+);
 
 </script>
 
+
 </body>
+
 </html>
