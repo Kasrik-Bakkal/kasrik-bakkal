@@ -103,123 +103,162 @@
 
 <script>
 
-  // TESTPRODUKTE
-  const products = {
+const products = {
 
-    "200000000001": {
-      name: "Spaghetti 500 g",
-      price: "1,49 €"
+  "200000000001": {
+    name: "Spaghetti 500 g",
+    price: "1,49 €"
+  },
+
+  "200000000002": {
+    name: "Penne 500 g",
+    price: "1,59 €"
+  },
+
+  "200000000003": {
+    name: "Basmati Reis 1 kg",
+    price: "2,99 €"
+  },
+
+  "200000000004": {
+    name: "Tomaten gehackt 400 g",
+    price: "1,19 €"
+  },
+
+  "200000000005": {
+    name: "Kichererbsen 400 g",
+    price: "1,29 €"
+  },
+
+  "200000000006": {
+    name: "Weiße Bohnen 400 g",
+    price: "1,39 €"
+  },
+
+  "200000000007": {
+    name: "Oliven grün 500 g",
+    price: "3,49 €"
+  },
+
+  "200000000008": {
+    name: "Tomatenmark 200 g",
+    price: "0,99 €"
+  },
+
+  "200000000009": {
+    name: "Rote Linsen 500 g",
+    price: "2,19 €"
+  },
+
+  "200000000010": {
+    name: "Bulgur 1 kg",
+    price: "2,49 €"
+  },
+
+  "4061461435721": {
+    name: "Kräuterli",
+    price: "1,29 €"
+  }
+
+};
+
+
+let scanner = null;
+let alreadyScanned = false;
+
+
+function showProduct(code) {
+
+  const result = document.getElementById("resultText");
+  const product = products[code];
+
+  if (product) {
+
+    result.innerHTML =
+      '<div class="product">' +
+      product.name +
+      '</div>' +
+      '<div class="price">' +
+      product.price +
+      '</div>';
+
+  } else {
+
+    result.innerHTML =
+      '<div class="not-found">' +
+      'Artikel nicht gefunden<br><br>' +
+      'EAN: ' + code +
+      '</div>';
+
+  }
+}
+
+
+function searchManual() {
+
+  const code =
+    document.getElementById("manualCode").value.trim();
+
+  if (code) {
+    showProduct(code);
+  }
+
+}
+
+
+function onScanSuccess(decodedText) {
+
+  if (alreadyScanned) return;
+
+  alreadyScanned = true;
+
+  showProduct(decodedText);
+
+  if (scanner) {
+    scanner.clear().catch(function(error) {
+      console.log(error);
+    });
+  }
+
+}
+
+
+function onScanFailure(error) {
+  // Kein Problem – während des Suchens sind Fehlermeldungen normal.
+}
+
+
+function startScanner() {
+
+  scanner = new Html5Qrcode("reader");
+
+  const config = {
+    fps: 15,
+    qrbox: {
+      width: 280,
+      height: 160
     },
-
-    "200000000002": {
-      name: "Penne 500 g",
-      price: "1,59 €"
-    },
-
-    "200000000003": {
-      name: "Basmati Reis 1 kg",
-      price: "2,99 €"
-    },
-
-    "200000000004": {
-      name: "Tomaten gehackt 400 g",
-      price: "1,19 €"
-    },
-
-    "200000000005": {
-      name: "Kichererbsen 400 g",
-      price: "1,29 €"
-    },
-
-    "200000000006": {
-      name: "Weiße Bohnen 400 g",
-      price: "1,39 €"
-    },
-
-    "200000000007": {
-      name: "Oliven grün 500 g",
-      price: "3,49 €"
-    },
-
-    "200000000008": {
-      name: "Tomatenmark 200 g",
-      price: "0,99 €"
-    },
-
-    "200000000009": {
-      name: "Rote Linsen 500 g",
-      price: "2,19 €"
-    },
-
-    "200000000010": {
-      name: "Bulgur 1 kg",
-      price: "2,49 €"
-    }
-
+    aspectRatio: 1.7777778
   };
 
+  scanner.start(
+    { facingMode: "environment" },
+    config,
+    onScanSuccess,
+    onScanFailure
+  ).catch(function(error) {
 
-  function showProduct(code) {
+    document.getElementById("resultText").innerHTML =
+      '<div class="not-found">' +
+      'Kamera konnte nicht gestartet werden.' +
+      '</div>';
 
-    const result = document.getElementById("resultText");
-    const product = products[code];
+  });
 
-    if (product) {
-
-      result.innerHTML =
-        '<div class="product">' + product.name + '</div>' +
-        '<div class="price">' + product.price + '</div>';
-
-    } else {
-
-      result.innerHTML =
-        '<div class="not-found">' +
-        'Artikel nicht gefunden<br><br>' +
-        'EAN: ' + code +
-        '</div>';
-
-    }
-  }
+}
 
 
-  function searchManual() {
-
-    const code =
-      document.getElementById("manualCode").value.trim();
-
-    if (code) {
-      showProduct(code);
-    }
-
-  }
-
-
-  function onScanSuccess(decodedText) {
-
-    showProduct(decodedText);
-
-  }
-
-
-  function onScanFailure(error) {
-    // Während des Scannens sind Fehlermeldungen normal.
-  }
-
-
-  const scanner = new Html5QrcodeScanner(
-    "reader",
-    {
-      fps: 10,
-      qrbox: {
-        width: 250,
-        height: 150
-      }
-    },
-    false
-  );
-
-
-  scanner.render(onScanSuccess, onScanFailure);
+startScanner();
 
 </script>
 
