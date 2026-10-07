@@ -1,196 +1,363 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Kasrik Bakkal – Preisfinder</title>
+<title>Kasrik Bakkal – Preisfinder</title>
 
-  <script src="https://unpkg.com/html5-qrcode" type="text/javascript"></script>
+<script src="https://unpkg.com/html5-qrcode" type="text/javascript"></script>
 
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      max-width: 600px;
-      margin: 0 auto;
-      padding: 12px;
-      background: #f5f5f5;
-    }
+<style>
 
-    h1 {
-      text-align: center;
-      margin: 8px 0 2px;
-    }
+:root {
+  --red: #b5121b;
+  --dark: #171717;
+  --gold: #d6a72c;
+  --cream: #fffaf0;
+  --light: #f5f5f5;
+  --green: #167447;
+}
 
-    .subtitle {
-      text-align: center;
-      color: #666;
-      margin-bottom: 12px;
-    }
+* {
+  box-sizing: border-box;
+}
 
-    #reader {
-      background: white;
-      padding: 6px;
-      border-radius: 12px;
-      max-width: 360px;
-      margin: 0 auto 12px;
-    }
+body {
+  font-family: Arial, sans-serif;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 12px;
+  background: var(--light);
+  color: var(--dark);
+}
 
-    .result {
-      background: white;
-      border-radius: 12px;
-      padding: 16px;
-      text-align: center;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-      margin-bottom: 12px;
-    }
+/* KOPF */
 
-    .product {
-      font-size: 22px;
-      font-weight: bold;
-      margin-bottom: 6px;
-    }
+.header {
+  background: var(--dark);
+  color: white;
+  border-radius: 14px;
+  padding: 16px;
+  text-align: center;
+  margin-bottom: 12px;
+  border-bottom: 5px solid var(--gold);
+}
 
-    .price {
-      font-size: 34px;
-      font-weight: bold;
-      margin-bottom: 12px;
-    }
+.header h1 {
+  margin: 0;
+  font-size: 25px;
+}
 
-    button {
-      border: none;
-      border-radius: 8px;
-      padding: 10px 16px;
-      font-size: 16px;
-      cursor: pointer;
-      margin: 4px;
-    }
+.header p {
+  margin: 5px 0 0;
+  color: #eee;
+}
 
-    .scanButton {
-      background: #222;
-      color: white;
-    }
+/* SCANNER */
 
-    .cart {
-      background: white;
-      border-radius: 12px;
-      padding: 16px;
-      margin-top: 12px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    }
+.scanner-box {
+  background: white;
+  border-radius: 14px;
+  padding: 7px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+}
 
-    .cart h2 {
-      margin-top: 0;
-    }
+#reader {
+  max-width: 360px;
+  margin: auto;
+}
 
-    .cartItem {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      border-bottom: 1px solid #ddd;
-      padding: 10px 0;
-      gap: 8px;
-    }
+/* BUTTONS */
 
-    .cartName {
-      flex: 1;
-      text-align: left;
-    }
+button {
+  border: none;
+  border-radius: 9px;
+  padding: 11px 16px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  margin: 4px;
+}
 
-    .quantity {
-      white-space: nowrap;
-    }
+.scan-button {
+  background: var(--red);
+  color: white;
+}
 
-    .total {
-      font-size: 24px;
-      font-weight: bold;
-      text-align: right;
-      margin-top: 15px;
-    }
+.share-button {
+  background: var(--gold);
+  color: #171717;
+}
 
-    .empty {
-      color: #777;
-      text-align: center;
-    }
+.clear-button {
+  background: #777;
+  color: white;
+}
 
-    input {
-      width: 90%;
-      padding: 11px;
-      font-size: 17px;
-      border: 1px solid #ccc;
-      border-radius: 8px;
-      margin-top: 8px;
-    }
+.quantity-button {
+  background: #eee;
+  color: #111;
+  padding: 6px 11px;
+  margin: 0 3px;
+}
 
-    .not-found {
-      color: #b00020;
-      font-weight: bold;
-    }
-  </style>
+/* ERGEBNIS */
+
+.result {
+  background: white;
+  border-radius: 14px;
+  padding: 17px;
+  text-align: center;
+  margin-bottom: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+}
+
+.product {
+  font-size: 23px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.price {
+  color: var(--red);
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+input {
+  width: 90%;
+  padding: 11px;
+  font-size: 17px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-top: 8px;
+}
+
+/* WARENKORB */
+
+.cart {
+  background: white;
+  border-radius: 14px;
+  padding: 17px;
+  margin-top: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+}
+
+.cart-title {
+  font-size: 22px;
+  font-weight: bold;
+  border-bottom: 3px solid var(--gold);
+  padding-bottom: 8px;
+  margin-bottom: 8px;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 7px;
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0;
+}
+
+.cart-name {
+  flex: 1;
+  text-align: left;
+}
+
+.cart-price {
+  white-space: nowrap;
+  font-weight: bold;
+}
+
+.total {
+  font-size: 25px;
+  font-weight: bold;
+  text-align: right;
+  margin-top: 15px;
+  color: var(--red);
+}
+
+.cart-buttons {
+  text-align: center;
+  margin-top: 12px;
+}
+
+.empty {
+  text-align: center;
+  color: #777;
+  padding: 12px;
+}
+
+/* FEHLER */
+
+.not-found {
+  color: var(--red);
+  font-weight: bold;
+}
+
+.footer {
+  text-align: center;
+  color: #888;
+  font-size: 12px;
+  margin: 20px 0;
+}
+
+</style>
 </head>
 
 <body>
 
-  <h1>🛒 Kasrik Bakkal</h1>
-  <div class="subtitle">Preisfinder</div>
+<!-- KOPF -->
 
-  <!-- SCANNER -->
+<div class="header">
+
+  <h1>🛒 KASRIK BAKKAL</h1>
+
+  <p>Preisfinder</p>
+
+</div>
+
+
+<!-- SCANNER -->
+
+<div class="scanner-box">
+
   <div id="reader"></div>
 
-  <div style="text-align:center;">
-    <button class="scanButton" onclick="startScanner()">
-      📷 Weiter scannen
-    </button>
+</div>
+
+
+<div style="text-align:center;">
+
+  <button
+    class="scan-button"
+    onclick="startScanner()">
+
+    📷 Weiter scannen
+
+  </button>
+
+</div>
+
+
+<!-- ERGEBNIS -->
+
+<div class="result" id="resultBox">
+
+  <div id="resultText">
+
+    Bitte einen Barcode scannen.
+
   </div>
 
-  <!-- ERGEBNIS -->
-  <div class="result" id="resultBox">
 
-    <div id="resultText">
-      Bitte einen Barcode scannen.
+  <input
+    type="text"
+    id="manualCode"
+    placeholder="EAN manuell eingeben"
+    inputmode="numeric">
+
+
+  <br>
+
+
+  <button
+    onclick="searchManual()">
+
+    Preis suchen
+
+  </button>
+
+</div>
+
+
+<!-- WARENKORB -->
+
+<div class="cart">
+
+  <div class="cart-title">
+
+    🛒 Mein Warenkorb
+
+  </div>
+
+
+  <div id="cartItems">
+
+    <div class="empty">
+
+      Noch keine Artikel
+
     </div>
 
-    <input
-      type="text"
-      id="manualCode"
-      placeholder="EAN manuell eingeben"
-      inputmode="numeric"
-    >
+  </div>
+
+
+  <div class="total">
+
+    Gesamt:
+    <span id="cartTotal">
+      0,00 €
+    </span>
+
+  </div>
+
+
+  <!-- BUTTONS -->
+
+  <div class="cart-buttons">
+
+    <button
+      class="scan-button"
+      onclick="startScanner()">
+
+      📷 Weiter scannen
+
+    </button>
+
 
     <br>
 
-    <button onclick="searchManual()">
-      Preis suchen
+
+    <button
+      class="share-button"
+      onclick="shareCart()">
+
+      📸 Einkaufsliste speichern / teilen
+
+    </button>
+
+
+    <br>
+
+
+    <button
+      class="clear-button"
+      onclick="clearCart()">
+
+      🗑️ Warenkorb leeren
+
     </button>
 
   </div>
 
+</div>
 
-  <!-- WARENKORB -->
-  <div class="cart">
 
-    <h2>🛒 Mein Warenkorb</h2>
+<div class="footer">
 
-    <div id="cartItems">
-      <div class="empty">
-        Noch keine Artikel
-      </div>
-    </div>
+  Kasrik Bakkal
 
-    <div class="total">
-      Gesamt: <span id="cartTotal">0,00 €</span>
-    </div>
-
-    <div style="text-align:center;">
-      <button onclick="clearCart()">
-        🗑️ Warenkorb leeren
-      </button>
-    </div>
-
-  </div>
+</div>
 
 
 <script>
+
+/* PRODUKTE */
 
 const products = {
 
@@ -253,14 +420,22 @@ const products = {
 
 
 let scanner = null;
+
 let scanning = false;
+
 let alreadyScanned = false;
 
 let cart = {};
 
 
+/* PREIS FORMATIEREN */
+
 function formatPrice(price) {
-  return price.toFixed(2).replace(".", ",") + " €";
+
+  return price
+    .toFixed(2)
+    .replace(".", ",") + " €";
+
 }
 
 
@@ -268,15 +443,23 @@ function formatPrice(price) {
 
 function showProduct(code) {
 
-  const result = document.getElementById("resultText");
-  const product = products[code];
+  const result =
+    document.getElementById("resultText");
+
+  const product =
+    products[code];
+
 
   if (!product) {
 
     result.innerHTML =
+
       '<div class="not-found">' +
+
       'Artikel nicht gefunden<br><br>' +
+
       'EAN: ' + code +
+
       '</div>';
 
     return;
@@ -285,27 +468,31 @@ function showProduct(code) {
 
 
   result.innerHTML =
+
     '<div class="product">' +
+
     product.name +
+
     '</div>' +
 
     '<div class="price">' +
-    formatPrice(product.price) +
-    '</div>' +
 
-    '<button onclick="addToCart(\'' + code + '\')">' +
-    '➕ In Warenkorb' +
-    '</button>';
+    formatPrice(product.price) +
+
+    '</div>';
 
 
   addToCart(code);
 
+
   setTimeout(function() {
 
-    document.getElementById("resultBox").scrollIntoView({
-      behavior: "smooth",
-      block: "start"
-    });
+    document
+      .getElementById("resultBox")
+      .scrollIntoView({
+        behavior: "smooth",
+        block: "start"
+      });
 
   }, 100);
 
@@ -318,19 +505,27 @@ function addToCart(code) {
 
   if (!products[code]) return;
 
+
   if (cart[code]) {
 
     cart[code].quantity++;
 
-  } else {
+  }
+
+  else {
 
     cart[code] = {
+
       name: products[code].name,
+
       price: products[code].price,
+
       quantity: 1
+
     };
 
   }
+
 
   updateCart();
 
@@ -341,11 +536,16 @@ function changeQuantity(code, change) {
 
   if (!cart[code]) return;
 
+
   cart[code].quantity += change;
 
+
   if (cart[code].quantity <= 0) {
+
     delete cart[code];
+
   }
+
 
   updateCart();
 
@@ -354,17 +554,29 @@ function changeQuantity(code, change) {
 
 function updateCart() {
 
-  const container = document.getElementById("cartItems");
+  const container =
+    document.getElementById("cartItems");
 
-  const codes = Object.keys(cart);
+
+  const codes =
+    Object.keys(cart);
+
 
   if (codes.length === 0) {
 
     container.innerHTML =
-      '<div class="empty">Noch keine Artikel</div>';
 
-    document.getElementById("cartTotal").textContent =
-      "0,00 €";
+      '<div class="empty">' +
+
+      'Noch keine Artikel' +
+
+      '</div>';
+
+
+    document
+      .getElementById("cartTotal")
+      .textContent = "0,00 €";
+
 
     return;
 
@@ -372,6 +584,7 @@ function updateCart() {
 
 
   let html = "";
+
   let total = 0;
 
 
@@ -379,37 +592,72 @@ function updateCart() {
 
     const item = cart[code];
 
+
     const itemTotal =
       item.price * item.quantity;
+
 
     total += itemTotal;
 
 
     html +=
 
-      '<div class="cartItem">' +
+      '<div class="cart-item">' +
 
-        '<div class="cartName">' +
-          '<strong>' + item.name + '</strong><br>' +
+        '<div class="cart-name">' +
+
+          '<strong>' +
+
+          item.name +
+
+          '</strong><br>' +
+
           formatPrice(item.price) +
+
         '</div>' +
 
-        '<div class="quantity">' +
 
-          '<button onclick="changeQuantity(\'' +
+        '<div>' +
+
+          '<button ' +
+
+          'class="quantity-button" ' +
+
+          'onclick="changeQuantity(\'' +
+
           code +
-          '\', -1)">−</button>' +
+
+          '\', -1)">' +
+
+          '−' +
+
+          '</button>' +
+
 
           item.quantity +
 
-          '<button onclick="changeQuantity(\'' +
+
+          '<button ' +
+
+          'class="quantity-button" ' +
+
+          'onclick="changeQuantity(\'' +
+
           code +
-          '\', 1)">+</button>' +
+
+          '\', 1)">' +
+
+          '+' +
+
+          '</button>' +
 
         '</div>' +
 
-        '<div>' +
+
+        '<div class="cart-price">' +
+
           formatPrice(itemTotal) +
+
         '</div>' +
 
       '</div>';
@@ -419,11 +667,15 @@ function updateCart() {
 
   container.innerHTML = html;
 
-  document.getElementById("cartTotal").textContent =
-    formatPrice(total);
+
+  document
+    .getElementById("cartTotal")
+    .textContent = formatPrice(total);
 
 }
 
+
+/* WARENKORB LEEREN */
 
 function clearCart() {
 
@@ -434,12 +686,17 @@ function clearCart() {
 }
 
 
-/* MANUELLE EINGABE */
+/* MANUELLE EAN */
 
 function searchManual() {
 
   const code =
-    document.getElementById("manualCode").value.trim();
+
+    document
+      .getElementById("manualCode")
+      .value
+      .trim();
+
 
   if (code) {
 
@@ -456,9 +713,12 @@ function onScanSuccess(decodedText) {
 
   if (alreadyScanned) return;
 
+
   alreadyScanned = true;
 
+
   showProduct(decodedText);
+
 
   stopScanner();
 
@@ -466,7 +726,9 @@ function onScanSuccess(decodedText) {
 
 
 function onScanFailure(error) {
-  // Während der Suche sind Fehlermeldungen normal.
+
+  // Während des Scannens sind Fehlermeldungen normal.
+
 }
 
 
@@ -474,11 +736,14 @@ function startScanner() {
 
   if (scanning) return;
 
+
   alreadyScanned = false;
+
 
   if (!scanner) {
 
-    scanner = new Html5Qrcode("reader");
+    scanner =
+      new Html5Qrcode("reader");
 
   }
 
@@ -488,25 +753,43 @@ function startScanner() {
     { facingMode: "environment" },
 
     {
+
       fps: 15,
+
       qrbox: {
+
         width: 280,
+
         height: 130
+
       }
+
     },
 
     onScanSuccess,
+
     onScanFailure
 
-  ).then(function() {
+  )
+
+
+  .then(function() {
 
     scanning = true;
 
-  }).catch(function(error) {
+  })
 
-    document.getElementById("resultText").innerHTML =
+
+  .catch(function(error) {
+
+    document
+      .getElementById("resultText")
+      .innerHTML =
+
       '<div class="not-found">' +
+
       'Kamera konnte nicht gestartet werden.' +
+
       '</div>';
 
   });
@@ -518,15 +801,130 @@ function stopScanner() {
 
   if (!scanner || !scanning) return;
 
-  scanner.stop().then(function() {
 
-    scanning = false;
+  scanner.stop()
 
-  }).catch(function(error) {
+    .then(function() {
 
-    scanning = false;
+      scanning = false;
+
+    })
+
+    .catch(function() {
+
+      scanning = false;
+
+    });
+
+}
+
+
+/* EINKAUFSLISTE */
+
+async function shareCart() {
+
+  const codes =
+    Object.keys(cart);
+
+
+  if (codes.length === 0) {
+
+    alert(
+      "Der Warenkorb ist noch leer."
+    );
+
+    return;
+
+  }
+
+
+  let text =
+    "🛒 KASRIK BAKKAL\n";
+
+  text +=
+    "Einkaufsliste\n\n";
+
+
+  let total = 0;
+
+
+  codes.forEach(function(code) {
+
+    const item = cart[code];
+
+    const itemTotal =
+      item.price * item.quantity;
+
+
+    total += itemTotal;
+
+
+    text +=
+
+      item.name +
+
+      " × " +
+
+      item.quantity +
+
+      " — " +
+
+      formatPrice(itemTotal) +
+
+      "\n";
 
   });
+
+
+  text +=
+
+    "\nGesamt: " +
+
+    formatPrice(total);
+
+
+  if (navigator.share) {
+
+    try {
+
+      await navigator.share({
+
+        title:
+          "Kasrik Bakkal Einkaufsliste",
+
+        text: text
+
+      });
+
+    }
+
+    catch(error) {
+
+      // Teilen wurde abgebrochen.
+
+    }
+
+  }
+
+  else {
+
+    try {
+
+      await navigator.clipboard.writeText(text);
+
+      alert(
+        "Einkaufsliste wurde kopiert."
+      );
+
+    }
+
+    catch(error) {
+
+      alert(text);
+
+    }
+
+  }
 
 }
 
