@@ -515,6 +515,243 @@ input {
 .meat-share-button{margin-top:12px;width:100%;min-height:46px}
 .meat-option-label{font-weight:700;font-size:14px;line-height:1.25;color:#672635;text-align:center;margin-bottom:4px}
 
+/* =========================================================
+   THEMEN-AUSWAHL – Zusatz, Originaldesign bleibt erhalten
+   ========================================================= */
+.theme-menu {
+  position: absolute;
+  left: 0;
+  bottom: 38px;
+  z-index: 60;
+  min-width: 190px;
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  box-shadow: 0 5px 18px rgba(0,0,0,0.18);
+  overflow-x: hidden;
+  overflow-y: auto;
+  max-height: 70vh;
+  text-align: left;
+}
+
+.theme-menu button {
+  display: block;
+  width: 100%;
+  margin: 0;
+  padding: 10px 12px;
+  border: 0;
+  border-radius: 0;
+  background: white;
+  color: #292323;
+  text-align: left;
+  font-size: 14px;
+}
+
+.theme-menu button:hover {
+  background: #faf7f2;
+}
+
+.theme-menu .theme-original { border-left: 5px solid #672635; }
+.theme-menu .theme-superhero { border-left: 5px solid #d71920; }
+.theme-menu .theme-ice { border-left: 5px solid #4aa7df; }
+.theme-menu .theme-kitten { border-left: 5px solid #e879a5; }
+.theme-menu .theme-dino { border-left: 5px solid #4b8f2f; }
+.theme-menu .theme-vivid { border-left: 5px solid #d94f70; }
+.theme-menu .theme-pastel { border-left: 5px solid #8d6fae; }
+.theme-menu .theme-crazy { border-left: 5px solid #ff1493; }
+.theme-menu .theme-racing { border-left: 5px solid #e10600; }
+.theme-menu .theme-power { border-left: 5px solid #1677d2; }
+.theme-menu .theme-luxury { border-left: 5px solid #c6a24a; }
+
+/* Themen – nur Variablen/ergänzende Flächen werden überschrieben.
+   Das Originaldesign bleibt der Standard. */
+body.theme-superhero {
+  --bordeaux: #182d4d;
+  --sand: #e42b32;
+  --background: #eaf0f8;
+}
+body.theme-superhero .header {
+  background: #182d4d;
+}
+body.theme-superhero .header p { color: #e8eef8; }
+body.theme-superhero .box { box-shadow: 0 2px 8px rgba(24,45,77,.12); }
+body.theme-superhero .section-title,
+body.theme-superhero .search-label,
+body.theme-superhero .total,
+body.theme-superhero .price { color: #182d4d; }
+body.theme-superhero .section-title { border-bottom-color: #e42b32; }
+body.theme-superhero .meat-order-button { background:#182d4d; border-color:#e42b32; }
+body.theme-superhero .testphase-inline { color:#ffd2d2; text-shadow:0 0 8px rgba(255,70,70,.85); }
+
+body.theme-ice {
+  --bordeaux: #2e78a8;
+  --sand: #9ed9f5;
+  --background: #eef9ff;
+}
+body.theme-ice .header { background:#2e78a8; }
+body.theme-ice .header p { color:#edfaff; }
+body.theme-ice .box { box-shadow:0 2px 8px rgba(46,120,168,.12); }
+body.theme-ice .section-title,
+body.theme-ice .search-label,
+body.theme-ice .total,
+body.theme-ice .price { color:#24688f; }
+body.theme-ice .section-title { border-bottom-color:#9ed9f5; }
+body.theme-ice .meat-order-button { background:#2e78a8; border-color:#9ed9f5; }
+body.theme-ice .testphase-inline { color:#dff7ff; text-shadow:0 0 9px rgba(120,220,255,.95); }
+
+body.theme-kitten {
+  --bordeaux: #a83f68;
+  --sand: #f0a7c5;
+  --background: #fff1f7;
+}
+body.theme-kitten .header { background:#a83f68; }
+body.theme-kitten .header p { color:#fff0f6; }
+body.theme-kitten .box { box-shadow:0 2px 8px rgba(168,63,104,.12); }
+body.theme-kitten .section-title,
+body.theme-kitten .search-label,
+body.theme-kitten .total,
+body.theme-kitten .price { color:#9c345f; }
+body.theme-kitten .section-title { border-bottom-color:#f0a7c5; }
+body.theme-kitten .meat-order-button { background:#a83f68; border-color:#f0a7c5; }
+body.theme-kitten .testphase-inline { color:#ffd8e8; text-shadow:0 0 9px rgba(255,150,195,.95); }
+
+body.theme-dino {
+  --bordeaux: #2f6b2f;
+  --sand: #a8c86a;
+  --background: #f1f7e9;
+}
+body.theme-dino .header { background:#2f6b2f; }
+body.theme-dino .header p { color:#eef8df; }
+body.theme-dino .box { box-shadow:0 2px 8px rgba(47,107,47,.12); }
+body.theme-dino .section-title,
+body.theme-dino .search-label,
+body.theme-dino .total,
+body.theme-dino .price { color:#2f6b2f; }
+body.theme-dino .section-title { border-bottom-color:#a8c86a; }
+body.theme-dino .meat-order-button { background:#2f6b2f; border-color:#a8c86a; }
+body.theme-dino .testphase-inline { color:#e6f6c9; text-shadow:0 0 9px rgba(170,220,90,.9); }
+
+@media (max-width: 480px) {
+  .theme-menu {
+    min-width: 175px;
+  }
+}
+
+/* =========================================================
+   ZUSÄTZLICHE THEMEN
+   ========================================================= */
+
+/* Blütenzauber – harmonische, kräftige Farben */
+body.theme-vivid {
+  --bordeaux: #d94f70;
+  --sand: #35b9b0;
+  --background: #fff4df;
+}
+body.theme-vivid .header { background:#d94f70; }
+body.theme-vivid .header p { color:#fff3f5; }
+body.theme-vivid .box { box-shadow:0 2px 9px rgba(217,79,112,.14); }
+body.theme-vivid .section-title,
+body.theme-vivid .search-label,
+body.theme-vivid .total,
+body.theme-vivid .price { color:#c63d60; }
+body.theme-vivid .section-title { border-bottom-color:#35b9b0; }
+body.theme-vivid .meat-order-button { background:#d94f70; border-color:#35b9b0; }
+body.theme-vivid .testphase-inline { color:#fff3b0; text-shadow:0 0 10px rgba(53,185,176,.9); }
+
+/* Pastelltraum – weich und ruhig */
+body.theme-pastel {
+  --bordeaux: #8d6fae;
+  --sand: #a9dcca;
+  --background: #fbf3f7;
+}
+body.theme-pastel .header { background:#8d6fae; }
+body.theme-pastel .header p { color:#f9f0ff; }
+body.theme-pastel .box { box-shadow:0 2px 9px rgba(141,111,174,.11); }
+body.theme-pastel .section-title,
+body.theme-pastel .search-label,
+body.theme-pastel .total,
+body.theme-pastel .price { color:#7c609d; }
+body.theme-pastel .section-title { border-bottom-color:#a9dcca; }
+body.theme-pastel .meat-order-button { background:#8d6fae; border-color:#a9dcca; }
+body.theme-pastel .testphase-inline { color:#f7e7ff; text-shadow:0 0 9px rgba(169,220,202,.9); }
+
+/* Farbexplosion – bewusst knallig */
+body.theme-crazy {
+  --bordeaux: #7b1cff;
+  --sand: #00e5ff;
+  --background: #fff0fb;
+}
+body.theme-crazy .header {
+  background: linear-gradient(135deg,#ff1493,#7b1cff,#00cfff);
+}
+body.theme-crazy .header p { color:#ffffff; }
+body.theme-crazy .box { box-shadow:0 3px 12px rgba(255,20,147,.18); }
+body.theme-crazy .section-title,
+body.theme-crazy .search-label,
+body.theme-crazy .total,
+body.theme-crazy .price { color:#7b1cff; }
+body.theme-crazy .section-title { border-bottom-color:#00e5ff; }
+body.theme-crazy .meat-order-button {
+  background:linear-gradient(90deg,#ff1493,#7b1cff);
+  border-color:#00e5ff;
+}
+body.theme-crazy .testphase-inline {
+  color:#ffff00;
+  text-shadow:0 0 5px #ff1493,0 0 12px #00e5ff;
+}
+
+
+/* Rennsport – sportlich und dynamisch */
+body.theme-racing {
+  --bordeaux: #171717;
+  --sand: #e10600;
+  --background: #f2f2f2;
+}
+body.theme-racing .header { background: linear-gradient(135deg,#111,#2a2a2a); }
+body.theme-racing .header p { color:#f4f4f4; }
+body.theme-racing .box { box-shadow:0 3px 10px rgba(0,0,0,.14); }
+body.theme-racing .section-title,
+body.theme-racing .search-label,
+body.theme-racing .total,
+body.theme-racing .price { color:#171717; }
+body.theme-racing .section-title { border-bottom-color:#e10600; }
+body.theme-racing .meat-order-button { background:#171717; border-color:#e10600; }
+body.theme-racing .testphase-inline { color:#ffffff; text-shadow:0 0 8px rgba(225,6,0,.95); }
+
+/* Power – modern, kräftig und technisch */
+body.theme-power {
+  --bordeaux: #163b63;
+  --sand: #ff8a00;
+  --background: #edf4fb;
+}
+body.theme-power .header { background:linear-gradient(135deg,#173b67,#1c5fa3); }
+body.theme-power .header p { color:#edf6ff; }
+body.theme-power .box { box-shadow:0 3px 10px rgba(22,59,99,.14); }
+body.theme-power .section-title,
+body.theme-power .search-label,
+body.theme-power .total,
+body.theme-power .price { color:#163b63; }
+body.theme-power .section-title { border-bottom-color:#ff8a00; }
+body.theme-power .meat-order-button { background:#163b63; border-color:#ff8a00; }
+body.theme-power .testphase-inline { color:#dff2ff; text-shadow:0 0 9px rgba(30,150,255,.95); }
+
+/* Luxus – edel und ruhig */
+body.theme-luxury {
+  --bordeaux: #173d2b;
+  --sand: #c6a24a;
+  --background: #f5f1e5;
+}
+body.theme-luxury .header { background:linear-gradient(135deg,#123323,#1f5a3d); }
+body.theme-luxury .header p { color:#f7f0d7; }
+body.theme-luxury .box { box-shadow:0 3px 10px rgba(23,61,43,.14); }
+body.theme-luxury .section-title,
+body.theme-luxury .search-label,
+body.theme-luxury .total,
+body.theme-luxury .price { color:#173d2b; }
+body.theme-luxury .section-title { border-bottom-color:#c6a24a; }
+body.theme-luxury .meat-order-button { background:#173d2b; border-color:#c6a24a; }
+body.theme-luxury .testphase-inline { color:#f7e9b1; text-shadow:0 0 9px rgba(198,162,74,.9); }
+
 </style>
 
 <style id="testphase-center-style">
@@ -583,6 +820,19 @@ input {
 
   <div class="header-bottom-left">
     <button id="themeButton" class="header-option" type="button">🎨 <span>Tema</span></button>
+    <div id="themeMenu" class="theme-menu hidden">
+      <button type="button" class="theme-original" data-theme="original">🌿 Kasrik Original</button>
+      <button type="button" class="theme-superhero" data-theme="superhero">🦸 Superheld</button>
+      <button type="button" class="theme-ice" data-theme="ice">❄️ Eiswelt</button>
+      <button type="button" class="theme-kitten" data-theme="kitten">🎀 Kätzchen</button>
+      <button type="button" class="theme-dino" data-theme="dino">🦖 Dinosaurier</button>
+      <button type="button" class="theme-vivid" data-theme="vivid">🌺 Blütenzauber</button>
+      <button type="button" class="theme-pastel" data-theme="pastel">🫧 Pastelltraum</button>
+      <button type="button" class="theme-crazy" data-theme="crazy">🦄 Farbexplosion</button>
+      <button type="button" class="theme-racing" data-theme="racing">🏎️ Rennsport</button>
+      <button type="button" class="theme-power" data-theme="power">⚡ Power</button>
+      <button type="button" class="theme-luxury" data-theme="luxury">🏆 Luxus</button>
+    </div>
 </div>
 
   <div class="header-bottom-right">
@@ -2445,13 +2695,47 @@ document.getElementById("languageButton").addEventListener("click",e=>{
 document.querySelectorAll("#languageMenu button").forEach(b=>b.addEventListener("click",e=>{
   e.stopPropagation(); setLanguage(b.dataset.lang);
 }));
-document.getElementById("themeButton").addEventListener("click",()=>{
-  alert(currentLanguage==="tr"?"Tema seçimi daha sonra eklenecek.":"Die Themenauswahl wird später hinzugefügt.");
+
+/* =========================================================
+   THEMEN-AUSWAHL
+   ========================================================= */
+const themeClasses = ["theme-superhero", "theme-ice", "theme-kitten", "theme-dino", "theme-vivid", "theme-pastel", "theme-crazy", "theme-racing", "theme-power", "theme-luxury"];
+
+function applyTheme(theme) {
+  themeClasses.forEach(cls => document.body.classList.remove(cls));
+
+  if (theme && theme !== "original" && themeClasses.includes("theme-" + theme)) {
+    document.body.classList.add("theme-" + theme);
+  }
+
+  localStorage.setItem("kasrikTheme", theme || "original");
+
+  const menu = document.getElementById("themeMenu");
+  if (menu) menu.classList.add("hidden");
+}
+
+const savedTheme = localStorage.getItem("kasrikTheme") || "original";
+applyTheme(savedTheme);
+
+document.getElementById("themeButton").addEventListener("click", function(e) {
+  e.stopPropagation();
+  document.getElementById("themeMenu").classList.toggle("hidden");
 });
+
+document.querySelectorAll("#themeMenu button").forEach(function(button) {
+  button.addEventListener("click", function(e) {
+    e.stopPropagation();
+    applyTheme(button.dataset.theme);
+  });
+});
+
 document.getElementById("meatOrderButton").addEventListener("click",()=>{
   document.getElementById("meatOrder").scrollIntoView({behavior:"smooth",block:"start"});
 });
-document.addEventListener("click",()=>document.getElementById("languageMenu").classList.add("hidden"));
+document.addEventListener("click",()=>{
+  document.getElementById("languageMenu").classList.add("hidden");
+  document.getElementById("themeMenu").classList.add("hidden");
+});
 
 /* =========================================================
    BUTTONS / EVENTS
