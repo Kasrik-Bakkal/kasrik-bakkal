@@ -52,7 +52,7 @@ body {
   padding: 18px 16px;
   text-align: center;
   margin-bottom: 12px;
-  border-bottom: none;
+  border-bottom: 5px solid var(--sand);
 }
 
 .header h1 {
@@ -167,7 +167,7 @@ button:active {
   font-size: 20px;
   font-weight: bold;
   margin-bottom: 10px;
-  border-bottom: none;
+  border-bottom: 3px solid var(--sand);
   padding-bottom: 8px;
   color: var(--bordeaux);
 }
@@ -417,21 +417,16 @@ input {
   background: var(--soft);
 }
 
-/* Kompakter Scanner – volle verfügbare Breite */
+/* Kompakter Scanner */
 #reader {
-  width: 100% !important;
-  max-width: none !important;
-  height: 190px !important;
+  max-width: 320px;
+  height: 190px;
   overflow: hidden;
   margin: auto;
 }
 
 #reader video {
-  width: 100% !important;
-  height: 190px !important;
-  max-width: none !important;
-  max-height: none !important;
-  object-fit: cover !important;
+  max-height: 190px !important;
 }
 
 /* Pluszeichen nur sandfarben */
@@ -485,10 +480,9 @@ input {
 }
 
 .order-info-row {
-  display: grid;
-  grid-template-columns: 1.45fr 0.75fr 1.15fr 1.45fr;
-  align-items: center;
-  gap: 10px;
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
   padding: 10px 0;
   border-bottom: 1px solid var(--border);
   text-align: left;
@@ -500,127 +494,16 @@ input {
 
 .order-info-row strong {
   color: var(--bordeaux);
-  white-space: nowrap;
 }
 
-.order-info-row > span {
-  text-align: left;
-  white-space: nowrap;
-}
-
-.order-info-row > span:last-of-type {
+.order-info-row span {
   text-align: right;
-}
-
-.order-info-note {
-  margin: 8px 0 2px;
-  padding: 0;
-  color: #555;
-  font-size: 13px;
-  line-height: 1.35;
-  text-align: left;
-}
-
-@media (max-width: 600px) {
-  .order-info-row {
-    grid-template-columns: 1.35fr 0.75fr 1.1fr 1.6fr;
-    gap: 6px;
-    font-size: 14px;
-  }
-
-  .order-info-row strong {
-    font-size: 14px;
-  }
-
-  .order-info-row > span:last-of-type {
-    text-align: right;
-  }
-
-  .order-info-note {
-    font-size: 12px;
-  }
 }
 
 .hidden {
   display: none !important;
 }
 
-
-/* Feste 4-Spalten-Struktur für Bestellschluss / Abholung */
-.meat-info-grid {
-  width: 100%;
-  margin-top: 12px;
-}
-
-.meat-row {
-  display: grid;
-  grid-template-columns: minmax(120px, 1.15fr) minmax(75px, .75fr) minmax(95px, .9fr) minmax(150px, 1.4fr);
-  align-items: center;
-  column-gap: 8px;
-  padding: 8px 0;
-}
-
-.meat-row > div {
-  text-align: left;
-  min-width: 0;
-}
-
-.meat-label {
-  white-space: nowrap;
-}
-
-.meat-note {
-  margin-top: 6px;
-  padding-top: 8px;
-  border-top: 1px solid rgba(0,0,0,.12);
-  font-size: 12px;
-  line-height: 1.4;
-  color: #666;
-}
-
-@media (max-width: 600px) {
-  .meat-row {
-    grid-template-columns: minmax(105px, 1.15fr) minmax(65px, .75fr) minmax(82px, .9fr) minmax(130px, 1.4fr);
-    column-gap: 5px;
-    font-size: 13px;
-  }
-  .meat-note {
-    font-size: 11px;
-  }
-}
-
-</style>
-
-<style>
-.copyright-notice {
-  text-align: center;
-  margin: 22px 0 10px;
-  font-size: 11px;
-  color: #777;
-}
-</style>
-
-
-<style>
-/* EDLE, MODERNE BAKKAL-GESTALTUNG – ohne orientalische Ornamente */
-:root{--bordeaux:#672635;--sand:#C8B08E;--paper:#F6F0E5;--ink:#30282a;--line:#dccbb3;}
-body{background:var(--paper)!important;color:var(--ink)!important;}
-.header{background:var(--bordeaux)!important;border-bottom:3px solid var(--sand)!important;border-radius:8px!important;box-shadow:0 5px 18px rgba(70,35,40,.14)!important;position:relative;overflow:hidden;}
-.header:after{content:"";position:absolute;left:22px;right:22px;bottom:8px;height:1px;background:rgba(200,176,142,.65);}
-.header h1{letter-spacing:.8px!important;}
-.header p{color:#eadfce!important;}
-.scanner-box,.result,.cart,.meat-section,.search-box{border:1px solid var(--line)!important;box-shadow:0 3px 12px rgba(70,35,40,.07)!important;border-radius:8px!important;}
-button{border-radius:6px!important;}
-.scan-button,.start-button{background:var(--bordeaux)!important;}
-.share-button{background:var(--sand)!important;color:#332b2b!important;}
-.cart-title,.section-title{color:var(--bordeaux)!important;border-bottom-color:var(--sand)!important;}
-.price,.total{color:var(--bordeaux)!important;}
-input{border-color:var(--line)!important;background:#fffdf9!important;}
-.meat-info-grid{border:1px solid var(--line)!important;background:#fffdf9!important;}
-.meat-info-grid > div{border-color:var(--line)!important;}
-.plus-icon{color:var(--sand)!important;}
-.footer{color:#6f6260!important;}
-.footer:before{content:"";display:block;width:90px;height:1px;background:var(--sand);margin:0 auto 10px;}
 </style>
 </head>
 
@@ -778,18 +661,13 @@ input{border-color:var(--line)!important;background:#fffdf9!important;}
   <div class="order-info">
     <div class="order-info-row">
       <strong id="orderDeadlineLabel">Son Sipariş Günü:</strong>
-      <span id="orderDeadlineDay"></span>
-      <span id="orderDeadlineDate"></span>
-      <span id="orderDeadlineTime"></span>
+      <span id="orderDeadlineValue"></span>
     </div>
 
     <div class="order-info-row">
       <strong id="pickupLabel">Teslim Alma:</strong>
-      <span id="pickupDay"></span>
-      <span id="pickupDate"></span>
-      <span id="pickupTime"></span>
+      <span id="pickupValue"></span>
     </div>
-    <div class="order-info-note" id="pickupNote"></div>
   </div>
 </div>
 
@@ -1820,18 +1698,26 @@ function startScanner() {
 
 
   scanner.start(
+
     {
-      facingMode: "environment"
+      facingMode:
+        "environment"
     },
+
     {
       fps: 15,
+
       qrbox: {
         width: 280,
         height: 90
       }
+
     },
+
     onScanSuccess,
+
     onScanFailure
+
   )
 
 
@@ -2229,7 +2115,7 @@ const translations = {
     cartTitle:"🛒 Sepetim", emptyCart:"Henüz ürün yok", total:"Toplam:",
     clear:"Sepeti sil", share:"Alışveriş listeni paylaş", add:"Sepete ekle",
     orderButton:"🥩 Et & Tavuk Siparişi", deadline:"Son Sipariş Günü:",
-    pickup:"Teslim Alma:", pickupNote:"(Kesin saat, teslim alma gününde WhatsApp grubunda duyurulacaktır.)", noArticles:"Ürün bulunamadı.",
+    pickup:"Teslim Alma:", noArticles:"Ürün bulunamadı.",
     searchError:"❌ Arama yapılamadı.", emptyWarning:"Sepet henüz boş.",
     copied:"Alışveriş listesi kopyalandı.",
     scannerFirst:"Lütfen önce tarayıcıyı başlatın.",
@@ -2246,7 +2132,7 @@ const translations = {
     cartTitle:"🛒 Sepetim", emptyCart:"Henüz ürün yok", total:"Gesamt:",
     clear:"Warenkorb leeren", share:"Einkaufsliste teilen", add:"In Warenkorb",
     orderButton:"🥩 Fleisch- & Hähnchenbestellung", deadline:"Bestellschluss:",
-    pickup:"Abholung:", pickupNote:"(Die genaue Uhrzeit wird am Abholtag in der WhatsApp-Gruppe bekannt gegeben.)", noArticles:"Keine Artikel gefunden.",
+    pickup:"Abholung:", noArticles:"Keine Artikel gefunden.",
     searchError:"❌ Suche konnte nicht ausgeführt werden.",
     emptyWarning:"Der Warenkorb ist noch leer.",
     copied:"Einkaufsliste wurde kopiert.",
@@ -2279,21 +2165,11 @@ function formatDate(d){
   return d.toLocaleDateString(currentLanguage==="tr"?"tr-TR":"de-DE",
     {weekday:"long",day:"2-digit",month:"2-digit",year:"numeric"});
 }
-function splitDate(d){
-  const weekday=d.toLocaleDateString(currentLanguage==="tr"?"tr-TR":"de-DE",{weekday:"long"});
-  const date=d.toLocaleDateString(currentLanguage==="tr"?"tr-TR":"de-DE",{day:"2-digit",month:"2-digit",year:"numeric"});
-  return {weekday, date};
-}
 function updateOrderDates(){
-  const deadline=splitDate(nextSaturday(1));
-  const pickup=splitDate(nextSaturday(0));
-  document.getElementById("orderDeadlineDay").textContent=deadline.weekday;
-  document.getElementById("orderDeadlineDate").textContent=deadline.date;
-  document.getElementById("orderDeadlineTime").textContent=currentLanguage==="tr"?"18:00":"18:00 Uhr";
-  document.getElementById("pickupDay").textContent=pickup.weekday;
-  document.getElementById("pickupDate").textContent=pickup.date;
-  document.getElementById("pickupTime").textContent=currentLanguage==="tr"?"12:00–17:00 (+/- 1h)":"12:00–17:00 Uhr (+/- 1 Std.)";
-  document.getElementById("pickupNote").textContent=t("pickupNote");
+  document.getElementById("orderDeadlineValue").textContent =
+    formatDate(nextSaturday(1)) + (currentLanguage==="tr"?", 18:00":", 18:00 Uhr");
+  document.getElementById("pickupValue").textContent =
+    formatDate(nextSaturday(0)) + (currentLanguage==="tr"?", 12:00–18:00":", 12:00–18:00 Uhr");
 }
 function applyLanguage(){
   document.documentElement.lang=currentLanguage==="tr"?"tr":"de";
@@ -2455,11 +2331,6 @@ window.addEventListener(
 );
 
 </script>
-
-
-<div class="copyright-notice">
-  © 2026 Kasrik Bakkal – Alle Rechte vorbehalten.
-</div>
 
 </body>
 </html>
