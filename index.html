@@ -355,6 +355,155 @@ input {
   display: none;
 }
 
+
+/* =========================================================
+   HEADER – ALT KÖŞELER
+   ========================================================= */
+.header {
+  position: relative;
+  padding-bottom: 48px;
+}
+
+.header-bottom-left,
+.header-bottom-right {
+  position: absolute;
+  bottom: 10px;
+}
+
+.header-bottom-left {
+  left: 10px;
+}
+
+.header-bottom-right {
+  right: 10px;
+}
+
+.header-option {
+  margin: 0;
+  padding: 6px 9px;
+  background: transparent;
+  color: white;
+  border: 1px solid rgba(255,255,255,0.35);
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.language-menu {
+  position: absolute;
+  right: 0;
+  bottom: 38px;
+  z-index: 50;
+  min-width: 130px;
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 9px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.16);
+  overflow: hidden;
+}
+
+.language-menu button {
+  display: block;
+  width: 100%;
+  margin: 0;
+  padding: 9px 12px;
+  text-align: left;
+  background: white;
+  color: var(--text);
+  border-radius: 0;
+  font-size: 14px;
+}
+
+.language-menu button:hover {
+  background: var(--soft);
+}
+
+/* Kompakter Scanner */
+#reader {
+  max-width: 320px;
+  height: 190px;
+  overflow: hidden;
+  margin: auto;
+}
+
+#reader video {
+  max-height: 190px !important;
+}
+
+/* Pluszeichen nur sandfarben */
+.plus-icon {
+  color: var(--sand);
+}
+
+/* Warenkorb-Buttons gleich groß und dicht beieinander */
+.cart-actions {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 6px;
+  margin-top: 12px;
+}
+
+.cart-action-button {
+  margin: 0;
+  width: 220px;
+  min-height: 46px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+}
+
+#addResultButton {
+  background: #eee;
+  color: #222;
+}
+
+/* Fleischbestellung */
+.meat-order-box {
+  text-align: center;
+  scroll-margin-top: 12px;
+}
+
+.meat-order-button {
+  width: 100%;
+  margin: 0;
+  background: var(--bordeaux);
+  color: white;
+  border: 2px solid var(--sand);
+  font-size: 18px;
+  padding: 13px 16px;
+}
+
+.order-info {
+  margin-top: 12px;
+  border-top: 1px solid var(--border);
+}
+
+.order-info-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--border);
+  text-align: left;
+}
+
+.order-info-row:last-child {
+  border-bottom: none;
+}
+
+.order-info-row strong {
+  color: var(--bordeaux);
+}
+
+.order-info-row span {
+  text-align: right;
+}
+
+.hidden {
+  display: none !important;
+}
+
 </style>
 </head>
 
@@ -367,11 +516,20 @@ input {
      ======================================================= -->
 
 <div class="header">
+  <div class="header-bottom-left">
+    <button id="themeButton" class="header-option" type="button">🎨 <span>Tema</span></button>
+  </div>
+
+  <div class="header-bottom-right">
+    <button id="languageButton" class="header-option" type="button">🇹🇷 Türkçe ▾</button>
+    <div id="languageMenu" class="language-menu hidden">
+      <button type="button" data-lang="tr">🇹🇷 Türkçe</button>
+      <button type="button" data-lang="de">🇩🇪 Deutsch</button>
+    </div>
+  </div>
 
   <h1>🛒 KASRIK BAKKAL</h1>
-
-  <p>Preisfinder</p>
-
+  <p id="headerSubtitle">Ürün ve fiyat bilgileri</p>
 </div>
 
 
@@ -406,8 +564,8 @@ input {
 
 <div class="box">
 
-  <div class="section-title">
-    📷 Barcode scannen
+  <div class="section-title" id="scannerTitle">
+    📷 Barkod okuyucu
   </div>
 
   <div id="reader"></div>
@@ -470,7 +628,7 @@ input {
 
   <div class="total">
 
-    Gesamt:
+    <span id="totalLabel">Gesamt:</span>
     <span id="cartTotal">
       0,00 €
     </span>
@@ -478,27 +636,40 @@ input {
   </div>
 
 
-  <div class="center">
-
-    <button
-      id="shareButton"
-      class="sand-button"
-    >
-      📤 Einkaufsliste teilen
+  <div class="cart-actions">
+    <button id="clearButton" class="light-button cart-action-button">
+      <span class="cart-icon">🛒</span> <span id="clearButtonText">Sepeti sil</span>
     </button>
 
-
-    <button
-      id="clearButton"
-      class="gray-button"
-    >
-      🗑️ Warenkorb leeren
+    <button id="shareButton" class="sand-button cart-action-button">
+      📤 <span id="shareButtonText">Alışveriş listeni paylaş</span>
     </button>
-
   </div>
 
 </div>
 
+
+<!-- =======================================================
+     ET & TAVUK / FLEISCHBESTELLUNG
+     ======================================================= -->
+
+<div class="box meat-order-box" id="meatOrder">
+  <button id="meatOrderButton" class="meat-order-button" type="button">
+    🥩 Et &amp; Tavuk Siparişi
+  </button>
+
+  <div class="order-info">
+    <div class="order-info-row">
+      <strong id="orderDeadlineLabel">Son Sipariş Günü:</strong>
+      <span id="orderDeadlineValue"></span>
+    </div>
+
+    <div class="order-info-row">
+      <strong id="pickupLabel">Teslim Alma:</strong>
+      <span id="pickupValue"></span>
+    </div>
+  </div>
+</div>
 
 <div class="footer">
   Kasrik Bakkal
@@ -641,7 +812,7 @@ async function showProduct(code) {
     );
 
   result.innerHTML =
-    "🔎 Preis wird gesucht...";
+    t("searchLoading");
 
 
   try {
@@ -691,9 +862,9 @@ async function showProduct(code) {
 
       '<button ' +
       'id="addResultButton" ' +
-      'class="bordeaux-button">' +
+      'class="light-button">' +
 
-      '➕ In Warenkorb' +
+      '<span class="plus-icon">➕</span> ' + t("add") +
 
       '</button>';
 
@@ -777,6 +948,8 @@ function addToCart(product) {
 
 
   updateCart();
+
+  document.getElementById("resultText").textContent = t("resultDefault");
 
 }
 
@@ -1035,9 +1208,11 @@ function updateCart() {
         "cart-price";
 
       price.textContent =
-        formatPrice(
-          itemTotal
-        );
+        item.quantity +
+        " × " +
+        formatPrice(item.price) +
+        " = " +
+        formatPrice(itemTotal);
 
 
       controls.appendChild(
@@ -1115,8 +1290,7 @@ function clearCart() {
     )
     .innerHTML =
 
-      "Bitte einen Barcode scannen " +
-      "oder einen Artikel suchen.";
+      t("resultDefault");
 
 }
 
@@ -1292,7 +1466,7 @@ async function searchMain() {
 
         '<div class="empty">' +
 
-        'Keine Artikel gefunden.' +
+        t("noArticles") +
 
         '</div>';
 
@@ -1426,7 +1600,7 @@ async function searchMain() {
 
       '<div class="not-found">' +
 
-      '❌ Suche konnte nicht ausgeführt werden.' +
+      t("searchError") +
 
       '</div>';
 
@@ -1531,7 +1705,7 @@ function startScanner() {
 
       qrbox: {
         width: 280,
-        height: 130
+        height: 90
       }
 
     },
@@ -1568,7 +1742,7 @@ function startScanner() {
 
           '<div class="not-found">' +
 
-          '❌ Kamera konnte nicht gestartet werden.' +
+          t("cameraError") +
 
           '<br><br>' +
 
@@ -1617,7 +1791,7 @@ function stopScanner() {
             "torchButton"
           )
           .textContent =
-          "🔦 Licht";
+          t("light");
 
       }
     )
@@ -1638,7 +1812,7 @@ function stopScanner() {
             "torchButton"
           )
           .textContent =
-          "🔦 Licht";
+          t("light");
 
       }
     );
@@ -1658,7 +1832,7 @@ async function toggleTorch() {
   ) {
 
     alert(
-      "Bitte zuerst den Scanner starten."
+      t("scannerFirst")
     );
 
     return;
@@ -1678,7 +1852,7 @@ async function toggleTorch() {
     ) {
 
       alert(
-        "Die Taschenlampe wird von diesem Handy bzw. Browser nicht unterstützt."
+        t("torchUnsupported")
       );
 
       return;
@@ -1724,7 +1898,7 @@ async function toggleTorch() {
     console.error(error);
 
     alert(
-      "Die Taschenlampe konnte nicht geschaltet werden."
+      t("torchError")
     );
 
   }
@@ -1747,7 +1921,7 @@ async function shareCart() {
   ) {
 
     alert(
-      "Der Warenkorb ist noch leer."
+      t("emptyWarning")
     );
 
     return;
@@ -1859,7 +2033,7 @@ async function shareCart() {
 
 
   text +=
-    "Vielen Dank für Ihren Einkauf!\n";
+    t("thanks") + "\n";
 
 
   text +=
@@ -1879,7 +2053,7 @@ async function shareCart() {
       await navigator.share({
 
         title:
-          "Kasrik Bakkal Einkaufsliste",
+          t("shareTitle"),
 
         text:
           text
@@ -1909,7 +2083,7 @@ async function shareCart() {
 
 
       alert(
-        "Einkaufsliste wurde kopiert."
+        t("copied")
       );
 
 
@@ -2030,16 +2204,14 @@ document
 window.addEventListener(
   "load",
   function() {
+    applyLanguage();
 
     setTimeout(
       function() {
-
         startScanner();
-
       },
       500
     );
-
   }
 );
 
