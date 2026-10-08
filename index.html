@@ -417,16 +417,21 @@ input {
   background: var(--soft);
 }
 
-/* Kompakter Scanner */
+/* Kompakter Scanner – volle verfügbare Breite */
 #reader {
-  max-width: 320px;
-  height: 190px;
+  width: 100% !important;
+  max-width: none !important;
+  height: 190px !important;
   overflow: hidden;
   margin: auto;
 }
 
 #reader video {
-  max-height: 190px !important;
+  width: 100% !important;
+  height: 190px !important;
+  max-width: none !important;
+  max-height: none !important;
+  object-fit: cover !important;
 }
 
 /* Pluszeichen nur sandfarben */
@@ -480,9 +485,10 @@ input {
 }
 
 .order-info-row {
-  display: flex;
-  justify-content: space-between;
-  gap: 12px;
+  display: grid;
+  grid-template-columns: 1.45fr 0.75fr 1.15fr 1.45fr;
+  align-items: center;
+  gap: 10px;
   padding: 10px 0;
   border-bottom: 1px solid var(--border);
   text-align: left;
@@ -494,10 +500,45 @@ input {
 
 .order-info-row strong {
   color: var(--bordeaux);
+  white-space: nowrap;
 }
 
-.order-info-row span {
+.order-info-row > span {
+  text-align: left;
+  white-space: nowrap;
+}
+
+.order-info-row > span:last-of-type {
   text-align: right;
+}
+
+.order-info-note {
+  margin: 8px 0 2px;
+  padding: 0;
+  color: #555;
+  font-size: 13px;
+  line-height: 1.35;
+  text-align: left;
+}
+
+@media (max-width: 600px) {
+  .order-info-row {
+    grid-template-columns: 1.35fr 0.75fr 1.1fr 1.6fr;
+    gap: 6px;
+    font-size: 14px;
+  }
+
+  .order-info-row strong {
+    font-size: 14px;
+  }
+
+  .order-info-row > span:last-of-type {
+    text-align: right;
+  }
+
+  .order-info-note {
+    font-size: 12px;
+  }
 }
 
 .hidden {
@@ -661,13 +702,18 @@ input {
   <div class="order-info">
     <div class="order-info-row">
       <strong id="orderDeadlineLabel">Son Sipariş Günü:</strong>
-      <span id="orderDeadlineValue"></span>
+      <span id="orderDeadlineDay"></span>
+      <span id="orderDeadlineDate"></span>
+      <span id="orderDeadlineTime"></span>
     </div>
 
     <div class="order-info-row">
       <strong id="pickupLabel">Teslim Alma:</strong>
-      <span id="pickupValue"></span>
+      <span id="pickupDay"></span>
+      <span id="pickupDate"></span>
+      <span id="pickupTime"></span>
     </div>
+    <div class="order-info-note" id="pickupNote"></div>
   </div>
 </div>
 
@@ -2115,7 +2161,7 @@ const translations = {
     cartTitle:"🛒 Sepetim", emptyCart:"Henüz ürün yok", total:"Toplam:",
     clear:"Sepeti sil", share:"Alışveriş listeni paylaş", add:"Sepete ekle",
     orderButton:"🥩 Et & Tavuk Siparişi", deadline:"Son Sipariş Günü:",
-    pickup:"Teslim Alma:", noArticles:"Ürün bulunamadı.",
+    pickup:"Teslim Alma:", pickupNote:"(Kesin saat, teslim alma gününde WhatsApp grubunda duyurulacaktır.)", noArticles:"Ürün bulunamadı.",
     searchError:"❌ Arama yapılamadı.", emptyWarning:"Sepet henüz boş.",
     copied:"Alışveriş listesi kopyalandı.",
     scannerFirst:"Lütfen önce tarayıcıyı başlatın.",
@@ -2132,7 +2178,7 @@ const translations = {
     cartTitle:"🛒 Sepetim", emptyCart:"Henüz ürün yok", total:"Gesamt:",
     clear:"Warenkorb leeren", share:"Einkaufsliste teilen", add:"In Warenkorb",
     orderButton:"🥩 Fleisch- & Hähnchenbestellung", deadline:"Bestellschluss:",
-    pickup:"Abholung:", noArticles:"Keine Artikel gefunden.",
+    pickup:"Abholung:", pickupNote:"(Die genaue Uhrzeit wird am Abholtag in der WhatsApp-Gruppe bekannt gegeben.)", noArticles:"Keine Artikel gefunden.",
     searchError:"❌ Suche konnte nicht ausgeführt werden.",
     emptyWarning:"Der Warenkorb ist noch leer.",
     copied:"Einkaufsliste wurde kopiert.",
@@ -2165,11 +2211,21 @@ function formatDate(d){
   return d.toLocaleDateString(currentLanguage==="tr"?"tr-TR":"de-DE",
     {weekday:"long",day:"2-digit",month:"2-digit",year:"numeric"});
 }
+function splitDate(d){
+  const weekday=d.toLocaleDateString(currentLanguage==="tr"?"tr-TR":"de-DE",{weekday:"long"});
+  const date=d.toLocaleDateString(currentLanguage==="tr"?"tr-TR":"de-DE",{day:"2-digit",month:"2-digit",year:"numeric"});
+  return {weekday, date};
+}
 function updateOrderDates(){
-  document.getElementById("orderDeadlineValue").textContent =
-    formatDate(nextSaturday(1)) + (currentLanguage==="tr"?", 18:00":", 18:00 Uhr");
-  document.getElementById("pickupValue").textContent =
-    formatDate(nextSaturday(0)) + (currentLanguage==="tr"?", 12:00–18:00":", 12:00–18:00 Uhr");
+  const deadline=splitDate(nextSaturday(1));
+  const pickup=splitDate(nextSaturday(0));
+  document.getElementById("orderDeadlineDay").textContent=deadline.weekday;
+  document.getElementById("orderDeadlineDate").textContent=deadline.date;
+  document.getElementById("orderDeadlineTime").textContent=currentLanguage==="tr"?"18:00":"18:00 Uhr";
+  document.getElementById("pickupDay").textContent=pickup.weekday;
+  document.getElementById("pickupDate").textContent=pickup.date;
+  document.getElementById("pickupTime").textContent=currentLanguage==="tr"?"12:00–17:00 (+/- 1h)":"12:00–17:00 Uhr (+/- 1 Std.)";
+  document.getElementById("pickupNote").textContent=t("pickupNote");
 }
 function applyLanguage(){
   document.documentElement.lang=currentLanguage==="tr"?"tr":"de";
