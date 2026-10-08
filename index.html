@@ -116,8 +116,16 @@ body {
    ========================================================= */
 
 #reader {
-  max-width: 360px;
+  width: 100%;
+  max-width: none;
   margin: auto;
+}
+
+#reader video {
+  width: 100% !important;
+  height: auto !important;
+  max-width: 100% !important;
+  object-fit: fill !important;
 }
 
 .scanner-buttons {
@@ -672,7 +680,8 @@ input {
 </div>
 
 <div class="footer">
-  Kasrik Bakkal
+  <div id="footerDisclaimer">Tüm bilgiler yalnızca bilgilendirme amaçlıdır ve garanti edilmez.</div>
+  <div id="footerCopyright">© 2026 Kasrik Bakkal – Tüm hakları saklıdır.</div>
 </div>
 
 
@@ -1709,7 +1718,7 @@ function startScanner() {
 
       qrbox: {
         width: 280,
-        height: 90
+        height: 130
       }
 
     },
@@ -2122,7 +2131,7 @@ const translations = {
     torchUnsupported:"Bu telefon veya tarayıcıda el feneri desteklenmiyor.",
     torchError:"El feneri değiştirilemedi.",
     shareTitle:"Kasrik Bakkal alışveriş listesi",
-    thanks:"Alışverişiniz için teşekkür ederiz!"
+    thanks:"Alışverişiniz için teşekkür ederiz!", disclaimer:"Tüm bilgiler yalnızca bilgilendirme amaçlıdır ve garanti edilmez.", copyright:"© 2026 Kasrik Bakkal – Tüm hakları saklıdır."
   },
   de: {
     headerSubtitle:"Produkt- und Preisinformationen", searchLabel:"🔎 Suche",
@@ -2140,7 +2149,7 @@ const translations = {
     torchUnsupported:"Die Taschenlampe wird von diesem Handy bzw. Browser nicht unterstützt.",
     torchError:"Die Taschenlampe konnte nicht geschaltet werden.",
     shareTitle:"Kasrik Bakkal Einkaufsliste",
-    thanks:"Vielen Dank für Ihren Einkauf!"
+    thanks:"Vielen Dank für Ihren Einkauf!", disclaimer:"Alle Angaben nur zur Information und ohne Gewähr.", copyright:"© 2026 Kasrik Bakkal – Alle Rechte vorbehalten."
   }
 };
 
@@ -2184,6 +2193,8 @@ function applyLanguage(){
   document.getElementById("orderDeadlineLabel").textContent=t("deadline");
   document.getElementById("pickupLabel").textContent=t("pickup");
   document.getElementById("meatOrderButton").textContent=t("orderButton");
+  document.getElementById("footerDisclaimer").textContent=t("disclaimer");
+  document.getElementById("footerCopyright").textContent=t("copyright");
   document.getElementById("totalLabel").textContent=t("total");
   document.getElementById("languageButton").textContent=currentLanguage==="tr"?"🇹🇷 Türkçe ▾":"🇩🇪 Deutsch";
   const result=document.getElementById("resultText");
