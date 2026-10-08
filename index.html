@@ -576,14 +576,14 @@ input {
       id="scanButton"
       class="bordeaux-button"
     >
-      📷 Scanner starten
+      📷 Kamerayı başlat
     </button>
 
     <button
       id="torchButton"
       class="gray-button"
     >
-      🔦 Licht
+      🔦 Işık
     </button>
 
   </div>
@@ -599,7 +599,7 @@ input {
 
   <div id="resultText">
 
-    Bitte einen Barcode scannen oder einen Artikel suchen.
+    Lütfen barkod taratın veya ürün arayın.
 
   </div>
 
@@ -613,14 +613,14 @@ input {
 <div class="box">
 
   <div class="section-title">
-    🛒 Mein Warenkorb
+    🛒 Sepetim
   </div>
 
 
   <div id="cartItems">
 
     <div class="empty">
-      Noch keine Artikel
+      Henüz ürün yok
     </div>
 
   </div>
@@ -842,6 +842,8 @@ async function showProduct(code) {
     }
 
 
+    result.dataset.hasProduct = "true";
+
     result.innerHTML =
 
       '<div class="brand">' +
@@ -880,6 +882,8 @@ async function showProduct(code) {
       function() {
 
         addToCart(product);
+        document.getElementById("resultText").dataset.hasProduct = "";
+        document.getElementById("resultText").textContent = t("resultDefault");
 
       }
     );
@@ -1008,7 +1012,7 @@ function updateCart() {
 
       '<div class="empty">' +
 
-      'Noch keine Artikel' +
+      'Henüz ürün yok' +
 
       '</div>';
 
@@ -1680,7 +1684,7 @@ function startScanner() {
 
 
   torchButton.textContent =
-    "🔦 Licht";
+    "🔦 Işık";
 
 
   if (!scanner) {
@@ -1888,9 +1892,9 @@ async function toggleTorch() {
 
       torchOn
 
-        ? "🔦 Licht aus"
+        ? "🔦 Işık aus"
 
-        : "🔦 Licht";
+        : "🔦 Işık";
 
 
   } catch (error) {
@@ -2098,6 +2102,116 @@ async function shareCart() {
 }
 
 
+
+/* =========================================================
+   SPRACHE
+   ========================================================= */
+const translations = {
+  tr: {
+    headerSubtitle:"Ürün ve fiyat bilgileri", searchLabel:"🔎 Ara",
+    scannerTitle:"📷 Barkod okuyucu", startScanner:"📷 Kamerayı başlat",
+    light:"🔦 Işık", lightOff:"🔦 Işık kapat",
+    resultDefault:"Lütfen barkod taratın veya ürün arayın.",
+    cartTitle:"🛒 Sepetim", emptyCart:"Henüz ürün yok", total:"Toplam:",
+    clear:"Sepeti sil", share:"Alışveriş listeni paylaş", add:"Sepete ekle",
+    orderButton:"🥩 Et & Tavuk Siparişi", deadline:"Son Sipariş Günü:",
+    pickup:"Teslim Alma:", noArticles:"Ürün bulunamadı.",
+    searchError:"❌ Arama yapılamadı.", emptyWarning:"Sepet henüz boş.",
+    copied:"Alışveriş listesi kopyalandı.",
+    scannerFirst:"Lütfen önce tarayıcıyı başlatın.",
+    torchUnsupported:"Bu telefon veya tarayıcıda el feneri desteklenmiyor.",
+    torchError:"El feneri değiştirilemedi.",
+    shareTitle:"Kasrik Bakkal alışveriş listesi",
+    thanks:"Alışverişiniz için teşekkür ederiz!"
+  },
+  de: {
+    headerSubtitle:"Produkt- und Preisinformationen", searchLabel:"🔎 Suche",
+    scannerTitle:"📷 Barcode-Scanner", startScanner:"📷 Kamera starten",
+    light:"🔦 Işık", lightOff:"🔦 Işık aus",
+    resultDefault:"Lütfen barkod taratın veya ürün arayın.",
+    cartTitle:"🛒 Sepetim", emptyCart:"Henüz ürün yok", total:"Gesamt:",
+    clear:"Warenkorb leeren", share:"Einkaufsliste teilen", add:"In Warenkorb",
+    orderButton:"🥩 Fleisch- & Hähnchenbestellung", deadline:"Bestellschluss:",
+    pickup:"Abholung:", noArticles:"Keine Artikel gefunden.",
+    searchError:"❌ Suche konnte nicht ausgeführt werden.",
+    emptyWarning:"Der Warenkorb ist noch leer.",
+    copied:"Einkaufsliste wurde kopiert.",
+    scannerFirst:"Bitte zuerst den Scanner starten.",
+    torchUnsupported:"Die Taschenlampe wird von diesem Handy bzw. Browser nicht unterstützt.",
+    torchError:"Die Taschenlampe konnte nicht geschaltet werden.",
+    shareTitle:"Kasrik Bakkal Einkaufsliste",
+    thanks:"Vielen Dank für Ihren Einkauf!"
+  }
+};
+
+let currentLanguage = localStorage.getItem("kasrikLanguage") || "tr";
+function t(key){ return translations[currentLanguage][key] || translations.tr[key] || key; }
+
+function isoWeek(date){
+  const d=new Date(Date.UTC(date.getFullYear(),date.getMonth(),date.getDate()));
+  const day=d.getUTCDay()||7; d.setUTCDate(d.getUTCDate()+4-day);
+  const y=new Date(Date.UTC(d.getUTCFullYear(),0,1));
+  return Math.ceil((((d-y)/86400000)+1)/7);
+}
+function nextSaturday(parity){
+  const now=new Date();
+  for(let i=0;i<15;i++){
+    const d=new Date(now); d.setHours(0,0,0,0); d.setDate(now.getDate()+i);
+    if(d.getDay()===6 && isoWeek(d)%2===parity) return d;
+  }
+  return now;
+}
+function formatDate(d){
+  return d.toLocaleDateString(currentLanguage==="tr"?"tr-TR":"de-DE",
+    {weekday:"long",day:"2-digit",month:"2-digit",year:"numeric"});
+}
+function updateOrderDates(){
+  document.getElementById("orderDeadlineValue").textContent =
+    formatDate(nextSaturday(1)) + (currentLanguage==="tr"?", 18:00":", 18:00 Uhr");
+  document.getElementById("pickupValue").textContent =
+    formatDate(nextSaturday(0)) + (currentLanguage==="tr"?", 12:00–18:00":", 12:00–18:00 Uhr");
+}
+function applyLanguage(){
+  document.documentElement.lang=currentLanguage==="tr"?"tr":"de";
+  document.getElementById("headerSubtitle").textContent=t("headerSubtitle");
+  document.querySelector(".search-label").textContent=t("searchLabel");
+  document.getElementById("scannerTitle").textContent=t("scannerTitle");
+  document.querySelectorAll(".section-title")[1].textContent=t("cartTitle");
+  document.getElementById("scanButton").textContent=t("startScanner");
+  document.getElementById("torchButton").textContent=torchOn?t("lightOff"):t("light");
+  document.getElementById("clearButtonText").textContent=t("clear");
+  document.getElementById("shareButtonText").textContent=t("share");
+  document.getElementById("orderDeadlineLabel").textContent=t("deadline");
+  document.getElementById("pickupLabel").textContent=t("pickup");
+  document.getElementById("meatOrderButton").textContent=t("orderButton");
+  document.getElementById("totalLabel").textContent=t("total");
+  document.getElementById("languageButton").textContent=currentLanguage==="tr"?"🇹🇷 Türkçe ▾":"🇩🇪 Deutsch";
+  const result=document.getElementById("resultText");
+  if(!result.dataset.hasProduct) result.textContent=t("resultDefault");
+  if(Object.keys(cart).length===0) document.getElementById("cartItems").innerHTML='<div class="empty">'+t("emptyCart")+'</div>';
+  updateOrderDates();
+  const add=document.getElementById("addResultButton");
+  if(add) add.innerHTML='<span class="plus-icon">➕</span> '+t("add");
+}
+function setLanguage(lang){
+  if(!translations[lang]) return;
+  currentLanguage=lang; localStorage.setItem("kasrikLanguage",lang);
+  document.getElementById("languageMenu").classList.add("hidden"); applyLanguage();
+}
+document.getElementById("languageButton").addEventListener("click",e=>{
+  e.stopPropagation(); document.getElementById("languageMenu").classList.toggle("hidden");
+});
+document.querySelectorAll("#languageMenu button").forEach(b=>b.addEventListener("click",e=>{
+  e.stopPropagation(); setLanguage(b.dataset.lang);
+}));
+document.getElementById("themeButton").addEventListener("click",()=>{
+  alert(currentLanguage==="tr"?"Tema seçimi daha sonra eklenecek.":"Die Themenauswahl wird später hinzugefügt.");
+});
+document.getElementById("meatOrderButton").addEventListener("click",()=>{
+  document.getElementById("meatOrder").scrollIntoView({behavior:"smooth",block:"start"});
+});
+document.addEventListener("click",()=>document.getElementById("languageMenu").classList.add("hidden"));
+
 /* =========================================================
    BUTTONS / EVENTS
    ========================================================= */
@@ -2204,6 +2318,7 @@ document
 window.addEventListener(
   "load",
   function() {
+    applyLanguage();
     applyLanguage();
 
     setTimeout(
