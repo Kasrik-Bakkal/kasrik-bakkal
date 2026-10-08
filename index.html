@@ -421,17 +421,14 @@ input {
 #reader {
   width: 100% !important;
   max-width: none !important;
-  height: 190px !important;
+  min-height: 190px;
   overflow: hidden;
   margin: auto;
 }
 
 #reader video {
   width: 100% !important;
-  height: 190px !important;
   max-width: none !important;
-  max-height: none !important;
-  object-fit: cover !important;
 }
 
 /* Pluszeichen nur sandfarben */
@@ -1782,97 +1779,61 @@ function startScanner() {
     return;
   }
 
-
   alreadyScanned = false;
-
-
-  /*
-     Taschenlampenstatus
-     für neuen Scan zurücksetzen.
-  */
-
   torchOn = false;
 
-
   const torchButton =
-    document.getElementById(
-      "torchButton"
-    );
+    document.getElementById("torchButton");
 
-
-  torchButton.textContent =
-    "🔦 Işık";
-
+  torchButton.textContent = t("light");
 
   if (!scanner) {
-
-    scanner =
-      new Html5Qrcode(
-        "reader"
-      );
-
+    scanner = new Html5Qrcode("reader");
   }
 
-
   scanner.start(
+    { facingMode: "environment" },
 
     {
-      facingMode:
-        "environment"
-    },
-
-    {
-      fps: 15,
-
+      fps: 10,
       qrbox: {
-        width: 320,
+        width: 300,
         height: 100
       }
-
     },
 
     onScanSuccess,
-
     onScanFailure
 
-  )
+  ).then(function() {
 
+    scanning = true;
 
-  .then(
-    function() {
+  }).catch(function(error) {
 
-      scanning = true;
+    scanning = false;
 
+    console.error("Kamera-Fehler:", error);
+
+    let message =
+      "❌ Kamera konnte nicht gestartet werden.";
+
+    if (error && error.message) {
+      message += "<br><small>" +
+        escapeHtml(error.message) +
+        "</small>";
     }
-  )
 
+    message +=
+      "<br><br>Bitte Kamera-Berechtigung erlauben " +
+      "und die Seite über HTTPS öffnen.";
 
-  .catch(
-    function(error) {
+    document.getElementById("resultText").innerHTML =
+      '<div class="not-found">' +
+      message +
+      '</div>';
 
-      console.error(error);
-
-      scanning = false;
-
-
-      document
-        .getElementById(
-          "resultText"
-        )
-        .innerHTML =
-
-          '<div class="not-found">' +
-
-          t("cameraError") +
-
-          '<br><br>' +
-
-          'Bitte Kamera-Berechtigung prüfen.' +
-
-          '</div>';
-
-    }
-  );
+  });
 
 }
 
@@ -2448,12 +2409,7 @@ window.addEventListener(
     applyLanguage();
     applyLanguage();
 
-    setTimeout(
-      function() {
-        startScanner();
-      },
-      500
-    );
+    /* Kamera wird bewusst erst nach Klick auf „Kamera starten“ aktiviert. */
   }
 );
 
