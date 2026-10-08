@@ -545,6 +545,50 @@ input {
   display: none !important;
 }
 
+
+/* Feste 4-Spalten-Struktur für Bestellschluss / Abholung */
+.meat-info-grid {
+  width: 100%;
+  margin-top: 12px;
+}
+
+.meat-row {
+  display: grid;
+  grid-template-columns: minmax(120px, 1.15fr) minmax(75px, .75fr) minmax(95px, .9fr) minmax(150px, 1.4fr);
+  align-items: center;
+  column-gap: 8px;
+  padding: 8px 0;
+}
+
+.meat-row > div {
+  text-align: left;
+  min-width: 0;
+}
+
+.meat-label {
+  white-space: nowrap;
+}
+
+.meat-note {
+  margin-top: 6px;
+  padding-top: 8px;
+  border-top: 1px solid rgba(0,0,0,.12);
+  font-size: 12px;
+  line-height: 1.4;
+  color: #666;
+}
+
+@media (max-width: 600px) {
+  .meat-row {
+    grid-template-columns: minmax(105px, 1.15fr) minmax(65px, .75fr) minmax(82px, .9fr) minmax(130px, 1.4fr);
+    column-gap: 5px;
+    font-size: 13px;
+  }
+  .meat-note {
+    font-size: 11px;
+  }
+}
+
 </style>
 </head>
 
