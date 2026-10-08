@@ -1023,12 +1023,12 @@
     "paket": "500g",
     "einheit": "€/St"
   },
-  "8697436523498": {
-    "barcode": "8697436523498",
-    "marke": "Ciloglu",
-    "produkt": "Fistikli Helva",
-    "preis": 5,
-    "paket": "350g",
+  "5411944363031": {
+    "barcode": "5411944363031",
+    "marke": "Sebahat",
+    "produkt": "Sebahat Helva Fistik 350 g",
+    "preis": 5.49,
+    "paket": "",
     "einheit": "€/St"
   },
   "8697436524297": {
@@ -2391,11 +2391,11 @@
     "paket": "800g",
     "einheit": "€/St"
   },
-  "8690710143610": {
-    "barcode": "8690710143610",
+  "8690710143689": {
+    "barcode": "8690710143689",
     "marke": "Koska",
-    "produkt": "Helva Fistikli",
-    "preis": 6,
+    "produkt": "Helva Sade",
+    "preis": 5,
     "paket": "350g",
     "einheit": "€/St"
   },
@@ -2407,11 +2407,11 @@
     "paket": "350g",
     "einheit": "€/St"
   },
-  "8690710143689": {
-    "barcode": "8690710143689",
+  "8690710143610": {
+    "barcode": "8690710143610",
     "marke": "Koska",
-    "produkt": "Helva Sade",
-    "preis": 5,
+    "produkt": "Helva Fistikli",
+    "preis": 6,
     "paket": "350g",
     "einheit": "€/St"
   },
@@ -3887,12 +3887,12 @@
     "paket": "",
     "einheit": "€/St"
   },
-  "5411944363031": {
-    "barcode": "5411944363031",
-    "marke": "Sebahat",
-    "produkt": "Sebahat Helva Fistik 350 g",
-    "preis": 13.99,
-    "paket": "",
+  "8697436523498": {
+    "barcode": "8697436523498",
+    "marke": "Ciloglu",
+    "produkt": "Fistikli Helva",
+    "preis": 5,
+    "paket": "350g",
     "einheit": "€/St"
   },
   "5411944712761": {
