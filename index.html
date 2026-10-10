@@ -1945,20 +1945,21 @@ function onScanSuccess(
   decodedText
 ) {
 
+  // Doppelte Treffer desselben Kamerabildes kurz abfangen.
   if (alreadyScanned) {
     return;
   }
 
-
   alreadyScanned = true;
 
+  // Produkt anzeigen, aber die Kamera NICHT stoppen.
+  // Das Hinzufügen zum Warenkorb bleibt weiterhin manuell über ➕.
+  showProduct(decodedText);
 
-  showProduct(
-    decodedText
-  );
-
-
-  stopScanner();
+  // Nach kurzer Pause ist der Scanner für den nächsten Barcode bereit.
+  setTimeout(function() {
+    alreadyScanned = false;
+  }, 1200);
 
 }
 
