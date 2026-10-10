@@ -898,8 +898,17 @@ body.theme-luxury .testphase-inline { color:#f7e9b1; text-shadow:0 0 9px rgba(19
     <button
       id="torchButton"
       class="gray-button"
+      type="button"
     >
       🔦 Işık
+    </button>
+
+    <button
+      id="focusButton"
+      class="gray-button"
+      type="button"
+    >
+      🎯 Fokus einstellen
     </button>
 
   </div>
@@ -1018,6 +1027,8 @@ let scanner = null;
 let scanning = false;
 
 let alreadyScanned = false;
+let lastScannedCode = "";
+let lastScannedAt = 0;
 
 let torchOn = false;
 
@@ -1941,26 +1952,29 @@ async function searchMain() {
    SCANNER – ERFOLGREICHER SCAN
    ========================================================= */
 
-function onScanSuccess(
-  decodedText
-) {
+function onScanSuccess(decodedText) {
+  const now = Date.now();
 
-  // Doppelte Treffer desselben Kamerabildes kurz abfangen.
-  if (alreadyScanned) {
+  // Doppelte Erkennung desselben Barcodes direkt hintereinander ignorieren.
+  if (
+    alreadyScanned &&
+    decodedText === lastScannedCode &&
+    now - lastScannedAt < 1800
+  ) {
     return;
   }
 
   alreadyScanned = true;
+  lastScannedCode = decodedText;
+  lastScannedAt = now;
 
-  // Produkt anzeigen, aber die Kamera NICHT stoppen.
-  // Das Hinzufügen zum Warenkorb bleibt weiterhin manuell über ➕.
   showProduct(decodedText);
 
-  // Nach kurzer Pause ist der Scanner für den nächsten Barcode bereit.
-  setTimeout(function() {
+  // Kamera absichtlich NICHT stoppen: bereit für den nächsten Barcode.
+  // Nach kurzer Pause kann auch derselbe Artikel erneut gescannt werden.
+  setTimeout(() => {
     alreadyScanned = false;
-  }, 1200);
-
+  }, 1800);
 }
 
 
@@ -2146,6 +2160,51 @@ function stopScanner() {
       }
     );
 
+}
+
+
+/* =========================================================
+   AUTOFOKUS – FOKUS NEU ANSTOSSEN
+   ========================================================= */
+
+async function refocusCamera() {
+  if (!scanner || !scanning) {
+    alert(t("scannerFirst"));
+    return;
+  }
+
+  try {
+    const capabilities = scanner.getRunningTrackCapabilities();
+
+    // Nicht alle Geräte/Browser geben Fokussteuerung frei.
+    if (!capabilities || !capabilities.focusMode) {
+      alert(t("focusUnsupported"));
+      return;
+    }
+
+    const supportedModes = capabilities.focusMode;
+    const preferredMode = Array.isArray(supportedModes) &&
+      supportedModes.includes("continuous")
+      ? "continuous"
+      : Array.isArray(supportedModes) &&
+        supportedModes.includes("single-shot")
+        ? "single-shot"
+        : null;
+
+    if (!preferredMode) {
+      alert(t("focusUnsupported"));
+      return;
+    }
+
+    await scanner.applyVideoConstraints({
+      advanced: [{ focusMode: preferredMode }]
+    });
+
+    alert(t("focusSuccess"));
+  } catch (error) {
+    console.warn("Autofokus konnte nicht neu angestoßen werden:", error);
+    alert(t("focusError"));
+  }
 }
 
 
@@ -2588,6 +2647,7 @@ const translations = {
     headerSubtitle:"Ürün ve fiyat bilgileri", searchLabel:"🔎 Ara",
     scannerTitle:"📷 Barkod okuyucu", startScanner:"📷 Kamerayı başlat",
     light:"🔦 Işık", lightOff:"🔦 Işık kapat",
+    focusButton:"🎯 Odağı yenile", focusUnsupported:"Bu kamera veya tarayıcıda odak ayarı desteklenmiyor.", focusSuccess:"Kamera odağı yeniden ayarlamayı denedi.", focusError:"Kamera odağı ayarlanamadı.",
     resultDefault:"Lütfen barkod taratın veya ürün arayın.",
     cartTitle:"🛒 Sepetim", emptyCart:"Henüz ürün yok", total:"Toplam:",
     clear:"Sepeti sil", share:"Alışveriş listeni paylaş", add:"Sepete ekle",
@@ -2606,6 +2666,7 @@ const translations = {
     headerSubtitle:"Produkt- und Preisinformationen", searchLabel:"🔎 Suche",
     scannerTitle:"📷 Barcode-Scanner", startScanner:"📷 Kamera starten",
     light:"🔦 Işık", lightOff:"🔦 Işık aus",
+    focusButton:"🎯 Fokus neu einstellen", focusUnsupported:"Diese Kamera bzw. dieser Browser unterstützt keine steuerbare Fokuseinstellung.", focusSuccess:"Die Kamera wurde aufgefordert, den Fokus neu einzustellen.", focusError:"Der Kamerafokus konnte nicht neu eingestellt werden.",
     resultDefault:"Lütfen barkod taratın veya ürün arayın.",
     cartTitle:"🛒 Sepetim", emptyCart:"Henüz ürün yok", total:"Gesamt:",
     clear:"Warenkorb leeren", share:"Einkaufsliste teilen", add:"In Warenkorb",
@@ -2661,6 +2722,7 @@ function applyLanguage(){
   document.querySelectorAll(".section-title")[1].textContent=t("cartTitle");
   document.getElementById("scanButton").textContent=t("startScanner");
   document.getElementById("torchButton").textContent=torchOn?t("lightOff"):t("light");
+  document.getElementById("focusButton").textContent=t("focusButton");
   document.getElementById("clearButtonText").textContent=t("clear");
   document.getElementById("shareButtonText").textContent=t("share");
   document.getElementById("orderDeadlineLabel").textContent=t("deadline");
@@ -2770,6 +2832,13 @@ document
     "click",
     toggleTorch
   );
+
+/*
+   Autofokus erneut anstoßen
+*/
+document
+  .getElementById("focusButton")
+  .addEventListener("click", refocusCamera);
 
 
 /*
