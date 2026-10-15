@@ -903,13 +903,6 @@ body.theme-luxury .testphase-inline { color:#f7e9b1; text-shadow:0 0 9px rgba(19
       🔦 Işık
     </button>
 
-    <button
-      id="focusButton"
-      class="gray-button"
-      type="button"
-    >
-      🎯 Fokus einstellen
-    </button>
 
   </div>
 
@@ -2722,7 +2715,6 @@ function applyLanguage(){
   document.querySelectorAll(".section-title")[1].textContent=t("cartTitle");
   document.getElementById("scanButton").textContent=t("startScanner");
   document.getElementById("torchButton").textContent=torchOn?t("lightOff"):t("light");
-  document.getElementById("focusButton").textContent=t("focusButton");
   document.getElementById("clearButtonText").textContent=t("clear");
   document.getElementById("shareButtonText").textContent=t("share");
   document.getElementById("orderDeadlineLabel").textContent=t("deadline");
@@ -2832,14 +2824,6 @@ document
     "click",
     toggleTorch
   );
-
-/*
-   Autofokus erneut anstoßen
-*/
-document
-  .getElementById("focusButton")
-  .addEventListener("click", refocusCamera);
-
 
 /*
    Suche
